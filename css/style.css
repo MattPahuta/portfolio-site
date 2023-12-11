@@ -1,0 +1,136 @@
+/*
+Author: Matt Pahuta
+https://www.mattpahuta.com
+Date: December 2023
+*/
+
+/* **************** */
+/* Custom Variables */
+/* **************** */
+:root {
+  
+  /* Fonts */
+
+  /* Font Sizes */
+  /* font-family: 'Source Code Pro', monospace; */
+  --ff-primary: 'Roboto', sans-serif;;
+  --ff-secondary: 'Source Code Pro', monospace;
+  /* Font weights */
+  /* Roboto: 400, 500 | Source Code: 400, 700 */
+  --fw-400: 400;
+  --fw-500: 500;
+  --fw-700: 700;
+
+  /* Colors */
+  /* Primary Colors */
+  /* blues/purples */
+  --clr-oxford-blue: #14213D;
+  --clr-royal-blue: #3D348B;
+  --clr-blue-violet: #8825D7;
+  /* green options */
+  --clr-accent-green: #25D788;
+  --clr-tea-green: #C5EBC3;
+  --clr-yellow: #FCA311;
+
+  /* Neutral Colors */
+  --clr-pure-black: #000000;
+  --clr-eerie-black: #191716;
+
+  /* primary text (dark-mode) */
+  --clr-alabaster: #E0E2DB;
+  --clr-alice-blue: #E5ECF4;
+  --clr-light-gray: #e5e5e5;
+
+  --clr-pure-white: #ffffff;
+  
+  /* Border radius */
+  --br-soft: 1rem;
+  --br-round: 50%;
+  
+
+}
+
+/* RESET */
+/* Josh Comeau custom css reset */
+/* https://www.joshwcomeau.com/css/custom-css-reset/ */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+#root, #__next {
+  isolation: isolate;
+}
+
+/* BASE STYLES */
+body {
+  min-height: 100vh;
+  display: grid;
+
+  font-family: var(--ff-primary);
+
+  background: var(--clr-oxford-blue);
+
+  color: #E5ECF4;
+}
+
+/* Typography */
+
+h1 {
+
+}
+
+/* Components and Utility Classes */
+.container {
+  max-width: 1360px;
+  margin-inline: auto;
+  padding: 0 1em;
+}
+
+.accent {
+  color: var(--clr-yellow);
+  color: hsla(154, 71%, 59%, 1);
+  color: #25D788;
+  color: #56E39F;
+}
+
+.block { display: block; }
+
+
+/* Header Styles */
+
+/* Intro/Hero Styles */
+.intro {
+  font-family: var(--ff-secondary);
+}
+
+.title {
+  font-size: 3.5rem;
+  font-weight: 400;
+  color: var(--clr-pure-white);
+}
