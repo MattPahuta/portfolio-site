@@ -31,6 +31,7 @@ Date: December 2023
   --clr-accent-green: #25D788;
   --clr-tea-green: #C5EBC3;
   --clr-yellow: #FCA311;
+  --clr-sunset: #F9C784;
 
   /* Neutral Colors */
   --clr-pure-black: #000000;
@@ -96,7 +97,7 @@ body {
 
   background: var(--clr-oxford-blue);
 
-  color: #E5ECF4;
+  color: #FCF7F8;
 }
 
 /* Typography */
