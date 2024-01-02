@@ -15,9 +15,13 @@
 <body>
   <header>
     <div class="container">
-      <div class="logo"></div>
+      <!-- Sticky navbar | Hamburger menu on mobile -->
       <nav>
+        <button id="mobile-nav-toggle" class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false" aria-label="navigation menu">
+          <span class="sr-only">Menu</span>
+        </button>
         <ul class="nav-list">
+          <li class="nav-list__item">Home</li>
           <li class="nav-list__item">About</li>
           <li class="nav-list__item">Skills</li>
           <li class="nav-list__item">Projects</li>
@@ -26,14 +30,16 @@
       </nav>
     </div>
   </header>
+
   <main>
     <div class="container">
-      <section class="intro">
-        <h1>
+      <section class="intro" id="home">
+        <h1 class="section__title intro-title">
           <span class="accent">Hi there,</span> 
           <span class="title block">I'm Matt Pahuta.</span>
-          <span>A frontend software engineer.</span>
         </h1>
+        <p>Frontend Developer.</p>
+        <img class="intro__image" src="./assets/profile-square.webp" alt="Stylized image of Matt Pahuta">
       </section>
 
       <!-- About Section -->
@@ -55,16 +61,6 @@
   </main>
   <footer>
     <div class="container">
-      <nav class="footer-nav">
-        <ul class="nav-list">
-          <!-- Got to top - Home/Welcome -->
-          <li class="nav-list__item">Welcome</li>
-          <li class="nav-list__item">About</li>
-          <li class="nav-list__item">Skills</li>
-          <li class="nav-list__item">Projects</li>
-          <li class="nav-list__item">Contact</li>
-        </ul>
-      </nav>
       <div class="copy-container">
         <span>Matt Pahuta | 2023</span>
       </div>
