@@ -108,9 +108,15 @@ h1 {
 
 /* Components and Utility Classes */
 .container {
-  max-width: 1360px;
+  /* max-width: 1360px;
   margin-inline: auto;
-  padding: 0 1em;
+  padding: 0 1em; */
+
+  margin-inline: max((100% - 90rem) / 2, 1rem);
+}
+
+.container--sml {
+  margin-inline: max((100% - 70rem) / 2, 2rem);
 }
 
 .accent {
@@ -135,6 +141,26 @@ h1 {
   border: 0 !important;
 } 
 
+
+/* Nav Styles */
+nav {
+  padding-block: 1.2rem;
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+  background-color: transparent;
+  transition: background-color 800ms cubic-bezier(0.64, 0.04, 0.26, 0.87);
+}
+
+nav.active {
+  background-color: var(--clr-eerie-black);
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
 /* Header Styles */
 
