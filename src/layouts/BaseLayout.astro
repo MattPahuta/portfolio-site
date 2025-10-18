@@ -1,0 +1,23 @@
+---
+import '../styles/global.css';
+
+const { title = 'Matt Pahuta | frontend developer' } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+  </head>
+  <body class="mx-auto max-w-screen bg-slate-900 text-slate-50">
+    <main>
+      <slot />
+    </main>
+  </body>
+</html>
