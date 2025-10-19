@@ -1,4 +1,5 @@
 ---
+import { Icon } from 'astro-icon/components'
 ---
 
 <header>
@@ -7,7 +8,35 @@
     <div>
       <h1 class="text-3xl sm:text-4xl font-bold">Matt Pahuta</h1>
       <h2 class="text-lg sm:text-xl font-mono font-light text-emerald-500">Frontend Developer</h2>
-      <p>Hi there! I love building stuff for the web with React, TailwindCSS, Astro. I thrive on learning new things and turning design ideas into user-friendly, accessible, and inclusive web experiences.</p>
+      <p class="leading-relaxed max-w-xl">Hi there! I love building stuff for the web with React, TailwindCSS, Astro. I thrive on learning new things and turning design ideas into user-friendly, accessible, and inclusive web experiences.</p>
+      <!-- Socials icon list li>a>svg -->
+      <!-- ToDo: make this its own Socials component -->
+      <ul class="flex gap-4">
+        <li>
+          <a href="">
+            <Icon name="simple-icons:linkedin" title="LinkedIn" class="size-6 sm:size-8"
+            />
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <Icon name="simple-icons:github" title="GitHub" class="size-6 sm:size-8"
+            />
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <Icon name="simple-icons:frontendmentor" title="Frontend Mentor" class="size-6 sm:size-8"
+            />
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <Icon name="simple-icons:bluesky" title="Bluesky" class="size-6 sm:size-8"
+            />
+          </a>
+        </li>
+      </ul>
     </div>
     <!-- Image (headshot wrapper) -->
     <div></div>
