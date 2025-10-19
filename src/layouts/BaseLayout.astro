@@ -1,7 +1,7 @@
 ---
 import '../styles/global.css';
-
-const { title = 'Matt Pahuta | frontend developer' } = Astro.props;
+import Header from '../components/Header.astro';
+const { title = 'Matt Pahuta' } = Astro.props;
 ---
 
 <!DOCTYPE html>
@@ -15,9 +15,11 @@ const { title = 'Matt Pahuta | frontend developer' } = Astro.props;
 		<meta name="generator" content={Astro.generator} />
     <title>{title}</title>
   </head>
-  <body class="mx-auto max-w-screen bg-slate-900 text-slate-50">
-    <main>
+  <body class="mx-auto px-4 max-w-screen min-h-screen font-sans grid bg-zinc-900 text-zinc-100 scroll-smooth">
+    <Header />
+    <main class="">
       <slot />
     </main>
+    <!-- Footer goes here -->
   </body>
 </html>
