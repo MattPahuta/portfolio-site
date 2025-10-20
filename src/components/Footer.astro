@@ -1,0 +1,18 @@
+---
+import { Icon } from 'astro-icon/components'
+---
+
+<footer>
+  <!-- wrapper element -->
+  <div class="mx-auto max-w-5xl">
+    <p>&copy; {new Date().getFullYear().toString()} <a href="https://github.com/MattPahuta">Matt Pahuta</a>. Made with <span class="sr-only">love</span>
+      <Icon 
+      name="pixelarticons:heart"
+      class="inline size-5 text-emerald-500"
+      aria-hidden="true"
+      focusable="false"
+      />
+      in Astro & TailwindCSS.
+    </p>
+  </div>
+</footer>
