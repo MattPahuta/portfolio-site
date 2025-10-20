@@ -1,0 +1,11 @@
+[
+  {
+    "title": "Frontend Quiz App",
+    "description": "Test your frontend web fluency with this interactive quiz app. Developed with React, semanantic HTML, modern CSS, and Vite.",
+    "techStack": ["React", "HTML", "CSS", "Vite"],
+    "image": "",
+    "imageAlt": "",
+    "gitHubUrl": "",
+    "liveSiteUrl": ""
+  }
+]
