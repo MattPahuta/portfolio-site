@@ -1,18 +1,20 @@
 ---
 import { Icon } from 'astro-icon/components'
+import SocialsList from '../components/SocialsList.astro';
 ---
 
-<footer>
+<footer class="p-6 text-center border-t-2 border-zinc-400">
   <!-- wrapper element -->
-  <div class="mx-auto max-w-5xl">
-    <p>&copy; {new Date().getFullYear().toString()} <a href="https://github.com/MattPahuta">Matt Pahuta</a>. Made with <span class="sr-only">love</span>
+  <div class="mx-auto max-w-5xl flex flex-col items-center justify-center">
+    <SocialsList />
+    <p class="text-sm">Made with <span class="sr-only">love</span>
       <Icon 
       name="pixelarticons:heart"
       class="inline size-5 text-emerald-500"
       aria-hidden="true"
       focusable="false"
       />
-      in Astro & TailwindCSS.
+      by Matt Pahuta.
     </p>
   </div>
 </footer>
