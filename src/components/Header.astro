@@ -6,16 +6,14 @@ import avatar from '../assets/images/avatar_v1.jpg';
 
 <header>
   <!-- wrapper element -->
-  <div class="mx-auto flex flex-col items-center gap-10 max-w-5xl py-10 sm:py-14">
+  <div class="mx-auto flex flex-col md:flex-row items-center gap-10 max-w-5xl py-10 sm:py-14">
     <div class="">
       <h1 class="mb-1 text-3xl sm:text-4xl font-bold">Matt Pahuta</h1>
       <p class="mb-6 text-lg sm:text-xl font-mono font-light text-emerald-500">Frontend Focused Software Engineer</p>
-      <p class="leading-relaxed max-w-xl">Hi there! I love building stuff for the web with React, TailwindCSS, Astro. I thrive on learning new things and turning design ideas into user-friendly, accessible, and inclusive web experiences.</p>
+      <p class="leading-relaxed">Hi there! I love building stuff for the web with React, TailwindCSS, Astro. I thrive on learning new things and turning design ideas into user-friendly, accessible, and inclusive web experiences.</p>
       <SocialsList />
     </div>
     <!-- Image (headshot wrapper) -->
-    <div>
-      <Image src={avatar} alt="Matt Pahuta" class="h-64 w-64 rounded-3xl" />
-    </div>
+    <Image src={avatar} alt="Matt Pahuta" class= "m-auto h-60 w-60 object-cover rounded-3xl" />
   </div>
 </header>
