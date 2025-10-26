@@ -1,0 +1,50 @@
+[
+  {
+    "name": "JavaScript",
+    "icon": "simple-icons:javascript"
+  },
+  {
+    "name": "HTML5",
+    "icon": "simple-icons:html5"
+  },
+  {
+    "name": "CSS",
+    "icon": "simple-icons:css"
+  },
+  {
+    "name": "React",
+    "icon": "simple-icons:react"
+  },
+  {
+    "name": "Tailwind CSS",
+    "icon": "simple-icons:tailwindcss"
+  },
+  {
+    "name": "Git",
+    "icon": "simple-icons:git"
+  },
+  {
+    "name": "TypeScript",
+    "icon": "simple-icons:typescript"
+  },
+  {
+    "name": "Astro",
+    "icon": "simple-icons:astro"
+  },
+  {
+    "name": "Vite",
+    "icon": "simple-icons:vite"
+  },
+  {
+    "name": "Figma",
+    "icon": "simple-icons:figma"
+  },
+  {
+    "name": "VS Code",
+    "icon": "mdi:vs-code"
+  },
+  {
+    "name": "Jira",
+    "icon": "simple-icons:jira"
+  }
+]

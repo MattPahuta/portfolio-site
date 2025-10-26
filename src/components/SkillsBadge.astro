@@ -1,0 +1,13 @@
+---
+import { Icon } from "astro-icon/components";
+const { name, icon } = Astro.props;
+---
+
+<li class="p-4 flex flex-col items-center justify-center gap-2 rounded-lg bg-zinc-600 text-zinc-50 shadow-sm text-sm font-mono">
+  <Icon
+    name={`${icon}`}
+    title={`${name}`}
+    class="size-12"
+  />
+  {name}
+</li>

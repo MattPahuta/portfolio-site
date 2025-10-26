@@ -1,14 +1,15 @@
 ---
-import { Icon } from "astro-icon/components";
-
+import SkillsBadge from "./SkillsBadge.astro";
+import skills from "../data/skills.json"
 ---
 
-<!-- ToDo: add reusable SkillBadge component, JSON file for Skills -->
-
-
 <ul role="list" class="p-6 gap-4 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4">
+  {
+    skills.map((skill) => <SkillsBadge name={skill.name} icon={skill.icon} />)
+  }
+</ul>
 
-  <li class="p-4 flex flex-col items-center justify-center gap-2 rounded-lg bg-indigo-600 text-zinc-50 shadow-sm text-sm font-mono">
+  <!-- <li class="p-4 flex flex-col items-center justify-center gap-2 rounded-lg bg-zinc-600 text-zinc-50 shadow-sm text-sm font-mono">
     <Icon
       name="simple-icons:javascript"
       title="JavaScript"
@@ -16,7 +17,7 @@ import { Icon } from "astro-icon/components";
     />
     JavaScript
   </li>
-  <li class="p-4 flex flex-col items-center justify-center gap-2 rounded-lg bg-indigo-600 text-zinc-50 shadow-sm text-sm font-mono">
+  <li class="p-4 flex flex-col items-center justify-center gap-2 rounded-lg bg-zinc-600 text-zinc-50 shadow-sm text-sm font-mono">
     <Icon
       name="simple-icons:react"
       title="React"
@@ -31,35 +32,5 @@ import { Icon } from "astro-icon/components";
       class="size-12"
     />
     TailwindCSS
-  </li>
-
-</ul>
-
-
-  <!-- <div class="flex flex-col items-center justify-center gap-2 min-w-24 min-h-24 rounded-lg bg-emerald-100 shadow-md shadow-zinc-950">
-    <Icon
-      name="simple-icons:javascript"
-      title="JavaScript"
-      class="size-12"
-    />
-    <span class="text-sm font-mono text-zinc-800">JavaScript</span>
-  </div>
-  <div class="flex flex-col items-center justify-center gap-2 min-w-24 min-h-24 rounded-lg bg-emerald-100 shadow-md shadow-zinc-950">
-    <Icon
-      name="simple-icons:react"
-      title="React"
-      class="size-12"
-    />
-    <span class="text-sm font-mono text-zinc-800">React</span>
-  </div>
-  <div class="flex flex-col items-center justify-center gap-2 min-w-24 min-h-24 rounded-lg bg-emerald-100 shadow-md shadow-zinc-950">
-    <Icon
-      name="simple-icons:tailwindcss"
-      title="TailwindCSS"
-      class="size-12"
-    />
-    <span class="text-sm font-mono text-zinc-800">TailwindCSS</span>
-  </div> -->
-
-
+  </li> -->
 
