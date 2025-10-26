@@ -1,15 +1,62 @@
 ---
+import { Image } from 'astro:assets';
+import project1 from '../assets/images/projects/frontend-quiz.png';
 const { data } = Astro.props;
 
 // drop project images in public: "quiz.jpg"
 // or in images folder, use Astro Image?
 // Add sub-component for tech 'badges' - icons with names?
 ---
-<li>
-  <article>
-    <img src="" alt="">
-    <div>
-
+<!-- <li class="max-w-sm overflow-hidden rounded-lg shadow-md transition-shadow duration-200 hover:shadow-lg">
+  <div class="relative group">
+    <img src="../assets/images/projects/frontend-quiz.png" alt="" class="h-48 w-full object-cover">
+    <div class="absolute inset-0 p-6 bg-black/60 opacity-0 group-hover:opacity-100">
+      <a href="" class="text-lg text-zinc-50 font-semibold">View project</a>
+      <a href="" class="text-lg text-zinc-50 font-semibold">View code</a>
     </div>
-  </article>
+  </div>
+  <div class="space-y-4 p-6">
+    <h3 class="text-lg font-mono font-semibold">Frontend Quiz App</h3>
+    <ul class="flex flex-wrap gap-2">
+      <li class="bg-indigo-700 rounded-md py-0.5 px-4">HTML</li>
+      <li class="bg-indigo-700 rounded-md py-0.5 px-4">CSS</li>
+      <li class="bg-indigo-700 rounded-md py-0.5 px-4">React</li>
+      <li class="bg-indigo-700 rounded-md py-0.5 px-4">Vite</li>
+    </ul>
+  </div>
+  <p>Test your frontend fundamentals with this interactive web app built with React, pure CSS, and accessible design principles.</p>
+</li> -->
+
+<li class="max-w-sm rounded-lg overflow-hidden">
+  <!-- top - image/overlay -->
+  <div
+    class="group relative overflow-hidden bg-zinc-800 shadow-md"
+  >
+    <!-- <img src="../assets/images/projects/frontend-quiz.png" alt="Product" class="h-60 w-full object-cover"
+    /> -->
+    <Image src={project1} alt="Frontend quiz app" class="h-60 w-full object-cover" />
+    <div
+      class="absolute inset-0 flex flex-col justify-end bg-black/60 p-6 opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+    >
+      <div
+        class="translate-y-4 space-y-2 transition-transform duration-300 group-hover:translate-y-0"
+      >
+        <p class="text-white"><a href="">View Project</a></p>
+        <p class="text-white"><a href="">View Code</a></p>
+      </div>
+    </div>
+  </div>
+  <!-- bottom - title/description -->
+  <div class="space-y-4 p-6 bg-indigo-300">
+    <h3 class="text-lg font-mono font-semibold">Frontend Quiz App</h3>
+    <!-- tech badge list -->
+    <ul class="flex flex-wrap gap-2">
+      <li class="bg-indigo-700 rounded-md py-0.5 px-4">HTML</li>
+      <li class="bg-indigo-700 rounded-md py-0.5 px-4">CSS</li>
+      <li class="bg-indigo-700 rounded-md py-0.5 px-4">React</li>
+      <li class="bg-indigo-700 rounded-md py-0.5 px-4">Vite</li>
+    </ul>
+    <p>Test your frontend fundamentals with this interactive web app built with React, pure CSS, and accessible design principles.</p>
+  </div>
+
 </li>

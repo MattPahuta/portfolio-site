@@ -1,0 +1,11 @@
+[
+  {
+    "title": "Frontend Quiz App",
+    "description": "Test your frontend web fluency with this interactive quiz app. Developed with React, semanantic HTML, modern CSS, and Vite.",
+    "techStack": ["React", "HTML", "CSS", "Vite"],
+    "image": "../assets/images/projects/frontend-quiz.png",
+    "imageAlt": "Frontend quiz app home screen",
+    "gitHubUrl": "https://github.com/MattPahuta/frontend-quiz-app",
+    "liveSiteUrl": "https://ubiquitous-malasada-c772ef.netlify.app/"
+  }
+]

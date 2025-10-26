@@ -44,7 +44,7 @@
     "icon": "mdi:vs-code"
   },
   {
-    "name": "Jira",
-    "icon": "simple-icons:jira"
+    "name": "Node.js",
+    "icon": "simple-icons:nodedotjs"
   }
 ]

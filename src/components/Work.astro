@@ -1,12 +1,20 @@
 ---
 import ProjectCard from '../components/ProjectCard.astro';
-import data from '../data/data.json';
+import projects from '../data/projects.json';
 ---
 
 <!-- Projects -->
-<section>
-  <h2>Work</h2>
-  <ul>
-    {data.map((project) => <ProjectCard data={project} />)}
-  </ul>
+<section class="space-y-12">
+  <div class="mx-auto max-w-5xl">
+    <h2 class="mb-4 text-2xl sm:text-3xl font-mono font-bold">Projects<span class="text-indigo-300">.</span>
+    </h2>
+    <!-- <ul>
+      {projects.map((project) => <ProjectCard data={project} />)}
+    </ul> -->
+    <ul>
+      <ProjectCard />
+    </ul>
+
+
+  </div>
 </section>
