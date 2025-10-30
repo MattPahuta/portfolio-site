@@ -1,50 +1,34 @@
 [
   {
     "name": "JavaScript",
-    "icon": "simple-icons:javascript"
+    "icon": "vscode-icons:file-type-js-official"
   },
   {
     "name": "HTML5",
-    "icon": "simple-icons:html5"
+    "icon": "vscode-icons:file-type-html"
   },
   {
     "name": "CSS",
-    "icon": "simple-icons:css"
+    "icon": "vscode-icons:file-type-css"
   },
   {
     "name": "React",
-    "icon": "simple-icons:react"
+    "icon": "vscode-icons:file-type-reactjs"
   },
   {
     "name": "Tailwind CSS",
-    "icon": "simple-icons:tailwindcss"
+    "icon": "vscode-icons:file-type-tailwind"
   },
   {
     "name": "Git",
-    "icon": "simple-icons:git"
-  },
-  {
-    "name": "TypeScript",
-    "icon": "simple-icons:typescript"
+    "icon": "vscode-icons:file-type-git"
   },
   {
     "name": "Astro",
-    "icon": "simple-icons:astro"
+    "icon": "vscode-icons:file-type-astro"
   },
   {
     "name": "Vite",
-    "icon": "simple-icons:vite"
-  },
-  {
-    "name": "Figma",
-    "icon": "simple-icons:figma"
-  },
-  {
-    "name": "VS Code",
-    "icon": "mdi:vs-code"
-  },
-  {
-    "name": "Node.js",
-    "icon": "simple-icons:nodedotjs"
+    "icon": "vscode-icons:file-type-vite"
   }
 ]

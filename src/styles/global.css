@@ -8,6 +8,7 @@
   /* brand colors */
   --color-gamboge: hsl(39, 91%, 49%);
   --color-silverlake-blue: hsl(214, 25%, 56%);
+  --color-columbia-blue: hsl(201, 31%, 82%);
   --color-light-cyan: hsl(184, 76%, 92%);
   --color-cerulean: hsl(202, 41%, 43%);
   --color-tangerine: hsl(33, 94%, 49%);
@@ -15,7 +16,7 @@
   /* Semantic colors */
   --color-primary-dark: var(--color-gamboge);
   --color-secondary-dark: var(--color-silverlake-blue);
-  --color-accent-dark: var(--color-light-cyan);
+  --color-accent-dark: var(--color-columbia-blue);
 
 
 }

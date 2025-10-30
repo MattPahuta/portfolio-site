@@ -1,20 +1,17 @@
 ---
 import ProjectCard from '../components/ProjectCard.astro';
 import projects from '../data/projects.json';
+import PortfolioCard from './PortfolioCard.astro';
 ---
 
 <!-- Projects -->
-<section class="space-y-12">
-  <div class="mx-auto max-w-5xl">
+<section class="">
+  <div class="">
     <h2 class="mb-4 text-2xl sm:text-3xl font-mono font-bold text-zinc-50">Projects<span class="text-primary-dark">.</span>
     </h2>
-    <!-- <ul>
-      {projects.map((project) => <ProjectCard data={project} />)}
-    </ul> -->
-    <ul>
-      <ProjectCard />
-    </ul>
-
-
+    <div class="py-6 grid justify-items-center gap-6">
+      <PortfolioCard />
+      <PortfolioCard />
+    </div>
   </div>
 </section>
