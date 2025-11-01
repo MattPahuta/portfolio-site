@@ -1,20 +1,21 @@
 ---
 import { Icon } from 'astro-icon/components'
 import SocialsList from '../components/SocialsList.astro';
+const year = new Date().getFullYear();
 ---
 
 <footer class="text-center">
   <!-- wrapper element -->
   <div class="flex flex-col items-center justify-center border-t border-slate-400">
     <SocialsList />
-    <p class="text-sm">Made with Astro, Tailwind CSS, and <span class="sr-only">coffee</span>
+    <p class="text-sm">&copy; {year} Matt Pahuta. Made with <span class="sr-only">coffee</span>
       <Icon 
       name="mdi:coffee"
       class="inline size-5 text-emerald-500"
       aria-hidden="true"
       focusable="false"
       />
-      by Matt Pahuta.
+      in Astro &amp; Tailwind CSS
     </p>
   </div>
 </footer>
