@@ -3,36 +3,17 @@ import SkillsBadge from "./SkillsBadge.astro";
 import skills from "../data/skills.json"
 ---
 
-<!-- Show Skill list only on Tablet and above? -->
-
-<ul role="list" class="grid gap-4 grid-cols-[repeat(auto-fill,_minmax(150px,_1fr))]">
+<ul role="list" class="mt-6 p-5 grid gap-4 grid-cols-[repeat(auto-fill,_minmax(115px,_1fr))] rounded-lg border border-zinc-700 bg-radial from-indigo-950 to-neutral-950">
+<!-- <ul role="list" class="grid auto-cols-[100px] grid-flow-col gap-4 rounded-lg"> -->
   {
-    skills.map((skill) => <SkillsBadge name={skill.name} icon={skill.icon} />)
+    skills.map((skill) => {
+      return (
+        <li class="p-3 flex flex-col gap-2 items-center rounded-md text-center text-xs font-mono bg-neutral-800 border-zinc-700 hover:scale-95 transition">
+          <SkillsBadge name={skill.name} icon={skill.icon} />
+          {skill.name}
+        </li>
+      );
+    })
   }
 </ul>
-
-  <!-- <li class="p-4 flex flex-col items-center justify-center gap-2 rounded-lg bg-zinc-600 text-zinc-50 shadow-sm text-sm font-mono">
-    <Icon
-      name="simple-icons:javascript"
-      title="JavaScript"
-      class="size-12"
-    />
-    JavaScript
-  </li>
-  <li class="p-4 flex flex-col items-center justify-center gap-2 rounded-lg bg-zinc-600 text-zinc-50 shadow-sm text-sm font-mono">
-    <Icon
-      name="simple-icons:react"
-      title="React"
-      class="size-12"
-    />
-    React
-  </li>
-  <li class="p-4 flex flex-col items-center justify-center gap-2 rounded-lg bg-indigo-600 text-zinc-50 shadow-sm text-sm font-mono">
-    <Icon
-      name="simple-icons:tailwindcss"
-      title="TailwindCSS"
-      class="size-12"
-    />
-    TailwindCSS
-  </li> -->
 

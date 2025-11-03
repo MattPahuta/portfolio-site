@@ -4,7 +4,19 @@
     "icon": "vscode-icons:file-type-js-official"
   },
   {
-    "name": "HTML5",
+    "name": "React",
+    "icon": "vscode-icons:file-type-reactjs"
+  },
+  {
+    "name": "Tailwind",
+    "icon": "vscode-icons:file-type-tailwind"
+  },
+  {
+    "name": "Astro",
+    "icon": "vscode-icons:file-type-astro"
+  },
+  {
+    "name": "HTML",
     "icon": "vscode-icons:file-type-html"
   },
   {
@@ -12,20 +24,16 @@
     "icon": "vscode-icons:file-type-css"
   },
   {
-    "name": "React",
-    "icon": "vscode-icons:file-type-reactjs"
-  },
-  {
-    "name": "Tailwind CSS",
-    "icon": "vscode-icons:file-type-tailwind"
+    "name": "TypeScript",
+    "icon": "vscode-icons:file-type-typescript-official"
   },
   {
     "name": "Git",
     "icon": "vscode-icons:file-type-git"
   },
   {
-    "name": "Astro",
-    "icon": "vscode-icons:file-type-astro"
+    "name": "Node",
+    "icon": "vscode-icons:file-type-node"
   },
   {
     "name": "Vite",
