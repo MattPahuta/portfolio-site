@@ -1,8 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap'); */
+
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 @import "tailwindcss";
 
 @theme {
-  --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  --font-sans: 'Work Sans', ui-sans-serif, system-ui, sans-serif;
   --font-mono: 'JetBrains Mono', ui-monospace, monospace;
 
   /* brand colors */
@@ -11,11 +13,11 @@
   --color-columbia-blue: hsl(201, 31%, 82%); 
   --color-airforce-blue: #698996;
   --color-night: #151517;
+  --color-glaucous: hsl(228, 34%, 58%);
 
   /* Semantic colors */
   /* --color-primary-dark: var(--color-gamboge); */
-  /* --color-secondary-dark: var(--color-silverlake-blue);
-  --color-accent-dark: var(--color-columbia-blue); */
+  --color-accent-dark: var(--color-glaucous);
 
 }
 

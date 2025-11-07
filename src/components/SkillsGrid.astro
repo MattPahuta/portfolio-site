@@ -3,12 +3,12 @@ import SkillsBadge from "./SkillsBadge.astro";
 import skills from "../data/skills.json"
 ---
 
-<ul role="list" class="mt-6 p-5 grid gap-4 grid-cols-[repeat(auto-fill,_minmax(115px,_1fr))] rounded-lg border border-zinc-700 bg-radial from-indigo-950 to-neutral-950">
+<ul role="list" class="mt-6 p-6 grid gap-4 grid-cols-[repeat(auto-fill,_minmax(115px,_1fr))] rounded-lg border border-zinc-700 bg-radial from-emerald-900 to-neutral-950">
 <!-- <ul role="list" class="grid auto-cols-[100px] grid-flow-col gap-4 rounded-lg"> -->
   {
     skills.map((skill) => {
       return (
-        <li class="p-3 flex flex-col gap-2 items-center rounded-md text-center text-xs font-mono bg-neutral-800 border-zinc-700 hover:scale-95 transition">
+        <li class="p-3 flex flex-col gap-2 items-center rounded-md text-center text-xs font-mono bg-neutral-800 hover:scale-95 transition">
           <SkillsBadge name={skill.name} icon={skill.icon} />
           {skill.name}
         </li>
