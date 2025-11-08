@@ -12,12 +12,18 @@
   --color-silverlake-blue: #738bab;
   --color-columbia-blue: hsl(201, 31%, 82%); 
   --color-airforce-blue: #698996;
+
+
   --color-night: #151517;
   --color-glaucous: hsl(228, 34%, 58%);
+  --color-yinmin-blue: hsl(225, 21%, 34%);
+  --color-space-cadet: hsl(229, 22%, 20%);
 
   /* Semantic colors */
   /* --color-primary-dark: var(--color-gamboge); */
   --color-accent-dark: var(--color-glaucous);
+  --color-accent2-dark: var(--color-yinmin-blue);
+  --color-accent3-dark: var(--color-space-cadet);
 
 }
 
