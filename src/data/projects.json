@@ -7,5 +7,23 @@
     "imageAlt": "Frontend quiz app home screen",
     "gitHubUrl": "https://github.com/MattPahuta/frontend-quiz-app",
     "liveSiteUrl": "https://ubiquitous-malasada-c772ef.netlify.app/"
+  },
+  {
+    "title": "Password Generator App",
+    "description": "Quickly generate a complex password using this web app built with JavaScript.",
+    "techStack": ["JavaScript", "HTML", "CSS"],
+    "image": "../assets/images/projects/pw-generator.png",
+    "imageAlt": "Password generator app",
+    "gitHubUrl": "https://github.com/MattPahuta/frontend-quiz-app",
+    "liveSiteUrl": "https://scintillating-muffin-250ce1.netlify.app/"
+  },
+  {
+    "title": "Contact Form",
+    "description": "Accessible and responsive contact form built with React.",
+    "techStack": ["React", "Tailwind", "Vite", "HTML"],
+    "image": "../assets/images/projects/contact-form.png",
+    "imageAlt": "Contact us form",
+    "gitHubUrl": "https://github.com/MattPahuta/frontend-quiz-app",
+    "liveSiteUrl": "https://singular-kashata-00a5f5.netlify.app/"
   }
 ]
