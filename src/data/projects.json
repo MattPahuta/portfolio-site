@@ -2,28 +2,77 @@
   {
     "title": "Frontend Quiz App",
     "description": "Test your frontend web fluency with this interactive quiz app. Developed with React, semanantic HTML, modern CSS, and Vite.",
-    "techStack": ["React", "HTML", "CSS", "Vite"],
-    "image": "../assets/images/projects/frontend-quiz.png",
-    "imageAlt": "Frontend quiz app home screen",
+    "techStack": [
+      {
+        "name": "React",
+        "icon": "vscode-icons:file-type-reactjs"
+      },
+      {
+        "name": "CSS",
+        "icon": "vscode-icons:file-type-css"
+      },
+      {
+        "name": "Vite",
+        "icon": "vscode-icons:file-type-vite"
+      }
+    ],
+    "imagePath": "/src/assets/frontend-quiz.png",
+    "imageAltText": "Frontend quiz app home screen",
     "gitHubUrl": "https://github.com/MattPahuta/frontend-quiz-app",
     "liveSiteUrl": "https://ubiquitous-malasada-c772ef.netlify.app/"
   },
   {
     "title": "Password Generator App",
     "description": "Quickly generate a complex password using this web app built with JavaScript.",
-    "techStack": ["JavaScript", "HTML", "CSS"],
-    "image": "../assets/images/projects/pw-generator.png",
-    "imageAlt": "Password generator app",
-    "gitHubUrl": "https://github.com/MattPahuta/frontend-quiz-app",
+    "techStack": [
+      {
+        "name": "JavaScript",
+        "icon": "vscode-icons:file-type-js-official"
+      },
+      {
+        "name": "HTML",
+        "icon": "vscode-icons:file-type-html"
+      },
+      {
+        "name": "CSS",
+        "icon": "vscode-icons:file-type-css"
+      },
+      {
+        "name": "Vite",
+        "icon": "vscode-icons:file-type-vite"
+      }
+    ],
+    "imagePath": "/src/assets/pw-generator.png",
+    "imageAltText": "Password generator app",
+    "gitHubUrl": "https://github.com/MattPahuta/password-generator-app",
     "liveSiteUrl": "https://scintillating-muffin-250ce1.netlify.app/"
   },
   {
     "title": "Contact Form",
     "description": "Accessible and responsive contact form built with React.",
-    "techStack": ["React", "Tailwind", "Vite", "HTML"],
-    "image": "../assets/images/projects/contact-form.png",
-    "imageAlt": "Contact us form",
-    "gitHubUrl": "https://github.com/MattPahuta/frontend-quiz-app",
+    "techStack": [
+      {
+        "name": "React",
+        "icon": "vscode-icons:file-type-reactjs"
+      },
+      {
+        "name": "HTML",
+        "icon": "vscode-icons:file-type-html"
+      },
+      {
+        "name": "Tailwind",
+        "icon": "vscode-icons:file-type-tailwind"
+      },
+      {
+        "name": "Vite",
+        "icon": "vscode-icons:file-type-vite"
+      }
+    ],
+    "imagePath": "/src/assets/contact-form.png",
+    "imageAltText": "Contact us form",
+    "gitHubUrl": "https://github.com/MattPahuta/contact-form-component",
     "liveSiteUrl": "https://singular-kashata-00a5f5.netlify.app/"
   }
+
+    
 ]
