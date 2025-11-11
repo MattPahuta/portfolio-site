@@ -1,7 +1,7 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap'); */
 
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
-@import "tailwindcss";
+@import 'tailwindcss';
 
 @theme {
   --font-sans: 'Work Sans', ui-sans-serif, system-ui, sans-serif;
@@ -10,19 +10,34 @@
   /* brand colors */
   --color-gamboge: hsl(39, 91%, 49%);
   --color-mint: hsl(138, 29%, 56%);
+  --color-night: hsl(220, 17%, 7%);
+  --color-celadon: hsl(123, 50%, 74%);
+
+  /* Brand colors - blue palette */
+  --rich-black-950: oklch(0.181 0.028 252);
+  --rich-black-900: oklch(0.212 0.039 252);
+  --oxford-blue: oklch(0.277 0.077 252);
+  --yale-blue-900: oklch(0.328 0.107 252);
+  --yale-blue-800: oklch(0.374 0.131 252);
+  --polynesian-blue: oklch(0.425 0.152 252);
+  --denim-blue: oklch(0.493 0.172 252);
+  --azure-blue: oklch(0.579 0.191 252);
+  --bleu-de-france: oklch(0.629 0.187 252);
+  --dodger-blue-500: oklch(0.682 0.176 252);
+  --light-sky-blue-400: oklch(0.849 0.107 252);
+  --columbia-blue-400: oklch(0.921 0.063 252);
 
   /* Brand colors - Dark Mode */
-  --color-night: hsl(220, 17%, 7%);
-  --color-space-cadet: hsl(229, 22%, 20%);
-  --color-yinmin-blue: hsl(225, 21%, 34%);
-  --color-glaucous: hsl(225, 27%, 55%);
-  --color-celadon: hsl(123, 50%, 74%);
-  /* Semantic colors */
-  --color-primary-bg-dark: var(--color-night);
-  --color-accent-dark: var(--color-glaucous);
-  --color-accent-green-dark: var(--color-celadon);
-  --color-accent2-dark: var(--color-yinmin-blue);
-  --color-accent3-dark: var(--color-space-cadet);
-}
 
- 
+  /* Semantic colors */
+  --color-primary-bg-dark: var(--rich-black-950);
+  --color-secondary-bg-dark: var(--rich-black-900);
+  --color-accent-bg-dark: var(--blue-black-500);
+  --color-accent-dark-800: var(--oxford-blue);
+  --color-accent-dark: var(--light-sky-blue-400);
+  --color-accent-500: var(--dodger-blue-500);
+  --color-accent-600: var(--polynesian-blue);
+
+  --color-gradient-bg-900: var(--rich-black-900);
+  --color-gradient-bg-800: var(--oxford-blue);
+}

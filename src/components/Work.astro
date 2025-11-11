@@ -19,20 +19,10 @@ import projects from '../data/projects.json';
 ---
 
 <!-- Projects -->
-<section class="py-12 border-t border-zinc-400">
-  <h2 class="mb-4 text-2xl sm:text-3xl font-mono font-bold text-zinc-50">Projects<span class="text-accent-green-dark">.</span>
+<section class="py-12 border-t border-gray-400">
+  <h2 class="mb-4 text-2xl sm:text-3xl font-mono font-bold text-zinc-50">Projects<span class="text-accent-500">.</span>
   </h2>
   <div class="py-6 grid justify-items-center gap-6">
-    <!-- <ProjectCard 
-      title="Frontend Quiz App"
-      description="Test your frontend web fluency with this interactive quiz app. Developed with React, modern CSS, and Vite."
-      imagePath="/src/assets/frontend-quiz.png"
-      imageAltText="Frontend quiz app"
-      techStack={projectOneTechStack}
-      gitHubUrl="https://github.com/MattPahuta/frontend-quiz-app"
-      liveSiteUrl="https://ubiquitous-malasada-c772ef.netlify.app/"
-    /> -->
-
     {
       projects.map(project => (
         <ProjectCard 
@@ -46,6 +36,5 @@ import projects from '../data/projects.json';
         />
       ))
     }
-
   </div>
 </section>
