@@ -15,15 +15,15 @@
 
   /* Brand colors - blue palette */
   --rich-black-950: oklch(0.181 0.028 252);
-  --rich-black-900: oklch(0.212 0.039 252);
+  --rich-black-900: #0a1a2a;
   --oxford-blue: oklch(0.277 0.077 252);
   --yale-blue-900: oklch(0.328 0.107 252);
-  --yale-blue-800: oklch(0.374 0.131 252);
+  --yale-blue-800: #004083;
   --polynesian-blue: oklch(0.425 0.152 252);
   --denim-blue: oklch(0.493 0.172 252);
   --azure-blue: oklch(0.579 0.191 252);
   --bleu-de-france: oklch(0.629 0.187 252);
-  --dodger-blue-500: oklch(0.682 0.176 252);
+  --dodger-blue-500: #359bff;
   --light-sky-blue-400: oklch(0.849 0.107 252);
   --columbia-blue-400: oklch(0.921 0.063 252);
 
@@ -32,11 +32,18 @@
   /* Semantic colors */
   --color-primary-bg-dark: var(--rich-black-950);
   --color-secondary-bg-dark: var(--rich-black-900);
+
+  --color-rich-black: oklch(0.181 0.028 252);
+  --color-blue-black: oklch(0.212 0.039 252);
+  --color-oxford-blue: oklch(0.277 0.077 252);
+  --color-yale-blue: oklch(0.328 0.107 252);
+
   --color-accent-bg-dark: var(--blue-black-500);
   --color-accent-dark-800: var(--oxford-blue);
   --color-accent-dark: var(--light-sky-blue-400);
   --color-accent-500: var(--dodger-blue-500);
   --color-accent-600: var(--polynesian-blue);
+  --color-accent-700: var(--yale-blue-800);
 
   --color-gradient-bg-900: var(--rich-black-900);
   --color-gradient-bg-800: var(--oxford-blue);
