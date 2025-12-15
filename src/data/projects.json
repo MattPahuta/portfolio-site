@@ -8,6 +8,10 @@
         "icon": "vscode-icons:file-type-reactjs"
       },
       {
+        "name": "HTML",
+        "icon": "vscode-icons:file-type-html"
+      },
+      {
         "name": "CSS",
         "icon": "vscode-icons:file-type-css"
       },
@@ -36,10 +40,6 @@
       {
         "name": "CSS",
         "icon": "vscode-icons:file-type-css"
-      },
-      {
-        "name": "Vite",
-        "icon": "vscode-icons:file-type-vite"
       }
     ],
     "imagePath": "/src/assets/pw-generator.png",
@@ -74,5 +74,4 @@
     "liveSiteUrl": "https://singular-kashata-00a5f5.netlify.app/"
   }
 
-    
 ]
