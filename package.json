@@ -14,7 +14,7 @@
     "@iconify-json/simple-icons": "^1.2.54",
     "@iconify-json/vscode-icons": "^1.2.33",
     "@tailwindcss/vite": "^4.1.7",
-    "astro": "^5.15.3",
+    "astro": "^5.16.6",
     "astro-icon": "^1.1.5",
     "simple-icons-astro": "^14.13.0",
     "tailwindcss": "^4.1.7"
