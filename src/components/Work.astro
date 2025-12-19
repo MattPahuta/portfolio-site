@@ -1,40 +1,26 @@
 ---
 import ProjectCard from '../components/ProjectCard.astro';
 import projects from '../data/projects.json';
-
-// const projectOneTechStack = [
-//       {
-//         name: "React",
-//         icon: "vscode-icons:file-type-reactjs"
-//       },
-//       {
-//         name: "CSS",
-//         icon: "vscode-icons:file-type-css"
-//       },
-//       {
-//         name: "Vite",
-//         icon: "vscode-icons:file-type-vite"
-//       }
-//     ]
 ---
 
-<!-- Projects -->
 <section class="py-12 border-t border-gray-400">
-  <h2 class="mb-4 text-2xl sm:text-3xl font-mono font-bold text-zinc-50">Projects<span class="text-accent-500">.</span>
-  </h2>
-  <div class="py-6 grid justify-items-center gap-6">
-    {
-      projects.map(project => (
-        <ProjectCard 
-          title={project.title} 
-          description={project.description} 
-          imagePath={project.imagePath} 
-          imageAltText={project.imageAltText} 
-          techStack={project.techStack} 
-          gitHubUrl={project.gitHubUrl} 
-          liveSiteUrl={project.liveSiteUrl} 
-        />
-      ))
-    }
+  <div class="max-w-4xl px-4 sm:px-6">
+    <h2 class="mb-4 text-2xl sm:text-3xl font-mono font-bold text-zinc-50">Projects<span class="text-indigo-300">.</span>
+    </h2>
+    <div class="py-6 grid justify-items-center gap-6">
+      {
+        projects.map(project => (
+          <ProjectCard 
+            title={project.title} 
+            description={project.description} 
+            imagePath={project.imagePath} 
+            imageAltText={project.imageAltText} 
+            techStack={project.techStack} 
+            gitHubUrl={project.gitHubUrl} 
+            liveSiteUrl={project.liveSiteUrl} 
+          />
+        ))
+      }
+    </div>
   </div>
 </section>

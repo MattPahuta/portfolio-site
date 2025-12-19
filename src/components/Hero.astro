@@ -4,16 +4,15 @@ import { Image } from 'astro:assets';
 import avatar from '../assets/avatar_v1.jpg';
 ---
 
-<header>
+<section>
   <!-- wrapper element -->
-  <div class="flex flex-col sm:flex-row items-center gap-10 py-10 sm:py-14">
+  <div class="max-w-4xl px-4 sm:px-6 flex flex-col sm:flex-row-reverse items-center gap-10 sm:gap-14 py-10 sm:py-14">
+    <Image src={avatar} alt="Matt Pahuta" class="m-auto h-40 w-40 sm:h-56 sm:w-56 object-cover rounded-full" />
     <div class="">
-      <h1 class="mb-1 text-3xl sm:text-4xl font-bold text-zinc-50">Matt Pahuta</h1>
-      <p class="mb-6 text-lg sm:text-xl font-mono font-light text-accent-500">Frontend Focused Software Engineer</p>
+      <h1 class="mb-1 text-4xl sm:text-4xl font-bold text-zinc-50">Matt Pahuta</h1>
+      <p class="mb-6 text-lg sm:text-xl font-mono font-light text-indigo-300">Frontend Focused Software Engineer</p>
       <p class="leading-relaxed sm:text-lg">Hi there! I love building stuff for the web with React, TailwindCSS, Astro. I thrive on learning new things and turning design ideas into user-friendly, accessible, and inclusive web experiences.</p>
       <SocialsList />
     </div>
-    <!-- Image (headshot wrapper) -->
-    <Image src={avatar} alt="Matt Pahuta" class= "m-auto h-60 w-60 object-cover rounded-full drop-shadow-sm drop-shadow-accent-600" />
   </div>
-</header>
+</section>

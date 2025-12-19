@@ -5,6 +5,7 @@ import { z } from "astro/zod";
 const project = defineCollection({
   loader: file('src/data/projects.json'),
   schema: z.object({
+    id: z.number(),
     title: z.string(),
     description: z.string(),
     techStack: z.array(z.object({

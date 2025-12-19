@@ -5,7 +5,7 @@ const { title = 'Matt Pahuta' } = Astro.props;
 ---
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="motion-safe:scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta
@@ -15,8 +15,8 @@ const { title = 'Matt Pahuta' } = Astro.props;
 		<meta name="generator" content={Astro.generator} />
     <title>{title}</title>
   </head>
-  <body class="max-w-screen px-4 min-h-screen font-sans grid text-gray-200 bg-primary-bg-dark scroll-smooth">
-    <div class="mx-auto max-w-4xl">
+  <body class="antialiased font-sans text-lg grid text-slate-200 bg-slate-950 scroll-smooth">
+    <div class="mx-auto">
       <slot />
     </div>
   </body>
