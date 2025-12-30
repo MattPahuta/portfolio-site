@@ -1,5 +1,6 @@
 ---
 import ProjectCard from '../components/ProjectCard.astro';
+import ProjectCardUpdated from './ProjectCardUpdated.astro';
 import projects from '../data/projects.json';
 ---
 
@@ -10,7 +11,7 @@ import projects from '../data/projects.json';
     <div class="py-6 grid justify-items-center gap-6">
       {
         projects.map(project => (
-          <ProjectCard 
+          <ProjectCardUpdated 
             title={project.title} 
             description={project.description} 
             imagePath={project.imagePath} 
