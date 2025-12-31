@@ -4,9 +4,9 @@ import { Image } from 'astro:assets';
 import avatar from '../assets/avatar_v1.jpg';
 ---
 
-<section>
+<section class="px-5 sm:px-6">
   <!-- wrapper element -->
-  <div class="max-w-4xl px-4 sm:px-6 flex flex-col sm:flex-row-reverse items-center gap-10 sm:gap-14 py-10 sm:py-14">
+  <div class="max-w-4xl flex flex-col sm:flex-row-reverse items-center gap-10 sm:gap-14 py-10 sm:py-14">
     <Image src={avatar} alt="Matt Pahuta" class="m-auto h-40 w-40 sm:h-56 sm:w-56 object-cover rounded-full" />
     <div class="">
       <h1 class="mb-1 text-4xl sm:text-4xl font-bold text-zinc-50">Matt Pahuta</h1>
