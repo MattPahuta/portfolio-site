@@ -4,24 +4,26 @@ import ProjectCardUpdated from './ProjectCardUpdated.astro';
 import projects from '../data/projects.json';
 ---
 
-<section class="max-w-4xl py-12 px-5 border-t border-gray-400">
-  <div class="">
-    <h2 class="mb-4 text-2xl sm:text-3xl font-mono font-bold text-zinc-50">Projects<span class="text-indigo-300">.</span>
+<section class="max-w-4xl py-12 px-5">
+  <div class="flex items-center gap-3">
+    <h2 class="text-2xl sm:text-3xl font-mono font-extrabold text-zinc-50 whitespace-nowrap">
+      Projects
     </h2>
-    <ul class="py-6 grid justify-items-center sm:grid-cols-2 gap-6">
-      {
-        projects.map(project => (
-          <ProjectCardUpdated 
-            title={project.title} 
-            description={project.description} 
-            imagePath={project.imagePath} 
-            imageAltText={project.imageAltText} 
-            techStack={project.techStack} 
-            gitHubUrl={project.gitHubUrl} 
-            liveSiteUrl={project.liveSiteUrl} 
-          />
-        ))
-      }
-    </ul>
+    <div class="w-full h-[1.5px] bg-linear-to-r from-slate-900 via-indigo-300 to-slate-900"></div>
   </div>
+  <ul class="pt-10 grid justify-items-center md:grid-cols-2 gap-6">
+    {
+      projects.map(project => (
+        <ProjectCardUpdated 
+          title={project.title} 
+          description={project.description} 
+          imagePath={project.imagePath} 
+          imageAltText={project.imageAltText} 
+          techStack={project.techStack} 
+          gitHubUrl={project.gitHubUrl} 
+          liveSiteUrl={project.liveSiteUrl} 
+        />
+      ))
+    }
+  </ul>
 </section>

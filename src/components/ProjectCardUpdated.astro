@@ -25,72 +25,38 @@ const images = import.meta.glob<{ default: ImageMetadata }>('/src/assets/*.{jpeg
 if (!images[imagePath]) throw new Error(`"${imagePath}" does not exist in glob: "src/assets/projects/*.{jpeg,jpg,png,gif}"`);
 ---
 
-<!-- hover:scale-105 duration-300 -->
-
-<!-- <article class="py-4 px-3 bg-slate-900/60 sm:bg-black/20 rounded-md sm:rounded-xl shadow-md sm:shadow-lg hover:shadow-xl sm:hover:shadow-indigo-500/20 transition duration-500 sm:border border-slate-800">
-  <div class="rounded-md sm:rounded-xl overflow-hidden">
-    <Image src={images[imagePath]()} alt={imageAltText} class="w-full object-cover object-top" />
+<li class="grid gap-3 py-5 px-3 md:grid-rows-2 bg-slate-900/60 sm:bg-black/20 rounded-md sm:rounded-xl shadow-md sm:shadow-lg hover:shadow-xl sm:hover:shadow-indigo-500/20 transition duration-500 sm:border border-slate-800">
+  <div class="relative">
+    <a href="" class="block overflow-hidden rounded-lg" aria-hidden="true" tabindex="-1">
+      <Image src={images[imagePath]()} alt={imageAltText} class="aspect-4/3 object-cover object-center hover:scale-105 duration-300 transition-transform" />
+    </a>
   </div>
-  <div class="pt-4 space-y-6">
-    <h3 class="mb-2 font-mono font-semibold text-xl text-zinc-50 sm:text-2xl sm:mb-3">
-      <a href="" class="hover:text-indigo-300/80 transition">
-        {title}
+  <div class="px-3 w-full flex flex-col gap-3 justify-between">
+    <div class="flex flex-col gap-3">
+      <a href="" class="hover:text-indigo-300/80 hover:underline transition">
+        <h3 class="font-mono font-semibold text-xl text-zinc-50 sm:text-2xl">
+          {title}
+        </h3>
       </a>
-    </h3>
-    <p class="text-base sm:text-lg">{description}</p>
-    <ul class="flex items-center gap-3">
-      {techStack.map((tech) => (
+      <ul class="inline-flex items-center gap-3">
+        {techStack.map((tech) => (
           <li>
             <Icon name={tech.icon} role="img" title={tech.name} class="size-6 sm:size-8" focusable="false" aria-hidden="true"
             />
             <span class="sr-only">{tech.name}</span>
           </li>
-        )
-      )}
-    </ul>
-    <div class="flex items-center gap-3 text-base sm:text-lg">
-      <a href={gitHubUrl} aria-label="GitHub project repo" class="p-1 inline-flex items-center gap-1 justify-center text-center rounded-md hover:text-indigo-300/80 sm:hover:bg-indigo-500/20 sm:hover:text-gray-950 transition">
-        <Icon name="mdi:github" class="size-5 sm:size-6" role="img" />
-        view code
-      </a>
-      <a href={liveSiteUrl} aria-label="Live preview" class="p-1 inline-flex items-center gap-1 justify-center text-center rounded-md hover:text-indigo-300/80 sm:hover:bg-indigo-500/20 sm:hover:text-gray-950 transition">
-        <Icon name="mdi:external-link" class="size-5 sm:size-6" role="img" />
-        live demo
-      </a>
+          )
+        )}
+      </ul>
+      <p class="text-base sm:text-lg">{description}</p>
     </div>
-  </div>
-</article> -->
-
-<li class="relative py-5 px-3 bg-slate-900/60 sm:bg-black/20 rounded-md sm:rounded-xl shadow-md sm:shadow-lg hover:shadow-xl sm:hover:shadow-indigo-500/20 transition duration-500 sm:border border-slate-800">
-  <div class="relative">
-    <a href="" class="block overflow-hidden rounded-lg" aria-hidden="true" tabindex="-1">
-      <Image src={images[imagePath]()} alt={imageAltText} class="w-full object-cover object-top hover:scale-105 duration-300 transition-transform" />
-    </a>
-  </div>
-  <div class="p-3 w-full flex flex-col gap-4">
-    <a href="" class="hover:text-indigo-300/80 hover:underline transition">
-      <h3 class="font-mono font-semibold text-xl text-zinc-50 sm:text-2xl sm:mb-3">
-        {title}
-      </h3>
-    </a>
-    <ul class="inline-flex items-center gap-3">
-      {techStack.map((tech) => (
-        <li>
-          <Icon name={tech.icon} role="img" title={tech.name} class="size-6 sm:size-8" focusable="false" aria-hidden="true"
-          />
-          <span class="sr-only">{tech.name}</span>
-        </li>
-        )
-      )}
-    </ul>
-    <p class="text-base sm:text-lg">{description}</p>
-    <div class="flex items-center gap-3 text-base sm:text-lg">
-      <a href={gitHubUrl} aria-label="GitHub project repo" class="p-1 inline-flex items-center gap-1 justify-center text-center rounded-md hover:text-indigo-300/80 sm:hover:bg-indigo-500/20 sm:hover:text-gray-950 transition">
-        <Icon name="mdi:github" class="size-5 sm:size-6" role="img" />
+    <div class="flex items-center gap-3 text-base text-sm sm:text-base">
+      <a href={gitHubUrl} aria-label="GitHub project repo" class="p-1 inline-flex items-center gap-2 justify-center rounded-md hover:text-indigo-300/80 sm:hover:bg-indigo-500/20 sm:hover:text-gray-950 transition">
+        <Icon name="mdi:github" class="size-4 sm:size-5" role="img" />
         view code
       </a>
-      <a href={liveSiteUrl} aria-label="Live preview" class="p-1 inline-flex items-center gap-1 justify-center text-center rounded-md hover:text-indigo-300/80 sm:hover:bg-indigo-500/20 sm:hover:text-gray-950 transition">
-        <Icon name="mdi:external-link" class="size-5 sm:size-6" role="img" />
+      <a href={liveSiteUrl} aria-label="Live preview" class="p-1 inline-flex items-center gap-2 justify-center rounded-md hover:text-indigo-300/80 sm:hover:bg-indigo-500/20 sm:hover:text-gray-950 transition">
+        <Icon name="mdi:external-link" class="size-4 sm:size-5" role="img" />
         live demo
       </a>
     </div>
