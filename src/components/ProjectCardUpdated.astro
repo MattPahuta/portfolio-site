@@ -33,7 +33,7 @@ if (!images[imagePath]) throw new Error(`"${imagePath}" does not exist in glob: 
   </div>
   <div class="px-3 w-full flex flex-col gap-3 justify-between">
     <div class="flex flex-col gap-3">
-      <a href="" class="hover:text-indigo-300/80 hover:underline transition">
+      <a href="" class="hover:text-indigo-300/80 hover:underline decoration-2 underline-offset-4 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-zinc-50  transition rounded-md">
         <h3 class="font-mono font-semibold text-xl text-zinc-50 sm:text-2xl">
           {title}
         </h3>
@@ -50,12 +50,12 @@ if (!images[imagePath]) throw new Error(`"${imagePath}" does not exist in glob: 
       </ul>
       <p class="text-base sm:text-lg">{description}</p>
     </div>
-    <div class="flex items-center gap-3 text-base text-sm sm:text-base">
-      <a href={gitHubUrl} aria-label="GitHub project repo" class="p-1 inline-flex items-center gap-2 justify-center rounded-md hover:text-indigo-300/80 sm:hover:bg-indigo-500/20 sm:hover:text-gray-950 transition">
+    <div class="flex items-center gap-3 text-sm sm:text-base">
+      <a href={gitHubUrl} aria-label="GitHub project repo" class="p-1 inline-flex items-center gap-2 justify-center rounded-md hover:text-indigo-300 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-zinc-50 transition">
         <Icon name="mdi:github" class="size-4 sm:size-5" role="img" />
         view code
       </a>
-      <a href={liveSiteUrl} aria-label="Live preview" class="p-1 inline-flex items-center gap-2 justify-center rounded-md hover:text-indigo-300/80 sm:hover:bg-indigo-500/20 sm:hover:text-gray-950 transition">
+      <a href={liveSiteUrl} aria-label="Live preview" class="p-1 inline-flex items-center gap-2 justify-center rounded-md hover:text-indigo-300 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-zinc-50 transition">
         <Icon name="mdi:external-link" class="size-4 sm:size-5" role="img" />
         live demo
       </a>
