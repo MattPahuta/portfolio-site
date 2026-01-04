@@ -1,15 +1,15 @@
 [
   {
-    "name": "JavaScript",
-    "icon": "vscode-icons:file-type-js-official"
-  },
-  {
     "name": "React",
     "icon": "vscode-icons:file-type-reactjs"
   },
   {
-    "name": "Tailwind",
+    "name": "Tailwind CSS",
     "icon": "vscode-icons:file-type-tailwind"
+  },
+  {
+    "name": "JavaScript",
+    "icon": "vscode-icons:file-type-js-official"
   },
   {
     "name": "Astro",
@@ -20,7 +20,7 @@
     "icon": "vscode-icons:file-type-html"
   },
   {
-    "name": "CSS",
+    "name": "CSS3",
     "icon": "vscode-icons:file-type-css"
   },
   {

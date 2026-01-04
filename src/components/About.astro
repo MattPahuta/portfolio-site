@@ -2,8 +2,8 @@
 import SkillsGrid from "./SkillsGrid.astro";
 ---
 
-<section class="px-5 sm:px-6 py-12">
-  <div class="max-w-4xl space-y-10">
+<section class="py-12 space-y-10 md:px-5">
+  <div class="max-w-4xl px-5 sm:px-6 space-y-10">
     <div class="flex items-center gap-6">
       <div class="w-full h-[1.5px] bg-linear-to-r from-slate-900 via-indigo-300 to-slate-900"></div>
       <h2 class="text-2xl sm:text-3xl font-mono font-extrabold text-zinc-50 whitespace-nowrap">
@@ -16,10 +16,10 @@ import SkillsGrid from "./SkillsGrid.astro";
       <p>Eager to contribute to dynamic projects while continuously expanding my skills in building scalable and responsive web applications.</p>
       <p>When I'm not deep in development mode, you'll either find me on the tennis court, running along scenic trails, or enjoying a well-earned rest day—while humbly accepting that my pets are the true project managers at home.</p>
     </div>
-    <div class="">
-      <h3 class="mb-2.5 text-xl font-semibold">My Skills</h3>
-      <p class="sm:text-lg leading-relaxed">I'm a passionate learner and these are some of the technologies and tools I've used often. </p>
-      <SkillsGrid />
-    </div>
+  </div>
+  <div class="py-6 px-5 space-y-6 bg-indigo-950/35">
+    <h3 class="mb-2.5 text-xl font-semibold">My Skills</h3>
+    <p class="sm:text-lg leading-relaxed">I'm a passionate learner and these are some of the technologies and tools I've used often. </p>
+    <SkillsGrid />
   </div>
 </section>
