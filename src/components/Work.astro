@@ -1,29 +1,31 @@
 ---
+import SectionHeader from './SectionHeader.astro';
 import ProjectCard from '../components/ProjectCard.astro';
 import ProjectCardUpdated from './ProjectCardUpdated.astro';
-import projects from '../data/projects.json';
+// import projects from '../data/projects.json';
+import { getCollection } from 'astro:content';
+const heading = "Projects";
+const projects = await getCollection('project');
+
 ---
 
-<section class="max-w-4xl py-12 px-5">
-  <div class="flex items-center gap-6">
-    <h2 class="text-2xl sm:text-3xl font-mono font-extrabold text-zinc-50 whitespace-nowrap">
-      Projects
-    </h2>
-    <div class="w-full h-[1.5px] bg-linear-to-r from-slate-900 via-indigo-300 to-slate-900"></div>
+<section class="py-12">
+  <div class="px-4 sm:px-6">
+    <SectionHeader heading={heading} />
+    <ul class="pt-10 grid justify-items-center md:grid-cols-2 gap-6">
+      {
+        projects.map(project => (
+          <ProjectCardUpdated 
+            title={project.data.title} 
+            description={project.data.description} 
+            imagePath={project.data.imagePath} 
+            imageAltText={project.data.imageAltText} 
+            techStack={project.data.techStack} 
+            gitHubUrl={project.data.gitHubUrl} 
+            liveSiteUrl={project.data.liveSiteUrl} 
+          />
+        ))
+      }
+    </ul>
   </div>
-  <ul class="pt-10 grid justify-items-center md:grid-cols-2 gap-6">
-    {
-      projects.map(project => (
-        <ProjectCardUpdated 
-          title={project.title} 
-          description={project.description} 
-          imagePath={project.imagePath} 
-          imageAltText={project.imageAltText} 
-          techStack={project.techStack} 
-          gitHubUrl={project.gitHubUrl} 
-          liveSiteUrl={project.liveSiteUrl} 
-        />
-      ))
-    }
-  </ul>
 </section>

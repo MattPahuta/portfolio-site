@@ -1,15 +1,13 @@
 ---
+import SectionHeader from "./SectionHeader.astro";
 import SkillsGrid from "./SkillsGrid.astro";
+
+const heading = "About";
 ---
 
-<section class="py-12 space-y-10 md:px-5">
-  <div class="max-w-4xl px-5 sm:px-6 space-y-10">
-    <div class="flex items-center gap-6">
-      <div class="w-full h-[1.5px] bg-linear-to-r from-slate-900 via-indigo-300 to-slate-900"></div>
-      <h2 class="text-2xl sm:text-3xl font-mono font-extrabold text-zinc-50 whitespace-nowrap">
-        About
-      </h2>
-    </div>
+<section class="py-12 space-y-10">
+  <div class="px-4 sm:px-6 space-y-10">
+    <SectionHeader heading={heading} />
     <!-- make the about text text-align: justify? -->
     <div class="space-y-6 leading-relaxed sm:text-lg">
       <p>I build responsive, dynamic web apps with Astro, TailwindCSS and React—focusing on clean code, intuitive design, and great user experiences.</p>
@@ -17,9 +15,11 @@ import SkillsGrid from "./SkillsGrid.astro";
       <p>When I'm not deep in development mode, you'll either find me on the tennis court, running along scenic trails, or enjoying a well-earned rest day—while humbly accepting that my pets are the true project managers at home.</p>
     </div>
   </div>
-  <div class="py-6 px-5 space-y-6 bg-indigo-950/35">
-    <h3 class="mb-2.5 text-xl font-semibold">My Skills</h3>
-    <p class="sm:text-lg leading-relaxed">I'm a passionate learner and these are some of the technologies and tools I've used often. </p>
-    <SkillsGrid />
+  <div class="md:px-5">
+    <div class="p-5 md:p-6 space-y-6 bg-indigo-950/35 md:rounded-2xl">
+      <h3 class="mb-2.5 text-xl font-semibold">My Skills</h3>
+      <p class="sm:text-lg leading-relaxed">I'm a passionate learner and these are some of the technologies and tools I've used often. </p>
+      <SkillsGrid />
+    </div>
   </div>
 </section>
