@@ -21,8 +21,8 @@
         "icon": "vscode-icons:file-type-vite"
       }
     ],
-    "imagePath": "/src/assets/frontend-quiz.png",
-    "imageAltText": "Frontend quiz app home screen",
+    "imagePath": "/src/assets/projects/frontend-quiz_thumb-01.jpg",
+    "imageAltText": "Frontend Quiz React App",
     "gitHubUrl": "https://github.com/MattPahuta/frontend-quiz-app",
     "liveSiteUrl": "https://ubiquitous-malasada-c772ef.netlify.app/"
   },
@@ -44,7 +44,7 @@
         "icon": "vscode-icons:file-type-css"
       }
     ],
-    "imagePath": "/src/assets/pw-generator.png",
+    "imagePath": "/src/assets/projects/pw-generator.png",
     "imageAltText": "Password generator app",
     "gitHubUrl": "https://github.com/MattPahuta/password-generator-app",
     "liveSiteUrl": "https://scintillating-muffin-250ce1.netlify.app/"
@@ -71,7 +71,7 @@
         "icon": "vscode-icons:file-type-vite"
       }
     ],
-    "imagePath": "/src/assets/contact-form.png",
+    "imagePath": "/src/assets/projects/contact-form.png",
     "imageAltText": "Contact us form",
     "gitHubUrl": "https://github.com/MattPahuta/contact-form-component",
     "liveSiteUrl": "https://singular-kashata-00a5f5.netlify.app/"

@@ -12,7 +12,7 @@ const projects = await getCollection('project');
 <section class="py-12">
   <div class="px-4 sm:px-6">
     <SectionHeader heading={heading} />
-    <ul class="pt-10 grid justify-items-center md:grid-cols-2 gap-6">
+    <ul class="pt-10 grid justify-items-center gap-6 sm:grid-cols-2 lg:grid-cols-1">
       {
         projects.map(project => (
           <ProjectCardUpdated 

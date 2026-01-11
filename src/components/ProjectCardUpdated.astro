@@ -20,37 +20,35 @@ interface Props {
 }
 
 const { title, description, imagePath, imageAltText, techStack, gitHubUrl, liveSiteUrl } = Astro.props;
-const images = import.meta.glob<{ default: ImageMetadata }>('/src/assets/*.{jpeg,jpg,png,gif}');
+const images = import.meta.glob<{ default: ImageMetadata }>('/src/assets/projects/*.{jpeg,jpg,png,gif}');
 
 if (!images[imagePath]) throw new Error(`"${imagePath}" does not exist in glob: "src/assets/projects/*.{jpeg,jpg,png,gif}"`);
 ---
 
-<li class="grid gap-3 py-5 px-3 md:grid-rows-2 bg-slate-900/60 sm:bg-black/20 rounded-md sm:rounded-xl shadow-md sm:shadow-lg hover:shadow-xl sm:hover:shadow-indigo-500/20 transition duration-500 sm:border border-slate-800">
-  <div class="relative">
-    <a href="" class="block overflow-hidden rounded-lg" aria-hidden="true" tabindex="-1">
-      <Image src={images[imagePath]()} alt={imageAltText} class="aspect-4/3 object-cover object-center hover:scale-105 duration-300 transition-transform" />
+<li class="flex flex-col overflow-hidden bg-slate-900/60 sm:bg-black/20 rounded-lg sm:rounded-xl shadow-md sm:shadow-lg hover:shadow-xl sm:hover:shadow-indigo-500/20 transition duration-500 sm:border border-slate-800 lg:p-5 lg:grid lg:grid-cols-2 lg:gap-6">
+  <div class="">
+    <a href="" class="aspect-[4/3] block isolate overflow-hidden lg:rounded-xl" aria-hidden="true" tabindex="-1">
+      <Image src={images[imagePath]()} alt={imageAltText} class=" object-cover object-center" />
     </a>
   </div>
-  <div class="px-3 w-full flex flex-col gap-3 justify-between">
-    <div class="flex flex-col gap-3">
-      <a href="" class="hover:text-indigo-300/80 hover:underline decoration-2 underline-offset-4 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-zinc-50  transition rounded-md">
-        <h3 class="font-mono font-semibold text-xl text-zinc-50 sm:text-2xl">
-          {title}
-        </h3>
-      </a>
-      <ul class="inline-flex items-center gap-3">
-        {techStack.map((tech) => (
-          <li>
-            <Icon name={tech.icon} role="img" title={tech.name} class="size-6 sm:size-8" focusable="false" aria-hidden="true"
-            />
-            <span class="sr-only">{tech.name}</span>
-          </li>
-          )
-        )}
-      </ul>
-      <p class="text-base sm:text-lg">{description}</p>
-    </div>
-    <div class="flex items-center gap-3 text-sm sm:text-base">
+  <div class="p-5 lg:p-0 flex flex-col grow space-y-4">
+    <a href="" class="hover:text-indigo-300/80 hover:underline decoration-2 underline-offset-4 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-zinc-50 transition rounded-md">
+      <h3 class="font-mono font-semibold text-xl text-zinc-50 sm:text-2xl">
+        {title}
+      </h3>
+    </a>
+    <ul class="inline-flex items-center gap-3">
+      {techStack.map((tech) => (
+        <li>
+          <Icon name={tech.icon} role="img" title={tech.name} class="size-6 sm:size-8" focusable="false" aria-hidden="true"
+          />
+          <span class="sr-only">{tech.name}</span>
+        </li>
+        )
+      )}
+    </ul>
+    <p class="text-base sm:text-lg grow">{description}</p>
+    <div class="pt-2 flex items-center gap-3 text-sm sm:text-base lg:justify-end">
       <a href={gitHubUrl} aria-label="GitHub project repo" class="p-1 inline-flex items-center gap-2 justify-center rounded-md hover:text-indigo-300 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-zinc-50 transition">
         <Icon name="mdi:github" class="size-4 sm:size-5" role="img" />
         view code
