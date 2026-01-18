@@ -14,19 +14,4 @@
   --color-gamboge: hsl(39, 91%, 49%);
   --color-mint: hsl(138, 29%, 56%);
   --color-muted-teal: oklch(73.981% 0.07696 174.07);
-
-  /* Brand colors - blue palette */
-  --rich-black-950: oklch(0.181 0.028 252);
-  --rich-black-900: #0a1a2a;
-  --oxford-blue: oklch(0.277 0.077 252);
-  --yale-blue-900: oklch(0.328 0.107 252);
-  --yale-blue-800: #004083;
-  --polynesian-blue: oklch(0.425 0.152 252);
-  --denim-blue: oklch(0.493 0.172 252);
-  --azure-blue: oklch(0.579 0.191 252);
-  --bleu-de-france: oklch(0.629 0.187 252);
-  --dodger-blue-500: #359bff;
-  --light-sky-blue-400: oklch(0.849 0.107 252);
-  --columbia-blue-400: oklch(0.921 0.063 252);
-
 }

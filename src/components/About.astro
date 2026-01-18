@@ -6,19 +6,17 @@ const heading = "About";
 ---
 
 <section class="">
-  <div class="px-4 mb-6 space-y-6">
+  <div class="px-4 mb-6 space-y-6 sm:space-y-8">
     <SectionHeader heading={heading} />
-    <!-- make the about text text-align: justify? -->
     <div class="space-y-6">
-      <p>I build responsive, dynamic web apps with Astro, TailwindCSS and React—focusing on clean code, intuitive design, and great user experiences.</p>
+      <p>I build responsive, dynamic web apps with <span class="text-muted-teal font-medium">Astro</span>, <span class="text-muted-teal font-medium">TailwindCSS</span> and <span class="text-muted-teal font-medium">React</span>—focusing on clean code, intuitive design, and great user experiences.</p>
       <p>Eager to contribute to dynamic projects while continuously expanding my skills in building scalable and responsive web applications.</p>
       <p>When I'm not deep in development mode, you'll either find me on the tennis court, running along scenic trails, or enjoying a well-earned rest day—while humbly accepting that my pets are the true project managers at home.</p>
     </div>
   </div>
-  <div class="py-6 px-4 md:py-8 md:mx-4 md:px-6 space-y-6 bg-linear-to-t from-slate-950 to-sky-700/20 md:rounded-2xl md:shadow-xl">
-    <h3 class="mb-2.5 text-xl font-semibold">My Skills</h3>
-    <p class="sm:text-lg">I'm a passionate learner and these are some of the technologies and tools I've used often. </p>
+  <div class="py-6 px-4 space-y-4 md:py-8 md:mx-4 md:px-6 bg-linear-to-t from-slate-950 to-sky-700/20 md:rounded-2xl md:shadow-xl">
+    <h3 class="text-xl font-mono font-medium">My Skills</h3>
+    <p>I'm a passionate learner and these are some of the technologies and tools I've used often. </p>
     <SkillsGrid />
   </div>
-
 </section>
