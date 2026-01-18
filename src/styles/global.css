@@ -1,11 +1,14 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap'); */
 
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
 @import 'tailwindcss';
 
 @theme {
-  --font-sans: 'Work Sans', ui-sans-serif, system-ui, sans-serif;
-  --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+  /* --font-sans: 'Work Sans', ui-sans-serif, system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, monospace; */
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "Roboto Mono", ui-monospace, monospace;
 
   /* brand colors */
   --color-gamboge: hsl(39, 91%, 49%);
@@ -26,24 +29,4 @@
   --light-sky-blue-400: oklch(0.849 0.107 252);
   --columbia-blue-400: oklch(0.921 0.063 252);
 
-  /* Brand colors - Dark Mode */
-
-  /* Semantic colors */
-  --color-primary-bg-dark: var(--rich-black-950);
-  --color-secondary-bg-dark: var(--rich-black-900);
-
-  --color-rich-black: oklch(0.181 0.028 252);
-  --color-blue-black: oklch(0.212 0.039 252);
-  --color-oxford-blue: oklch(0.277 0.077 252);
-  --color-yale-blue: oklch(0.328 0.107 252);
-
-  --color-accent-bg-dark: var(--blue-black-500);
-  --color-accent-dark-800: var(--oxford-blue);
-  --color-accent-dark: var(--light-sky-blue-400);
-  --color-accent-500: var(--dodger-blue-500);
-  --color-accent-600: var(--polynesian-blue);
-  --color-accent-700: var(--yale-blue-800);
-
-  --color-gradient-bg-900: var(--rich-black-900);
-  --color-gradient-bg-800: var(--oxford-blue);
 }

@@ -5,14 +5,11 @@ import skills from "../data/skills.json"
 
 <!-- <ul role="list" class="mt-6 p-8 grid gap-4 grid-cols-3 sm:grid-cols-[repeat(auto-fill,_minmax(150px,_1fr))] rounded-lg bg-linear-to-t from-slate-900 to-indigo-400/30"> -->
 
-<!-- <ul role="list" class="mt-6 p-4 flex flex-wrap gap-4 rounded-lg bg-linear-to-t from-slate-900 to-indigo-400/30"> -->
- 
 <ul role="list" class="flex gap-2.5 sm:gap-3.5 flex-wrap">
 {
     skills.map((skill) => {
       return (
-        // <li class="py-2 px-3 rounded-lg flex gap-3 items-center text-center text-xs sm:flex-row sm:text-sm bg-black/50 hover:scale-95 transition">
-        <li class="py-2 px-3 rounded-lg flex gap-3 border border-slate-600 items-center text-center text-xs sm:text-sm hover:scale-95 transition">
+        <li class="py-2 px-3 rounded-lg flex gap-3 border border-slate-700 items-center text-center text-xs sm:text-sm hover:scale-95 transition">
           <SkillsBadge 
             name={skill.name} 
             icon={skill.icon} 

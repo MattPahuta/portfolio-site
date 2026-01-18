@@ -24,11 +24,8 @@ const images = import.meta.glob<{ default: ImageMetadata }>('/src/assets/project
 
 if (!images[imagePath]) throw new Error(`"${imagePath}" does not exist in glob: "src/assets/projects/*.{jpeg,jpg,png,gif}"`);
 ---
-
 <!-- ToDo: Check screen reader announcement with project cards -->
-
-<!-- <li class="flex flex-col overflow-hidden bg-slate-900/60 sm:bg-black/20 rounded-lg sm:rounded-xl hover:shadow-lg sm:hover:shadow-blue-400/20 transition duration-500 sm:border border-slate-800 lg:p-5 lg:grid lg:grid-cols-2 lg:gap-6"> -->
-<li class="flex flex-col overflow-hidden bg-slate-900 sm:bg-black/20 rounded-lg sm:rounded-xl sm:hover:border-blue-400/20 hover:shadow-lg sm:hover:shadow-blue-400/20 transition duration-500 sm:border border-slate-700 lg:p-5 lg:grid lg:grid-cols-2 lg:gap-6">
+<li class="flex flex-col overflow-hidden bg-slate-950/70 rounded-lg sm:shadow-lg sm:rounded-xl sm:hover:border-blue-400/20 hover:shadow-lg sm:hover:shadow-blue-400/20 transition duration-500 sm:border border-slate-700 lg:p-6 lg:grid lg:grid-cols-2 lg:gap-6">
   <div class="">
     <a href="" class="aspect-[4/3] block isolate overflow-hidden lg:rounded-xl" aria-hidden="true" tabindex="-1">
       <Image src={images[imagePath]()} alt={imageAltText} class=" object-cover object-center" />
