@@ -20,6 +20,7 @@
     "tailwindcss": "^4.1.7"
   },
   "devDependencies": {
-    "@iconify-icons/vscode-icons": "^1.2.29"
+    "@iconify-icons/vscode-icons": "^1.2.29",
+    "@iconify-json/material-icon-theme": "^1.2.48"
   }
 }

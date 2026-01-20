@@ -38,5 +38,9 @@
   {
     "name": "Vite",
     "icon": "vscode-icons:file-type-vite"
+  },
+  {
+    "name": "Figma",
+    "icon": "material-icon-theme:figma"
   }
 ]
