@@ -25,7 +25,7 @@ const images = import.meta.glob<{ default: ImageMetadata }>('/src/assets/project
 if (!images[imagePath]) throw new Error(`"${imagePath}" does not exist in glob: "src/assets/projects/*.{jpeg,jpg,png,gif}"`);
 ---
 <!-- ToDo: Check screen reader announcement with project cards -->
-<li class="flex flex-col overflow-hidden bg-slate-950/70 rounded-lg sm:shadow-lg sm:rounded-xl sm:hover:border-blue-400/20 hover:shadow-lg sm:hover:shadow-blue-400/20 transition duration-500 sm:border border-slate-700 lg:p-6 lg:grid lg:grid-cols-2 lg:gap-6">
+<li class="flex flex-col overflow-hidden bg-slate-950/70 rounded-lg sm:shadow-lg sm:rounded-xl sm:hover:border-blue-400/20 hover:shadow-lg sm:hover:shadow-blue-400/20 transition duration-500 sm:border border-slate-700 lg:p-6 lg:gap-6">
   <div class="">
     <a href="" class="aspect-[4/3] block isolate overflow-hidden lg:rounded-xl" aria-hidden="true" tabindex="-1">
       <Image src={images[imagePath]()} alt={imageAltText} class=" object-cover object-center" />
@@ -33,7 +33,7 @@ if (!images[imagePath]) throw new Error(`"${imagePath}" does not exist in glob: 
   </div>
   <div class="p-5 lg:p-0 flex flex-col grow space-y-4">
     <a href="" class="hover:text-blue-400 hover:underline decoration-2 underline-offset-4 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-zinc-50 transition rounded-md">
-      <h3 class="text-xl sm:text-2xl font-medium text-zinc-50 sm:text-2xl">
+      <h3 class="text-xl sm:text-2xl font-medium text-zinc-50">
         {title}
       </h3>
     </a>
