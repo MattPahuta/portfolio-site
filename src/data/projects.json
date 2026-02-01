@@ -51,6 +51,33 @@
   },
   {
     "id": 3,
+    "title": "Responsive Menu with Cart",
+    "description": "Accessible and responsive dessert menu with shopping cart, built with React.",
+    "techStack": [
+      {
+        "name": "React",
+        "icon": "vscode-icons:file-type-reactjs"
+      },
+      {
+        "name": "HTML",
+        "icon": "vscode-icons:file-type-html"
+      },
+      {
+        "name": "Tailwind",
+        "icon": "vscode-icons:file-type-tailwind"
+      },
+      {
+        "name": "Vite",
+        "icon": "vscode-icons:file-type-vite"
+      }
+    ],
+    "imagePath": "/src/assets/projects/contact-form.png",
+    "imageAltText": "Dessert shop ordering app",
+    "gitHubUrl": "https://github.com/MattPahuta/contact-form-component",
+    "liveSiteUrl": "https://singular-kashata-00a5f5.netlify.app/"
+  },
+  {
+    "id": 4,
     "title": "Contact Form",
     "description": "Accessible and responsive contact form built with React.",
     "techStack": [
