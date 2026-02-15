@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
 import Hero from '../components/Hero.astro';
 import About from '../components/About.astro';
 import Work from '../components/Work.astro';
@@ -8,6 +9,7 @@ import Footer from '../components/Footer.astro';
 ---
 
 <BaseLayout>
+	<Header />
 	<main class="mx-auto max-w-4xl space-y-6 sm:space-y-8 md:space-y-12 leading-7 sm:text-lg">
 		<Hero />
 		<About />

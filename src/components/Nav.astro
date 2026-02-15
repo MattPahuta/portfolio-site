@@ -1,0 +1,128 @@
+---
+---
+
+<div class="@container border-b border-slate-200 bg-white shadow-sm">
+  <nav role="navigation" aria-label="Main navigation">
+    <div class="flex items-center justify-between px-4 py-3 @lg:px-6">
+      <div>
+        <a
+          href="#"
+          class="rounded-sm text-lg font-bold text-slate-900 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600 @lg:text-xl"
+        >
+          Brand
+        </a>
+      </div>
+
+      <!-- Horizontal Navigation (medium+ containers) -->
+      <div class="hidden gap-2 @sm:flex @md:gap-3 @lg:gap-6">
+        <a
+          href="#"
+          class="rounded-md bg-blue-50 px-3 py-1.5 text-sm font-medium text-blue-700 transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
+        >
+          Home
+        </a>
+        <a
+          href="#"
+          class="rounded-md px-3 py-1.5 text-sm font-medium text-slate-700 transition-colors hover:bg-slate-50 hover:text-slate-900 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
+        >
+          About
+        </a>
+        <a
+          href="#"
+          class="rounded-md px-3 py-1.5 text-sm font-medium text-slate-700 transition-colors hover:bg-slate-50 hover:text-slate-900 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
+        >
+          Services
+        </a>
+        <a
+          href="#"
+          class="hidden rounded-md px-3 py-1.5 text-sm font-medium text-slate-700 transition-colors hover:bg-slate-50 hover:text-slate-900 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600 @md:block"
+        >
+          Portfolio
+        </a>
+        <a
+          href="#"
+          class="rounded-md px-3 py-1.5 text-sm font-medium text-slate-700 transition-colors hover:bg-slate-50 hover:text-slate-900 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
+        >
+          Contact
+        </a>
+      </div>
+
+      <!-- Mobile Menu Button (narrow containers) -->
+      <div class="@sm:hidden">
+        <input type="checkbox" id="mobile-menu-3" class="peer sr-only" />
+        <label
+          for="mobile-menu-3"
+          class="flex h-8 w-8 cursor-pointer items-center justify-center rounded-md transition-colors focus-within:bg-slate-100 focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-blue-600 hover:bg-slate-100"
+          aria-label="Toggle navigation menu"
+        >
+          <svg
+            class="h-5 w-5 text-slate-600 transition-all peer-checked:hidden"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            aria-hidden="true"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"
+            />
+          </svg>
+          <svg
+            class="hidden h-5 w-5 text-slate-600 transition-all peer-checked:block"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            aria-hidden="true"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M6 18L18 6M6 6l12 12"
+            />
+          </svg>
+        </label>
+      </div>
+    </div>
+
+    <!-- Mobile Dropdown Menu -->
+    <div
+      class="hidden border-t border-slate-200 bg-slate-50/80 backdrop-blur-sm peer-checked:block @sm:hidden"
+    >
+      <div class="space-y-1 px-4 py-3">
+        <a
+          href="#"
+          class="block rounded-md bg-blue-50 px-3 py-2.5 text-sm font-medium text-blue-700 transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
+        >
+          Home
+        </a>
+        <a
+          href="#"
+          class="block rounded-md px-3 py-2.5 text-sm font-medium text-slate-700 transition-colors hover:bg-slate-100 hover:text-slate-900 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
+        >
+          About
+        </a>
+        <a
+          href="#"
+          class="block rounded-md px-3 py-2.5 text-sm font-medium text-slate-700 transition-colors hover:bg-slate-100 hover:text-slate-900 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
+        >
+          Services
+        </a>
+        <a
+          href="#"
+          class="block rounded-md px-3 py-2.5 text-sm font-medium text-slate-700 transition-colors hover:bg-slate-100 hover:text-slate-900 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
+        >
+          Portfolio
+        </a>
+        <a
+          href="#"
+          class="block rounded-md px-3 py-2.5 text-sm font-medium text-slate-700 transition-colors hover:bg-slate-100 hover:text-slate-900 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
+        >
+          Contact
+        </a>
+      </div>
+    </div>
+  </nav>
+</div>
