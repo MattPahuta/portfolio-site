@@ -4,15 +4,15 @@ import { Image } from 'astro:assets';
 import avatar from '../assets/avatar_v1.jpg';
 ---
 
-<section class="">
+<section class="min-h-dvh flex items-center text-center">
   <!-- wrapper element -->
   <div class="px-4 flex flex-col items-center gap-10 sm:gap-14 md:flex-row">
-    <div class="space-y-6">
-      <h1 class="mb-1 text-3xl sm:text-4xl font-mono text-zinc-50">Matt Pahuta</h1>
-      <p class="font-medium text-blue-400">Frontend Focused Software Engineer</p>
+    <div class="">
+      <h1 class="mb-3 text-5xl font-mono font-semibold text-zinc-50">Matt Pahuta</h1>
+      <p class="mb-4 text-xl font-medium text-blue-400">Frontend Focused Software Engineer</p>
       <p>Hi there! I love building stuff for the web with React, TailwindCSS, Astro. I thrive on learning new things and turning design ideas into user-friendly, accessible, and inclusive web experiences.</p>
-      <SocialsList />
     </div>
     <Image src={avatar} alt="Matt Pahuta" class="m-auto size-52 sm:size-60 object-cover rounded-full border-2 border-slate-700/80 shadow-2xl" />
+    <SocialsList />
   </div>
 </section>

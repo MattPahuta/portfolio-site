@@ -1,14 +1,47 @@
 ---
-
+import Nav from "./Nav.astro";
+import { Icon } from 'astro-icon/components';
 ---
 
-<header class="sticky top-0 z-40 flex-none mx-auto w-full border-b border-slate-700"> -->
-  <div class="@container max-w-4xl mx-auto p-3 md:flex md:justify-between md:px-4">
-    <div class="">
-      <a href="#" class="">Brand</a>
+<!-- 
+sticky top-0 z-40 flex-none mx-auto w-full bg-white md:bg-white/90 dark:bg-slate-950 dark:md:bg-slate-950/90 md:backdrop-blur-md border-b dark:border-b-0
+
+nav
+items-start justify-start w-full md:w-auto hidden peer-checked:flex md:flex text-gray-600 dark:text-slate-200 h-screen md:h-auto
+
+nav > ul
+flex flex-col gap-2 pt-8 md:pt-0 md:flex-row md:self-center w-full md:w-auto collapsed text-4xl md:text-base md:gap-0
+-->
+
+<header class="sticky top-0 z-50 flex-none mx-auto w-full bg-gray-900 md:border-b border-slate-700">
+  <div class="max-w-4xl w-full mx-auto p-3 justify-between md:px-4">
+    <div class="flex items-center justify-between">
+      <a href="/" class="flex items-center p-1 rounded-md">
+        <!-- <span class="font-mono text-xl font-semibold leading-none text-slate-900">MP</span> -->
+         <Icon name="mdi:paw" title="woof" class="size-7 text-zinc-50 hover:scale-110 transition-transform" />
+      </a>
+      <div class="flex items-center md:hidden">
+        <label for="menu-toggle" aria-label="Toggle navigation menu" class="p-2 inline-flex cursor-pointer items-center rounded-lg hover:bg-slate-800 md:hidden">
+          <svg
+          class="size-7 text-slate-600 transition-all"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          aria-hidden="true"
+          >
+          <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M4 6h16M4 12h16M4 18h16"
+          />
+        </svg>
+        </label>
+      </div>
     </div>
-    <nav class="">
-      <ul class="flex">
+    <input id="menu-toggle" type="checkbox" class="peer sr-only">
+    <nav class="w-full hidden peer-checked:flex items-start justify-start">
+      <ul class="w-full md:w-auto collapflex flex-col gap-2 pt-8 md:pt-0 md:flex-row md:self-center text-4xl md:text-base md:gap-0">
         <li><a href="#">Home</a></li>
         <li><a href="#">About</a></li>
         <li><a href="#">Projects</a></li>
