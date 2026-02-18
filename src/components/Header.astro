@@ -4,21 +4,34 @@ import { Icon } from 'astro-icon/components';
 ---
 
 <!-- 
+header:
 sticky top-0 z-40 flex-none mx-auto w-full bg-white md:bg-white/90 dark:bg-slate-950 dark:md:bg-slate-950/90 md:backdrop-blur-md border-b dark:border-b-0
 
-nav
+bg-gray-900, border-slate-700"
+
+header > div:
+py-3 px-3 mx-auto w-full md:flex md:justify-between max-w-6xl md:px-4
+
+max-w-4xl
+
+nav:
 items-start justify-start w-full md:w-auto hidden peer-checked:flex md:flex text-gray-600 dark:text-slate-200 h-screen md:h-auto
 
-nav > ul
+nav > ul:
 flex flex-col gap-2 pt-8 md:pt-0 md:flex-row md:self-center w-full md:w-auto collapsed text-4xl md:text-base md:gap-0
+
+nav > ul > li > a:
+font-medium hover:text-gray-900 dark:hover:text-white px-4 py-3 flex items-center transition duration-150 ease-in-out
+
+font-sans text-gray-700 dark:text-gray-300 hover:text-blue-400 transition-all duration-300 text-sm lg:text-base font-medium transform hover:scale-110 hover:-translate-y-1 relative after:content-[''] after:absolute after:w-full after:scale-x-0 after:h-0.5 after:bottom-0 after:left-0 after:bg-blue-600 dark:after:bg-blue-400 after:origin-bottom-right after:transition-transform after:duration-300 hover:after:scale-x-100 hover:after:origin-bottom-left
 -->
 
-<header class="sticky top-0 z-50 flex-none mx-auto w-full bg-gray-900 md:border-b border-slate-700">
-  <div class="max-w-4xl w-full mx-auto p-3 justify-between md:px-4">
+<header class="sticky top-0 z-50 flex-none mx-auto w-full bg-gray-900 md:bg-gray-900/90 md:backdrop-blur-md lg:border-b lg:border-slate-700">
+  <div class="py-3 px-3 mx-auto w-full md:flex md:justify-between max-w-4xl md:px-4 md:py-5">
     <div class="flex items-center justify-between">
-      <a href="/" class="flex items-center p-1 rounded-md">
+      <a href="/" class="flex items-center p-1 rounded-md focus-visible:outline-2 focus-visible:outline-offset-1 focus-visible:outline-blue-600">
         <!-- <span class="font-mono text-xl font-semibold leading-none text-slate-900">MP</span> -->
-         <Icon name="mdi:paw" title="woof" class="size-7 text-muted-teal hover:scale-110 transition-transform" />
+         <Icon name="mdi:paw" title="woof" class="size-7 text-zinc-100 hover:scale-110 transition-transform" />
       </a>
       <div class="flex items-center md:hidden">
         <label for="menu-toggle" aria-label="Toggle navigation menu" class="p-2 inline-flex cursor-pointer items-center rounded-lg hover:bg-slate-800 md:hidden">
@@ -39,13 +52,21 @@ flex flex-col gap-2 pt-8 md:pt-0 md:flex-row md:self-center w-full md:w-auto col
         </label>
       </div>
     </div>
-    <input id="menu-toggle" type="checkbox" class="peer sr-only">
-    <nav class="w-full hidden peer-checked:flex items-start justify-start">
-      <ul class="w-full md:w-auto collapflex flex-col gap-2 pt-8 md:pt-0 md:flex-row md:self-center text-4xl md:text-base md:gap-0">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Projects</a></li>
-        <li><a href="#">Contact</a></li>
+    <input id="menu-toggle" type="checkbox" class="peer sr-only md:hidden">
+    <nav class="items-start justify-start w-full md:w-auto hidden peer-checked:flex md:flex text-slate-200 h-screen md:h-auto">
+      <ul class="flex flex-col gap-5 pt-8 md:pt-0 md:flex-row md:self-center w-full md:w-auto collapsed text-3xl font-medium md:text-xl md:gap-6">
+        <li>
+          <a href="#" class="flex rounded-sm px-4 py-3 md:p-0 hover:text-blue-400 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600 transition-all duration-300 transform md:hover:scale-110 md:hover:-translate-y-1 relative after:content-[''] after:absolute after:w-full after:scale-x-0 after:h-0.5 after:bottom-0 after:left-0 after:bg-blue-400 after:origin-bottom-right after:transition-transform after:duration-300 md:hover:after:scale-x-100 md:hover:after:origin-bottom-left">Home</a>
+        </li>
+        <li>
+          <a href="#" class="flex rounded-sm px-4 py-3 md:p-0 hover:text-blue-400 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600 transition-all duration-300 transform md:hover:scale-110 md:hover:-translate-y-1 relative after:content-[''] after:absolute after:w-full after:scale-x-0 after:h-0.5 after:bottom-0 after:left-0 after:bg-blue-400 after:origin-bottom-right after:transition-transform after:duration-300 md:hover:after:scale-x-100 md:hover:after:origin-bottom-left">About</a>
+        </li>
+        <li>
+          <a href="#" class="flex rounded-sm px-4 py-3 md:p-0 hover:text-blue-400 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600 transition-all duration-300 transform md:hover:scale-110 md:hover:-translate-y-1 relative after:content-[''] after:absolute after:w-full after:scale-x-0 after:h-0.5 after:bottom-0 after:left-0 after:bg-blue-400 after:origin-bottom-right after:transition-transform after:duration-300 md:hover:after:scale-x-100 md:hover:after:origin-bottom-left">Projects</a>
+        </li>
+        <li>
+          <a href="#" class="flex rounded-sm px-4 py-3 md:p-0 hover:text-blue-400 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600 transition-all duration-300 transform md:hover:scale-110 md:hover:-translate-y-1 relative after:content-[''] after:absolute after:w-full after:scale-x-0 after:h-0.5 after:bottom-0 after:left-0 after:bg-blue-400 after:origin-bottom-right after:transition-transform after:duration-300 md:hover:after:scale-x-100 md:hover:after:origin-bottom-left">Contact</a>
+        </li>
       </ul>
     </nav>
   </div>
