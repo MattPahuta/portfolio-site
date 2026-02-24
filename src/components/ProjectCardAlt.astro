@@ -28,22 +28,20 @@ if (!images[imagePath]) throw new Error(`"${imagePath}" does not exist in glob: 
 <!-- 
 
 flex py-6 px-2 sm:p-6 bg-black/20 sm:rounded-xl shadow-lg hover:shadow-xl sm:hover:shadow-indigo-500/20 transition duration-500 sm:border border-slate-800
+
+flex flex-col items-center gap-8 transition duration-500 ease-in-out transform shadow-2xl overflow-clip rounded-2xl
 -->
 <!-- ToDo: Check screen reader announcement with project cards -->
 <!-- <article class="flex flex-col items-center space-x-0 space-y-8 gap-8 group md:flex-row md:space-x-16 md:space-y-0"> -->
-<article class="p-4 md:p-6 flex flex-col items-center gap-8 group rounded-xl md:flex-row md:space-x-16 md:space-y-0 md:bg-black/20 md:shadow-lg md:hover:shadow-xl md:hover:shadow-blue-500/20 transition duration-500 md:border md:border-slate-700">
-
-
+<article class="p-4 md:p-6 space-y-8 group grid items-center rounded-xl md:bg-black/20 md:shadow-lg md:hover:shadow-xl md:hover:shadow-blue-500/20 transition duration-500 md:border md:border-slate-700">
   <!-- Image container -->
   <div class="w-full overflow-hidden rounded-lg md:shadow-lg md:rounded-xl md:group-hover:shadow-lg md:group-hover:shadow-blue-400/20 transition duration-300">
-    <div class="flex flex-col items-center gap-8 transition duration-500 ease-in-out transform shadow-2xl overflow-clip rounded-2xl">
-      <Image src={images[imagePath]()} alt={imageAltText} class="object-cover object-top w-full aspect-[4/3] md:group-hover:scale-105 duration-300 min-h-[275px]" />
-    </div>
+    <Image src={images[imagePath]()} alt={imageAltText} class="object-cover w-full aspect-[4/3] md:group-hover:scale-105 duration-300 min-h-[275px]" />
   </div>
   <!-- Content container -->
-  <div class="w-full">
+  <div class="w-full space-y-8">
     <a href="" class="group-hover:text-blue-400 hover:underline decoration-2 underline-offset-4 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-zinc-50 transition rounded-md">
-      <h3 class="text-xl sm:text-2xl font-medium text-zinc-50 group-hover:text-blue-400">
+      <h3 class="mb-4 text-3xl font-medium text-zinc-50">
         {title}
       </h3>
     </a>
@@ -57,16 +55,24 @@ flex py-6 px-2 sm:p-6 bg-black/20 sm:rounded-xl shadow-lg hover:shadow-xl sm:hov
         )
       )}
     </ul>
-    <p class="leading-relaxed font-light">{description}</p>
-    <div class="flex items-center justify-start gap-x-3 text-sm sm:text-base">
-      <a href={gitHubUrl} aria-label="GitHub project repo" class="p-1 inline-flex items-center gap-2 justify-center rounded-md hover:text-blue-400 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-zinc-50 transition">
-        <Icon name="mdi:github" class="size-4 sm:size-5" role="img" />
-        view code
+    <p class="text-lg leading-relaxed font-light">{description}</p>
+    <!-- Card footer / link buttons -->
+    <footer class="flex items-center justify-start gap-x-4">
+      <!-- <a href={gitHubUrl} aria-label="GitHub project repo" class="inline-flex items-center justify-center gap-2 px-3 py-2 space-x-2 text-base text-zinc-50 transition bg-gray-800 border border-yellow-600 focus-within:ring-2 focus-within:ring-red-500 focus-within:ring-offset-2 hover:bg-gray-700 hover:border-gray-700 group max-w-fit rounded-xl active:bg-gray-900 focus:outline-hidden"> -->
+      <a href={gitHubUrl} aria-label="GitHub project repo" class="inline-flex items-center justify-center gap-2 px-3 py-2 space-x-2 text-base text-zinc-50 transition bg-gray-800 border border-gray-600  hover:bg-gray-700 hover:border-gray-700 group max-w-fit rounded-xl active:bg-gray-900 focus:outline-hidden focus:ring-4 focus:ring-gray-200">
+        <Icon name="mdi:github" class="size-5" role="img" />
+        Source Code
       </a>
-      <a href={liveSiteUrl} aria-label="Live preview" class="p-1 inline-flex items-center gap-2 justify-center rounded-md hover:text-blue-400 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-zinc-50 transition">
-        <Icon name="mdi:external-link" class="size-4 sm:size-5" role="img" />
-        live demo
+      <!-- 
+      Original style:
+      p-1 inline-flex items-center gap-2 justify-center rounded-md hover:text-blue-400 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-zinc-50 transition"
+
+      focus-within:ring-2 focus-within:ring-zinc-50 focus-within:ring-offset-2
+      -->
+      <a href={liveSiteUrl} aria-label="Live preview" class="inline-flex items-center justify-center gap-2 px-3 py-2 space-x-2 text-base text-zinc-50 transition bg-gray-800 border border-gray-600 focus-within:ring-2 focus-within:ring-zinc-50 focus-within:ring-offset-2 hover:bg-gray-700 hover:border-gray-700 group max-w-fit rounded-xl active:bg-gray-900 focus-within:outline-hidden focus:border-0">
+        <Icon name="mdi:external-link" class="size-5" role="img" />
+        Live Demo
       </a>
-    </div>
+    </footer>
   </div>
 </article>
