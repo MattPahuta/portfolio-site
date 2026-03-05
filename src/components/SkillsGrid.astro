@@ -5,7 +5,12 @@ import skills from "../data/skills.json"
 
 <!-- <ul role="list" class="mt-6 p-8 grid gap-4 grid-cols-3 sm:grid-cols-[repeat(auto-fill,_minmax(150px,_1fr))] rounded-lg bg-linear-to-t from-slate-900 to-indigo-400/30"> -->
 
-<ul role="list" class="flex gap-2.5 sm:gap-3.5 flex-wrap">
+<!-- <ul role="list" class="flex gap-2.5 sm:gap-3.5 flex-wrap"> -->
+ <!-- 
+    Skill Li
+      <li class="py-2 px-3 rounded-lg flex gap-3 border border-slate-700 items-center text-center text-xs sm:text-sm hover:scale-95 transition">
+ -->
+<ul role="list" class="grid gap-4 grid-cols-3 sm:grid-cols-[repeat(auto-fill,_minmax(150px,_1fr))] rounded-lg md:bg-neutral-950/70 md:p-6">
 {
     skills.map((skill) => {
       return (
@@ -14,7 +19,9 @@ import skills from "../data/skills.json"
             name={skill.name} 
             icon={skill.icon} 
           />
-          {skill.name}
+          <span class="font-mono text-xs font-semibold text-slate-200">
+            {skill.name}
+          </span>
         </li>
       );
     })

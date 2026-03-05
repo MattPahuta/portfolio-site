@@ -1,5 +1,9 @@
 /* @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap'); */
 
+/* 
+Material Design Icons, Material Icon Theme, Simple Icons, Pixelarticons, VSCode-icons
+*/
+
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
 
 @import 'tailwindcss';
@@ -13,5 +17,9 @@
   /* brand colors */
   --color-gamboge: hsl(39, 91%, 49%);
   --color-mint: hsl(138, 29%, 56%);
+
   --color-muted-teal: oklch(73.981% 0.07696 174.07);
+  --color-blue-energy: oklch(0.6467 0.1497 255.5836);
+
 }
+ 

@@ -3,20 +3,10 @@ import Nav from "./Nav.astro";
 
 ---
 
-<!-- 
-
-
-font-sans text-gray-700 dark:text-gray-300 hover:text-blue-400 transition-all duration-300 text-sm lg:text-base font-medium transform hover:scale-110 hover:-translate-y-1 relative after:content-[''] after:absolute after:w-full after:scale-x-0 after:h-0.5 after:bottom-0 after:left-0 after:bg-blue-600 dark:after:bg-blue-400 after:origin-bottom-right after:transition-transform after:duration-300 hover:after:scale-x-100 hover:after:origin-bottom-left
-
-      <a href="#" class="flex rounded-sm px-4 py-3 md:p-0 hover:text-blue-400 
-      
-      focus-visible:outline-3 focus-visible:outline-offset-2 focus-visible:outline-blue-400 focus-visible:text-blue-400 
--->
-
-<header class="sticky top-0 z-50 flex-none mx-auto w-full bg-gray-900 md:bg-gray-950/40 md:backdrop-blur-md md:border-b md:border-slate-700">
-  <div class="py-3 px-3 mx-auto w-full flex md:justify-between max-w-4xl md:px-4 md:py-5">
-    <a href="/" class="hidden md:inline-flex rounded-md focus-visible:outline-2 focus-visible:outline-offset-1 focus-visible:outline-blue-600">
-      <span class="text-2xl font-extrabold">MP</span>
+<header class="sticky top-0 z-50 flex-none mx-auto w-full bg-neutral-950/70 backdrop-blur-md border-b border-slate-700">
+  <div class="max-w-4xl mx-auto py-3 px-3 flex items-center justify-center md:justify-between md:px-4 md:py-5">
+    <a href="/" class="hidden md:inline-flex rounded-md focus-visible:outline-3 focus-visible:outline-offset-2 focus-visible:slate-200">
+      <span class="text-2xl font-extrabold text-blue-400">MP</span>
     </a>
     <Nav />
   </div>
