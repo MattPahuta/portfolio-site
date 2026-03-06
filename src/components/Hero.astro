@@ -4,14 +4,15 @@ import { Image } from 'astro:assets';
 import avatar from '../assets/avatar_v1.jpg';
 ---
 
-<section class="py-12 flex items-center justify-center">
-  <div class="w-full px-4 md:px-6 grid gap-10">
+<section class="py-12 px-6 flex items-center justify-center">
+  <div class="w-full grid gap-10 md:grid-cols-[60%_1fr] md:col-gap-4">
     <div class="text-center md:text-left">
       <h1 class="mb-3 text-4xl md:text-5xl font-bold tracking-wide text-zinc-50">Matt Pahuta</h1>
       <p class="mb-4 md:text-xl font-mono font-medium text-blue-400">Frontend Focused Software Engineer</p>
       <p class="md:text-xl leading-relaxed">Hi there! I love building stuff for the web with React, TailwindCSS, Astro. I thrive on learning new things and turning design ideas into user-friendly, accessible, and inclusive web experiences.</p>
     </div>
-    <div class="md:-order-1">
+    <!-- <div class="md:-order-1"> -->
+    <div class="md:place-self-center">
       <Image src={avatar} alt="Matt Pahuta" class="m-auto size-52 object-cover rounded-full border-2 border-slate-700/80 shadow-2xl" />
     </div>
     <div class="md:justify-self-start">
