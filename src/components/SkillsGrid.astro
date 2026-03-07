@@ -3,18 +3,14 @@ import SkillsBadge from "./SkillsBadge.astro";
 import skills from "../data/skills.json"
 ---
 
-<!-- <ul role="list" class="mt-6 p-8 grid gap-4 grid-cols-3 sm:grid-cols-[repeat(auto-fill,_minmax(150px,_1fr))] rounded-lg bg-linear-to-t from-slate-900 to-indigo-400/30"> -->
+<!-- ToDo: Add subtle animation to skill cards -->
 
-<!-- <ul role="list" class="flex gap-2.5 sm:gap-3.5 flex-wrap"> -->
- <!-- 
-    Skill Li
-      <li class="py-2 px-3 rounded-lg flex gap-3 border border-slate-700 items-center text-center text-xs sm:text-sm hover:scale-95 transition">
- -->
-<ul role="list" class="grid gap-4 grid-cols-3 sm:grid-cols-[repeat(auto-fill,_minmax(150px,_1fr))] rounded-lg md:bg-neutral-950/70 md:p-6">
+<!-- <ul role="list" class="grid gap-4 grid-cols-3 sm:grid-cols-[repeat(auto-fill,_minmax(150px,_1fr))] rounded-lg md:bg-neutral-900/80 md:p-6"> -->
+  <ul class="flex items-center justify-start gap-2.5 sm:gap-3.5 flex-wrap">
 {
     skills.map((skill) => {
       return (
-        <li class="py-2 px-3 rounded-lg flex gap-3 border border-slate-700 items-center text-center text-xs sm:text-sm hover:scale-95 transition">
+        <li class="min-w-24 py-4 px-5 rounded-xl flex flex-col gap-2.5 border border-slate-700 items-center text-center text-xs sm:text-sm hover:scale-95 transition">
           <SkillsBadge 
             name={skill.name} 
             icon={skill.icon} 
