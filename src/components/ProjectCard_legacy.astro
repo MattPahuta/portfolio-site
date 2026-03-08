@@ -25,7 +25,7 @@ const images = import.meta.glob<{ default: ImageMetadata }>('/src/assets/project
 if (!images[imagePath]) throw new Error(`"${imagePath}" does not exist in glob: "src/assets/projects/*.{jpeg,jpg,png,gif}"`);
 ---
 <!-- ToDo: Check screen reader announcement with project cards -->
-<li class="flex flex-col overflow-hidden bg-slate-950/70 rounded-lg sm:shadow-lg sm:rounded-xl sm:hover:border-blue-400/20 hover:shadow-lg sm:hover:shadow-blue-400/20 transition duration-500 sm:border border-slate-700 lg:p-6 lg:gap-5">
+<!-- <li class="flex flex-col overflow-hidden bg-slate-950/70 rounded-lg sm:shadow-lg sm:rounded-xl sm:hover:border-blue-400/20 hover:shadow-lg sm:hover:shadow-blue-400/20 transition duration-500 sm:border border-slate-700 lg:p-6 lg:gap-5">
   <div class="">
     <a href="" class="aspect-[4/3] block isolate overflow-hidden lg:rounded-xl" aria-hidden="true" tabindex="-1">
       <Image src={images[imagePath]()} alt={imageAltText} class=" object-cover object-center" />
@@ -48,7 +48,33 @@ if (!images[imagePath]) throw new Error(`"${imagePath}" does not exist in glob: 
       )}
     </ul>
     <p class="grow">{description}</p>
-    <div class="pt-2 flex items-center gap-3 text-sm sm:text-base lg:justify-end">
+
+  </div>
+</li> -->
+
+<article
+  class="max-w-sm overflow-hidden rounded-lg bg-slate-950/70 shadow-md transition-shadow duration-200 hover:shadow-lg"
+>
+  <Image
+    src={images[imagePath]()} alt={imageAltText}
+    alt="Product"
+    class="h-56 w-full object-cover"
+  />
+  <div class="space-y-4 p-6">
+    <h3 class="text-xl sm:text-2xl font-medium text-zinc-50">{title}</h3>
+    <ul class="inline-flex items-center gap-3">
+      {techStack.map((tech) => (
+        <li>
+          <Icon name={tech.icon} role="img" title={tech.name} class="size-6 sm:size-8" focusable="false" aria-hidden="true"
+          />
+          <span class="sr-only">{tech.name}</span>
+        </li>
+        )
+      )}
+    </ul>
+    <p class="grow">{description}</p>
+
+    <footer class="pt-2 flex items-center gap-3 text-sm sm:text-base lg:justify-end">
       <a href={gitHubUrl} aria-label="GitHub project repo" class="p-1 inline-flex items-center gap-2 justify-center rounded-md hover:text-blue-400 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-zinc-50 transition">
         <Icon name="mdi:github" class="size-4 sm:size-5" role="img" />
         view code
@@ -57,6 +83,6 @@ if (!images[imagePath]) throw new Error(`"${imagePath}" does not exist in glob: 
         <Icon name="mdi:external-link" class="size-4 sm:size-5" role="img" />
         live demo
       </a>
-    </div>
+    </footer>
   </div>
-</li>
+</article>

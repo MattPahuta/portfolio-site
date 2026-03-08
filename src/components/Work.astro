@@ -1,6 +1,6 @@
 ---
 import SectionHeader from './SectionHeader.astro';
-import ProjectCard from '../components/ProjectCard.astro';
+import ProjectCard_legacy from '../components/ProjectCard_legacy.astro';
 import ProjectCardAlt from './ProjectCardAlt.astro';
 // import projects from '../data/projects.json';
 import { getCollection } from 'astro:content';
@@ -8,11 +8,9 @@ const heading = "Projects";
 const projects = await getCollection('project');
 ---
 
-<section id="projects" class="py-12 px-6">
-  <!-- <div class="space-y-6 sm:space-y-8"> -->
-   <!-- flex flex-col -->
+<section id="projects" class="py-12 px-4">
     <SectionHeader heading={heading} />
-    <div class="grid md:grid-cols-2 gap-y-20 md:gap-5">
+    <div class="grid md:grid-cols-2 gap-y-20 md:gap-y-8 md:gap-x-6">
       {
         projects.map(project => (
           <ProjectCardAlt 
@@ -27,11 +25,11 @@ const projects = await getCollection('project');
         ))
       }
     </div>
-    <!-- Project Cards - FEM style -->
-    <!-- <ul class="grid justify-items-center gap-6 sm:grid-cols-2">
+
+    <!-- <div class="grid md:grid-cols-2 gap-y-20 md:gap-5">
       {
         projects.map(project => (
-          <ProjectCard 
+          <ProjectCard_legacy 
             title={project.data.title} 
             description={project.data.description} 
             imagePath={project.data.imagePath} 
@@ -42,6 +40,6 @@ const projects = await getCollection('project');
           />
         ))
       }
-    </ul> -->
-  <!-- </div> -->
+    </div> -->
+
 </section>
