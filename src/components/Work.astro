@@ -8,10 +8,9 @@ const heading = "Projects";
 const projects = await getCollection('project');
 ---
 
-<section id="projects" class="py-12 px-4">
+<section id="projects" class="py-16 md:py-20 px-5">
     <SectionHeader heading={heading} />
-    <!-- <div class="grid md:grid-cols-2 gap-y-20 md:gap-y-8 md:gap-x-6"> -->
-    <div class="grid gap-6 sm:gap-10">
+    <div class="grid gap-10 sm:gap-12">
       {
         projects.map(project => (
           <ProjectCardAlt 
@@ -26,21 +25,4 @@ const projects = await getCollection('project');
         ))
       }
     </div>
-
-    <!-- <div class="grid md:grid-cols-2 gap-y-20 md:gap-5">
-      {
-        projects.map(project => (
-          <ProjectCard_legacy 
-            title={project.data.title} 
-            description={project.data.description} 
-            imagePath={project.data.imagePath} 
-            imageAltText={project.data.imageAltText} 
-            techStack={project.data.techStack} 
-            gitHubUrl={project.data.gitHubUrl} 
-            liveSiteUrl={project.data.liveSiteUrl} 
-          />
-        ))
-      }
-    </div> -->
-
 </section>
