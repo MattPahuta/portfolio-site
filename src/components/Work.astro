@@ -10,7 +10,8 @@ const projects = await getCollection('project');
 
 <section id="projects" class="py-12 px-4">
     <SectionHeader heading={heading} />
-    <div class="grid md:grid-cols-2 gap-y-20 md:gap-y-8 md:gap-x-6">
+    <!-- <div class="grid md:grid-cols-2 gap-y-20 md:gap-y-8 md:gap-x-6"> -->
+    <div class="grid gap-6 sm:gap-10">
       {
         projects.map(project => (
           <ProjectCardAlt 

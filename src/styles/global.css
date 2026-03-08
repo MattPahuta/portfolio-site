@@ -15,14 +15,10 @@ Material Design Icons, Material Icon Theme, Simple Icons, Pixelarticons, VSCode-
   --font-mono: "Roboto Mono", ui-monospace, monospace;
 
   /* brand colors */
-
   --color-blue-energy: oklch(0.6467 0.1497 255.5836);
   --color-muted-teal: oklch(73.981% 0.07696 174.07);
-  
-  --color-ash-grey: oklch(79.181% 0.04737 139.303);
-
   /* slate-950 BG (dark) colors */
-  --color-ash-grey-2: oklch(74.122% 0.03189 191.505);
+  --color-ash-grey: oklch(0.7412 0.0319 191.3556);
 
 }
  
