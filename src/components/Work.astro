@@ -1,19 +1,19 @@
 ---
 import SectionHeader from './SectionHeader.astro';
 import ProjectCard_legacy from '../components/ProjectCard_legacy.astro';
-import ProjectCardAlt from './ProjectCardAlt.astro';
+import ProjectCard from './ProjectCard.astro';
 // import projects from '../data/projects.json';
 import { getCollection } from 'astro:content';
 const heading = "Projects";
 const projects = await getCollection('project');
 ---
 
-<section id="projects" class="py-16 md:py-20 px-5">
+<section id="projects" class="py-16 md:py-20 px-4">
     <SectionHeader heading={heading} />
     <div class="grid gap-10 sm:gap-12">
       {
         projects.map(project => (
-          <ProjectCardAlt 
+          <ProjectCard 
             title={project.data.title} 
             description={project.data.description} 
             imagePath={project.data.imagePath} 

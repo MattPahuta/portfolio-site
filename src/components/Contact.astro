@@ -1,14 +1,29 @@
 ---
+import SectionHeader from "./SectionHeader.astro";
+const heading = "Let's Work Together"
+import { Icon } from "astro-icon/components";
 ---
 
 <section id="contact" class="py-16 md:py-20">
   <!-- <div class="max-w-5xl p-10 md:rounded-2xl text-center bg-linear-to-t from-slate-950 to-indigo-500/30 space-y-4"> -->
-  <div class="max-w-5xl p-6 sm:p-10 md:mx-5 md:rounded-2xl text-center shadow-lg md:bg-linear-to-t from-slate-900/40 to-indigo-900/40 space-y-4">
-
+  <div class="max-w-5xl p-6 sm:p-10 md:mx-4 md:rounded-2xl text-center shadow-lg md:bg-linear-to-t from-slate-900/40 to-indigo-900/40 space-y-4">
+    <!-- <SectionHeader heading={heading} /> -->
     <div class="mx-auto max-w-3xl">
-      <h2 class="mb-4 text-2xl sm:text-3xl text-zinc-50 text-balance font-semibold">Let's Build Something Together</h2>
+      <h2 class="mb-4 text-2xl sm:text-3xl text-zinc-50 text-balance font-semibold">Let's Work Together</h2>
       <p class="text-pretty">Looking for a developer? Have a question? Just want to connect? Feel free to reach out! Send me an email or find me on <a href="" class="font-semibold text-emerald-200/80  hover:text-zinc-50 transition focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-zinc-50 rounded-sm">LinkedIn</a>.</p>
     </div>
-    <a class="underline underline-offset-2 font-mono font-semibold hover:text-emerald-200/80 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-zinc-50 rounded-sm transition" href="mailto:mhpahuta@gmail.com">mattpahuta@gmail.com</a>
+    <a class="underline underline-offset-2 font-mono font-semibold hover:text-emerald-200/80 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-zinc-50 rounded-sm transition decoration-2 decoration-emerald-200/80" href="mailto:mhpahuta@gmail.com">mattpahuta@gmail.com</a>
+
+    <!-- <div class="flex flex-col gap-2.5">
+      <a 
+        href="#" 
+        aria-label="Live preview" 
+        class="group px-3 py-2 space-x-2 rounded-xl inline-flex items-center justify-center gap-2 transition border shadow-sm border-slate-800 hover:bg-slate-800 hover:border-slate-800 hover:shadow-md focus:border-0 focus-within:ring-2 focus-within:ring-slate-200 focus-within:ring-offset-2 active:bg-black/40 focus-within:outline-hidden"
+      >
+        <Icon name="mdi:github" class="size-5" role="img" />
+        <span>GitHub</span>
+        <span class="ml-auto">@mattpahuta</span>
+      </a>
+    </div> -->
   </div>
 </section>  

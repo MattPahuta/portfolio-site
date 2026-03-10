@@ -2,10 +2,16 @@
 import Nav from "./Nav.astro";
 ---
 
-<header class="sticky top-0 z-50 flex-none mx-auto w-full dark:bg-black/40 backdrop-blur-md border-b border-slate-800">
+<!-- 
+
+ bg-white/90 dark:bg-slate-950 dark:md:bg-slate-950/90 md:backdrop-blur-md border-b dark:border-b-0
+
+-->
+
+<header class="sticky top-0 z-50 flex-none mx-auto w-full bg-zinc-50/90 dark:bg-gray-900/90 backdrop-blur-md border-b border-slate-800 dark:border-b-0">
   <div class="max-w-4xl mx-auto py-3 px-4 flex items-center justify-center md:justify-between md:px-4 md:py-5">
     <a href="/" class="hidden md:inline-flex rounded-md focus-visible:outline-3 focus-visible:outline-offset-2 focus-visible:slate-200">
-      <span class="text-2xl font-extrabold tracking-tight text-indigo-400">MP</span>
+      <span class="text-2xl font-heading font-extrabold tracking-tight text-blue-400">MP</span>
     </a>
     <Nav />
   </div>

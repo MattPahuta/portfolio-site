@@ -27,18 +27,17 @@ if (!images[imagePath]) throw new Error(`"${imagePath}" does not exist in glob: 
 <!-- ToDo: Check screen reader announcement with project cards -->
 
 <!-- 
-flex py-4 px-2 sm:p-6 bg-white dark:bg-black/20 sm:rounded-xl shadow-md dark:shadow-lg sm:border sm:border-transparent dark:sm:border-slate-800 sm:hover:border-indigo-200/70 dark:sm:hover:border-indigo-500/30 sm:hover:bg-indigo-50/40 dark:sm:hover:bg-indigo-950/20 hover:shadow-xl dark:sm:hover:shadow-indigo-500/20 sm:hover:-translate-y-0.5 transition duration-300 first:mt-8 sm:first:mt-0
-
+ bg-white dark:bg-black/20 sm:rounded-xl shadow-md dark:shadow-lg sm:border sm:border-transparent dark:sm:border-slate-800 sm:hover:border-indigo-200/70 dark:sm:hover:border-indigo-500/30 sm:hover:bg-indigo-50/40 dark:sm:hover:bg-indigo-950/20 dark:sm:hover:shadow-indigo-500/20
 -->
 
 <!-- <article class="md:p-6 group flex flex-col gap-8 items-center rounded-xl text-slate-200 md:bg-neutral-900/80 shadow-lg md:hover:shadow-sky-500/60 transition duration-500 md:border md:border-slate-700"> -->
-<article class="flex flex-col gap-5 md:gap-6 sm:flex-row sm:p-6 dark:sm:bg-black/40 sm:rounded-xl shadow-md dark:shadow-lg sm:border sm:border-transparent dark:sm:border-slate-800 sm:hover:border-indigo-200/70 dark:sm:hover:border-indigo-500/30 sm:hover:bg-indigo-50/40 dark:sm:hover:bg-indigo-950/20 hover:shadow-xl dark:sm:hover:shadow-indigo-500/20 sm:hover:-translate-y-0.5 transition duration-300">
+<article class="flex flex-col gap-5 md:gap-6 sm:flex-row sm:p-6 bg-white dark:sm:bg-black/40 sm:rounded-xl shadow-md dark:shadow-lg sm:border sm:border-transparent dark:sm:border-slate-800 sm:hover:border-indigo-200/70 dark:sm:hover:border-indigo-500/30 sm:hover:bg-indigo-50/40 dark:sm:hover:bg-indigo-950/20 hover:shadow-xl dark:sm:hover:shadow-indigo-500/20 sm:hover:-translate-y-0.5 transition duration-300">
   <div class="w-full overflow-hidden grid content-center">
     <Image src={images[imagePath]()} alt={imageAltText} class="object-cover w-full rounded-xl aspect-[4/3]" />
   </div>
   <div class="w-full flex flex-col grow space-y-6">
     <a href="" class="group hover:text-indigo-400 hover:underline decoration-2 underline-offset-4 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-zinc-50 transition rounded-md">
-      <h3 class="text-2xl font-medium text-zinc-50">
+      <h3 class="text-2xl font-medium dark:text-zinc-50">
         {title}
       </h3>
     </a>

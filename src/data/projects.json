@@ -28,29 +28,6 @@
   },
   {
     "id": 2,
-    "title": "Password Generator App",
-    "description": "Quickly generate a complex password using this web app built with JavaScript.",
-    "techStack": [
-      {
-        "name": "JavaScript",
-        "icon": "vscode-icons:file-type-js-official"
-      },
-      {
-        "name": "HTML",
-        "icon": "vscode-icons:file-type-html"
-      },
-      {
-        "name": "CSS",
-        "icon": "vscode-icons:file-type-css"
-      }
-    ],
-    "imagePath": "/src/assets/projects/pw-generator.png",
-    "imageAltText": "Password generator app",
-    "gitHubUrl": "https://github.com/MattPahuta/password-generator-app",
-    "liveSiteUrl": "https://scintillating-muffin-250ce1.netlify.app/"
-  },
-  {
-    "id": 3,
     "title": "Responsive Menu with Cart",
     "description": "Accessible and responsive dessert menu with shopping cart, built with React.",
     "techStack": [
@@ -75,6 +52,29 @@
     "imageAltText": "Dessert shop ordering app",
     "gitHubUrl": "https://github.com/MattPahuta/contact-form-component",
     "liveSiteUrl": "https://singular-kashata-00a5f5.netlify.app/"
+  },
+  {
+    "id": 3,
+    "title": "Password Generator App",
+    "description": "Quickly generate a complex password using this web app built with JavaScript.",
+    "techStack": [
+      {
+        "name": "JavaScript",
+        "icon": "vscode-icons:file-type-js-official"
+      },
+      {
+        "name": "HTML",
+        "icon": "vscode-icons:file-type-html"
+      },
+      {
+        "name": "CSS",
+        "icon": "vscode-icons:file-type-css"
+      }
+    ],
+    "imagePath": "/src/assets/projects/pw-generator.png",
+    "imageAltText": "Password generator app",
+    "gitHubUrl": "https://github.com/MattPahuta/password-generator-app",
+    "liveSiteUrl": "https://scintillating-muffin-250ce1.netlify.app/"
   },
   {
     "id": 4,
@@ -103,5 +103,4 @@
     "gitHubUrl": "https://github.com/MattPahuta/contact-form-component",
     "liveSiteUrl": "https://singular-kashata-00a5f5.netlify.app/"
   }
-
 ]
