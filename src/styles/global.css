@@ -25,6 +25,13 @@ Material Design Icons, Material Icon Theme, Simple Icons, Pixelarticons, VSCode-
   --color-muted-teal: oklch(73.981% 0.07696 174.07);
   /* slate-950 BG (dark) colors */
   --color-ash-grey: oklch(0.7412 0.0319 191.3556);
+  --color-celadon: oklch(78.235% 0.0717 146.135);
 
+  /* Dark Theme - gray-900 BG */
+  --color-baby-blue-ice: oklch(78.167% 0.08004 251.168);
+  --color-steel-blue: oklch(65.283% 0.04711 248.593);
+
+  /* Light Theme - zinc-50 BG */
+  --color-pine-blue: #297373;
 }
  
