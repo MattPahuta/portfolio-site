@@ -36,7 +36,7 @@ if (!images[imagePath]) throw new Error(`"${imagePath}" does not exist in glob: 
   </div>
   <div class="w-full flex flex-col grow space-y-6">
     <a href="" class="group hover:text-blue-400 hover:underline decoration-2 underline-offset-4 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-zinc-50 transition rounded-md">
-      <h3 class="text-2xl font-medium dark:text-zinc-50">
+      <h3 class="text-2xl font-medium leading-tight dark:text-zinc-50">
         {title}
       </h3>
     </a>
@@ -55,7 +55,7 @@ if (!images[imagePath]) throw new Error(`"${imagePath}" does not exist in glob: 
       <a 
         href={gitHubUrl} 
         aria-label="GitHub project repo" 
-        class="group max-w-fit px-3 py-2 space-x-2 rounded-xl inline-flex items-center justify-center gap-2 transition dark:border shadow-sm bg-gray-100 hover:bg-white dark:bg-transparent border-slate-700 dark:hover:bg-slate-700 dark:sm:hover:bg-slate-950 hover:border-slate-950 hover:shadow-md focus:border-0 focus-within:ring-2 focus-within:ring-slate-200 focus-within:ring-offset-2 active:bg-slate-950/40 focus-within:outline-hidden"
+        class="group max-w-fit px-3 py-2 space-x-2 rounded-xl inline-flex items-center justify-center gap-2 transition dark:border shadow-sm text-gray-700 dark:text-slate-400 bg-gray-100 hover:bg-white dark:bg-transparent border-slate-700 dark:hover:bg-slate-700 dark:sm:hover:bg-slate-950 hover:border-slate-950 hover:shadow-md focus:border-0 focus-within:ring-2 focus-within:ring-slate-200 focus-within:ring-offset-2 active:bg-slate-950/40 focus-within:outline-hidden"
       >
         <Icon name="mdi:github" class="size-5" role="img" />
         Source Code
@@ -63,7 +63,7 @@ if (!images[imagePath]) throw new Error(`"${imagePath}" does not exist in glob: 
       <a 
         href={liveSiteUrl} 
         aria-label="Live preview" 
-        class="group max-w-fit px-3 py-2 space-x-2 rounded-xl inline-flex items-center justify-center gap-2 transition dark:border shadow bg-gray-100 hover:bg-white dark:bg-transparent dark:border-slate-700 dark:hover:bg-slate-700 dark:sm:hover:bg-slate-950 hover:border-slate-950 hover:shadow-md focus:border-0 focus-within:ring-2 focus-within:ring-slate-200 focus-within:ring-offset-2 active:bg-slate-950/40 focus-within:outline-hidden"
+        class="group max-w-fit px-3 py-2 space-x-2 rounded-xl inline-flex items-center justify-center gap-2 transition dark:border shadow text-gray-700 bg-gray-100 hover:bg-white dark:bg-transparent dark:border-slate-700 dark:hover:bg-slate-700 dark:text-slate-400 dark:sm:hover:bg-slate-950 hover:border-slate-950 hover:shadow-md focus:border-0 focus-within:ring-2 focus-within:ring-slate-200 focus-within:ring-offset-2 active:bg-slate-950/40 focus-within:outline-hidden"
       >
         <Icon name="mdi:external-link" class="size-5" role="img" />
         Live Demo

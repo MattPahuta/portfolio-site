@@ -6,12 +6,15 @@ import avatar from '../assets/avatar_v1.jpg';
 const iconSizeClass= "size-8";
 ---
 
-<section class="pt-12 px-4 flex items-center justify-center">
+<section class="pt-12 sm:pt-20 px-4 flex items-center justify-center">
   <div class="w-full grid gap-10 md:grid-cols-[60%_1fr] md:col-gap-4">
     <div class="text-center md:text-left">
-      <h1 class="mb-3 text-4xl md:text-5xl font-heading font-bold tracking-wide text-gray-950 dark:text-zinc-50">Matt Pahuta</h1>
-      <p class="mb-4 md:text-xl font-medium text-teal-700 dark:text-blue-400/90">Frontend Focused Software Engineer</p>
-      <p class="md:text-xl leading-relaxed">Hi there! I love building stuff for the web with React, TailwindCSS, Astro. I thrive on learning new things and turning design ideas into user-friendly, accessible, and inclusive web experiences.</p>
+      <h1 class="mb-3 text-4xl md:text-5xl font-heading font-bold text-gray-950 dark:text-zinc-50">
+        Hi, I'm<span class=""> Matt Pahuta</span>
+      </h1>
+      <p class="mb-4 md:text-2xl font-medium text-teal-800 dark:text-blue-400/90">Frontend Focused Web Developer</p>
+      <p class="mb-6 md:text-xl leading-relaxed text-pretty">I build clean, responsive web applications with <span class="text-teal-800 dark:text-emerald-200/80 font-semibold">React</span>, <span class="text-teal-800 dark:text-emerald-200/80 font-semibold">Tailwind CSS</span>, and modern <span class="text-teal-800 dark:text-emerald-200/80 font-semibold">JavaScript</span> — with a strong focus on accessibility and responsive design.</p>
+      <!-- <p>React • Tailwind CSS • Accessibility</p> -->
     </div>
     <div class="md:place-self-center">
       <Image src={avatar} alt="Matt Pahuta" class="m-auto size-52 object-cover rounded-full shadow-gray-300 dark:shadow-gray-800 shadow-2xl" />

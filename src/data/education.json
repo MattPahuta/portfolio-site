@@ -1,0 +1,11 @@
+[
+  {
+    "id": 1,
+    "title": "Fullstack Developer Path",
+    "source": "Scrimba wiht MDN",
+    "description": "A project-based full-stack program covering modern frontend and backend developement.",
+    "topics": [
+      "HTML/CSS", "JavaScript", "React", "Next.js", "Node.js", "Express", "SQL", "TypeScript", "REST APIs", "Deployment"
+    ]
+  }
+]
