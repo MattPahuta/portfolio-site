@@ -35,7 +35,7 @@ if (!images[imagePath]) throw new Error(`"${imagePath}" does not exist in glob: 
     <Image src={images[imagePath]()} alt={imageAltText} class="object-cover w-full rounded-lg sm:rounded-xl aspect-[4/3]" />
   </div>
   <div class="w-full flex flex-col grow space-y-6">
-    <a href={gitHubUrl} class="group hover:text-pine-blue dark:hover:text-baby-blue-ice hover:underline decoration-2 underline-offset-4 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-pine-blue dark:focus-visible:outline-zinc-50 transition rounded-md">
+    <a href={gitHubUrl} class="group hover:text-pine-blue dark:hover:text-amber-600 hover:underline decoration-2 underline-offset-4 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-pine-blue dark:focus-visible:outline-zinc-50 transition rounded-md">
       <h3 class="text-2xl font-medium leading-tight dark:text-zinc-50">
         {title}
       </h3>
@@ -50,7 +50,7 @@ if (!images[imagePath]) throw new Error(`"${imagePath}" does not exist in glob: 
         )
       )}
     </ul>
-    <p class="md:text-lg text-slate-900 leading-relaxed font-light">{description}</p>
+    <p class="md:text-lg text-slate-900 dark:text-zinc-300 leading-relaxed font-light">{description}</p>
     <footer class="flex items-center justify-start gap-x-4 text-xs md:text-sm mt-auto">
       <a 
         href={gitHubUrl} 

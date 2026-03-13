@@ -2,7 +2,7 @@
   {
     "id": 1,
     "title": "Frontend Quiz App",
-    "description": "Test your frontend fundamentals with this interactive quiz app. Developed with React and styled using modern pure CSS.",
+    "description": "Test your frontend fundamentals with this interactive quiz app. Developed with React, semantic HTML, and styled using modern CSS.",
     "techStack": [
       {
         "name": "React",
@@ -29,15 +29,11 @@
   {
     "id": 2,
     "title": "Responsive Menu with Cart",
-    "description": "Accessible and responsive dessert menu with shopping cart, built with React.",
+    "description": "Accessible and responsive dessert menu with shopping cart, built with React, styled with Tailwind, and using WAI-ARIA best practices.",
     "techStack": [
       {
         "name": "React",
         "icon": "vscode-icons:file-type-reactjs"
-      },
-      {
-        "name": "HTML",
-        "icon": "vscode-icons:file-type-html"
       },
       {
         "name": "Tailwind",
@@ -48,15 +44,15 @@
         "icon": "vscode-icons:file-type-vite"
       }
     ],
-    "imagePath": "/src/assets/projects/contact-form.png",
+    "imagePath": "/src/assets/projects/product-list-cart_thumb.jpg",
     "imageAltText": "Dessert shop ordering app",
-    "gitHubUrl": "https://github.com/MattPahuta/contact-form-component",
-    "liveSiteUrl": "https://singular-kashata-00a5f5.netlify.app/"
+    "gitHubUrl": "https://github.com/MattPahuta/product-list-with-cart",
+    "liveSiteUrl": "https://product-list-desserts.netlify.app/"
   },
   {
     "id": 3,
     "title": "Password Generator App",
-    "description": "Quickly generate a password with variable complexity and lenght. Built with vanilla JavaScript, semantic HTML, and vanilla CSS.",
+    "description": "Quickly generate a password of variable length and complexity. Built with vanilla JavaScript, semantic HTML, and pure CSS.",
     "techStack": [
       {
         "name": "JavaScript",
