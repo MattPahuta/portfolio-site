@@ -28,6 +28,33 @@
   },
   {
     "id": 2,
+    "title": "GitSeeker",
+    "description": "A responsive and accessible GitHub user profile search app. Built with React and styled with Tailwind CSS.",
+    "techStack": [
+      {
+        "name": "React",
+        "icon": "vscode-icons:file-type-reactjs"
+      },
+      {
+        "name": "HTML",
+        "icon": "vscode-icons:file-type-html"
+      },
+      {
+        "name": "Tailwind",
+        "icon": "vscode-icons:file-type-tailwind"
+      },
+      {
+        "name": "Vite",
+        "icon": "vscode-icons:file-type-vite"
+      }
+    ],
+    "imagePath": "/src/assets/projects/git-seeker_thumb.jpg",
+    "imageAltText": "GitSeeker GitHub user search app",
+    "gitHubUrl": "https://github.com/MattPahuta/git-seeker",
+    "liveSiteUrl": "https://git-seeker.netlify.app/"
+  },
+  {
+    "id": 3,
     "title": "Responsive Menu with Cart",
     "description": "Accessible and responsive dessert menu with shopping cart, built with React, styled with Tailwind, and using WAI-ARIA best practices.",
     "techStack": [
@@ -50,7 +77,7 @@
     "liveSiteUrl": "https://product-list-desserts.netlify.app/"
   },
   {
-    "id": 3,
+    "id": 4,
     "title": "Password Generator App",
     "description": "Quickly generate a password of variable length and complexity. Built with vanilla JavaScript, semantic HTML, and pure CSS.",
     "techStack": [
@@ -71,32 +98,5 @@
     "imageAltText": "Password generator app",
     "gitHubUrl": "https://github.com/MattPahuta/password-generator-app",
     "liveSiteUrl": "https://scintillating-muffin-250ce1.netlify.app/"
-  },
-  {
-    "id": 4,
-    "title": "Contact Form",
-    "description": "A responsive contact form developed with an emphasis on accessibility. Built with React and styled with Tailwind CSS.",
-    "techStack": [
-      {
-        "name": "React",
-        "icon": "vscode-icons:file-type-reactjs"
-      },
-      {
-        "name": "HTML",
-        "icon": "vscode-icons:file-type-html"
-      },
-      {
-        "name": "Tailwind",
-        "icon": "vscode-icons:file-type-tailwind"
-      },
-      {
-        "name": "Vite",
-        "icon": "vscode-icons:file-type-vite"
-      }
-    ],
-    "imagePath": "/src/assets/projects/contact-form.png",
-    "imageAltText": "Contact us form",
-    "gitHubUrl": "https://github.com/MattPahuta/contact-form-component",
-    "liveSiteUrl": "https://singular-kashata-00a5f5.netlify.app/"
   }
 ]

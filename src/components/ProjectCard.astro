@@ -27,7 +27,7 @@ if (!images[imagePath]) throw new Error(`"${imagePath}" does not exist in glob: 
 
 <article class="flex flex-col gap-5 md:gap-6 sm:flex-row p-4 sm:p-6 bg-white dark:bg-slate-950/80 rounded-lg sm:rounded-xl shadow-md dark:shadow-lg sm:border sm:border-transparent dark:sm:border-slate-700 sm:hover:border-slate-100 dark:sm:hover:border-blue-400/30 sm:hover:bg-slate-100 dark:sm:hover:bg-blue-950/20 hover:shadow-xl dark:sm:hover:shadow-blue-500/20 sm:hover:-translate-y-0.5 transition duration-300">
   <div class="w-full overflow-hidden grid content-center">
-    <Image src={images[imagePath]()} alt={imageAltText} class="object-cover w-full rounded-lg sm:rounded-xl aspect-[4/3]" />
+    <Image src={images[imagePath]()} alt={imageAltText} class="object-cover object-top w-full rounded-lg sm:rounded-xl aspect-[4/3]" />
   </div>
   <div class="w-full flex flex-col grow space-y-6">
     <a href={gitHubUrl} class="group hover:text-pine-blue dark:hover:text-amber-600 hover:underline decoration-2 underline-offset-4 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-pine-blue dark:focus-visible:outline-zinc-50 transition rounded-md">
