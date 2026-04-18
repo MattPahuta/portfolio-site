@@ -23,18 +23,17 @@ const images = import.meta.glob<{ default: ImageMetadata }>('/src/assets/project
 
 if (!images[imagePath]) throw new Error(`"${imagePath}" does not exist in glob: "src/assets/projects/*.{jpeg,jpg,png,gif}"`);
 ---
-<!-- ToDo: Check screen reader announcement with project cards -->
 
-<article class="flex flex-col gap-5 md:gap-6 sm:flex-row p-4 sm:p-6 bg-white dark:bg-slate-950/80 rounded-lg sm:rounded-xl shadow-md dark:shadow-lg sm:border sm:border-transparent dark:sm:border-slate-700 sm:hover:border-slate-100 dark:sm:hover:border-blue-400/30 sm:hover:bg-slate-100 dark:sm:hover:bg-blue-950/20 hover:shadow-xl dark:sm:hover:shadow-blue-500/20 sm:hover:-translate-y-0.5 transition duration-300">
+<article class="flex flex-col gap-5 md:gap-6 sm:flex-row p-4 sm:p-6 bg-white dark:bg-gray-950/40 rounded-lg sm:rounded-xl shadow-md dark:shadow-lg sm:border sm:border-transparent dark:sm:border-slate-700 sm:hover:border-slate-100 dark:sm:hover:border-blue-400/30 sm:hover:bg-slate-100 dark:sm:hover:bg-blue-950/20 hover:shadow-xl dark:sm:hover:shadow-blue-500/20 sm:hover:-translate-y-0.5 transition duration-300">
   <div class="w-full overflow-hidden grid content-center">
     <Image src={images[imagePath]()} alt={imageAltText} class="object-cover object-top w-full rounded-lg sm:rounded-xl aspect-[4/3]" />
   </div>
   <div class="w-full flex flex-col grow space-y-6">
-    <a href={gitHubUrl} class="group hover:text-pine-blue dark:hover:text-amber-600 hover:underline decoration-2 underline-offset-4 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-pine-blue dark:focus-visible:outline-zinc-50 transition rounded-md">
-      <h3 class="text-2xl font-medium leading-tight dark:text-zinc-50">
+    <h3 class="text-2xl font-medium leading-tight dark:text-zinc-50">
+      <a href={gitHubUrl} class="hover:text-blue-800 dark:hover:text-blue-300 hover:underline decoration-2 underline-offset-4 transition rounded-md">
         {title}
-      </h3>
-    </a>
+      </a>
+    </h3> 
     <ul class="flex flex-wrap items-center gap-3">
       {techStack.map((tech) => (
         <li>
@@ -49,18 +48,18 @@ if (!images[imagePath]) throw new Error(`"${imagePath}" does not exist in glob: 
     <footer class="flex items-center justify-start gap-x-4 text-xs md:text-sm mt-auto">
       <a 
         href={gitHubUrl} 
-        aria-label="GitHub project repo" 
-        class="group max-w-fit px-3 py-2 space-x-2 rounded-xl inline-flex items-center justify-center gap-2 transition dark:border shadow-sm text-slate-800 dark:text-slate-400 bg-slate-100 hover:bg-white dark:bg-transparent border-slate-700 dark:hover:bg-slate-700 dark:sm:hover:bg-slate-950 hover:border-slate-950 hover:shadow-md focus:border-0 focus-within:ring-2 focus-within:ring-slate-700 dark:focus-within:ring-slate-200 focus-within:ring-offset-2 active:bg-slate-300 dark:active:bg-slate-950/40 focus-within:outline-hidden"
+        aria-label="Navigate to GitHub project repo"
+        class="group max-w-fit px-3 py-2 space-x-2 rounded-xl inline-flex items-center justify-center gap-2 transition dark:border shadow-sm text-slate-800 dark:text-slate-300 bg-slate-50 hover:bg-slate-300 dark:bg-gray-950/40 border-slate-700 dark:hover:bg-slate-700 hover:shadow-md"
       >
-        <Icon name="mdi:github" class="size-5" role="img" />
+        <Icon name="mdi:github" class="size-5" role="img" aria-hidden="true" focusable="false" />
         Source Code
       </a>
       <a 
         href={liveSiteUrl} 
-        aria-label="Live preview" 
-        class="group max-w-fit px-3 py-2 space-x-2 rounded-xl inline-flex items-center justify-center gap-2 transition dark:border shadow-sm text-slate-800 dark:text-slate-400 bg-slate-100 hover:bg-white dark:bg-transparent border-slate-700 dark:hover:bg-slate-700 dark:sm:hover:bg-slate-950 hover:border-slate-950 hover:shadow-md focus:border-0 focus-within:ring-2 focus-within:ring-slate-700 dark:focus-within:ring-slate-200 focus-within:ring-offset-2 active:bg-slate-300 dark:active:bg-slate-950/40 focus-within:outline-hidden"
+        aria-label="Navigate to Live demo website" 
+        class="group max-w-fit px-3 py-2 space-x-2 rounded-xl inline-flex items-center justify-center gap-2 transition dark:border shadow-sm text-slate-800 dark:text-slate-300 bg-slate-50 hover:bg-slate-300 dark:bg-gray-950/40 border-slate-700 dark:hover:bg-slate-700 hover:shadow-md"
       >
-        <Icon name="mdi:external-link" class="size-5" role="img" />
+        <Icon name="mdi:external-link" class="size-5" role="img" aria-hidden="true" focusable="false" />
         Live Demo
       </a>
     </footer>

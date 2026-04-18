@@ -6,9 +6,10 @@ interface Props {
 const { heading } = Astro.props;
 ---
 
-<div class="mb-12 pt-16 md:pt-20 flex items-center justify-center gap-6">
-  <h2 class="text-3xl md:text-4xl font-heading font-medium text-gray-900 dark:text-zinc-50 whitespace-nowrap">
+<!-- <div class="mb-12 pt-16 md:pt-20 flex items-center justify-center gap-6 border-b"> -->
+<div class="mb-12 pb-4 sm:border-b border-slate-400 dark:border-slate-700">
+  <h2 class="text-3xl md:text-4xl font-heading font-medium text-slate-900 dark:text-zinc-50 whitespace-nowrap">
     {heading}
   </h2>
-  <div class="hidden sm:block w-full h-[1.5px] bg-linear-to-r from-zinc-50 dark:from-gray-900/20 via-teal-700/80 dark:via-baby-blue-ice to-zinc-50 dark:to-gray-900/20"></div>
+  <!-- <div class="hidden sm:block w-full h-[1.5px] bg-linear-to-r from-gray-50 dark:from-gray-900/20 via-sky-700/80 dark:via-baby-blue-ice to-grau-50 dark:to-gray-900/20"></div> -->
 </div>
