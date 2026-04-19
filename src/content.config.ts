@@ -8,10 +8,7 @@ const project = defineCollection({
     id: z.number(),
     title: z.string(),
     description: z.string(),
-    techStack: z.array(z.object({
-      name: z.string(),
-      icon: z.string()
-    })),
+    techStack: z.array(z.string()),
     imagePath: z.string(),
     imageAltText: z.string(),
     gitHubUrl: z.string().url(),

@@ -3,24 +3,7 @@
     "id": 1,
     "title": "Frontend Quiz App",
     "description": "Test your frontend fundamentals with this interactive quiz app. Developed with React, semantic HTML, and styled using modern CSS.",
-    "techStack": [
-      {
-        "name": "React",
-        "icon": "vscode-icons:file-type-reactjs"
-      },
-      {
-        "name": "HTML",
-        "icon": "vscode-icons:file-type-html"
-      },
-      {
-        "name": "CSS",
-        "icon": "vscode-icons:file-type-css"
-      },
-      {
-        "name": "Vite",
-        "icon": "vscode-icons:file-type-vite"
-      }
-    ],
+    "techStack": ["React", "HTML", "CSS"],
     "imagePath": "/src/assets/projects/frontend-quiz_thumb-01.jpg",
     "imageAltText": "Frontend Quiz React App",
     "gitHubUrl": "https://github.com/MattPahuta/frontend-quiz-app",
@@ -30,24 +13,7 @@
     "id": 2,
     "title": "GitSeeker",
     "description": "A responsive and accessible GitHub user profile search app. Built with React and styled with Tailwind CSS.",
-    "techStack": [
-      {
-        "name": "React",
-        "icon": "vscode-icons:file-type-reactjs"
-      },
-      {
-        "name": "HTML",
-        "icon": "vscode-icons:file-type-html"
-      },
-      {
-        "name": "Tailwind",
-        "icon": "vscode-icons:file-type-tailwind"
-      },
-      {
-        "name": "Vite",
-        "icon": "vscode-icons:file-type-vite"
-      }
-    ],
+    "techStack": ["React", "HTML", "Tailwind CSS", "REST API"],
     "imagePath": "/src/assets/projects/git-seeker_thumb.jpg",
     "imageAltText": "GitSeeker GitHub user search app",
     "gitHubUrl": "https://github.com/MattPahuta/git-seeker",
@@ -57,20 +23,7 @@
     "id": 3,
     "title": "Responsive Menu with Cart",
     "description": "Accessible and responsive dessert menu with shopping cart, built with React, styled with Tailwind, and using WAI-ARIA best practices.",
-    "techStack": [
-      {
-        "name": "React",
-        "icon": "vscode-icons:file-type-reactjs"
-      },
-      {
-        "name": "Tailwind",
-        "icon": "vscode-icons:file-type-tailwind"
-      },
-      {
-        "name": "Vite",
-        "icon": "vscode-icons:file-type-vite"
-      }
-    ],
+    "techStack": ["React", "HTML", "Tailwind CSS"],
     "imagePath": "/src/assets/projects/product-list-cart_thumb.jpg",
     "imageAltText": "Dessert shop ordering app",
     "gitHubUrl": "https://github.com/MattPahuta/product-list-with-cart",
@@ -80,20 +33,7 @@
     "id": 4,
     "title": "Password Generator App",
     "description": "Quickly generate a password of variable length and complexity. Built with vanilla JavaScript, semantic HTML, and pure CSS.",
-    "techStack": [
-      {
-        "name": "JavaScript",
-        "icon": "vscode-icons:file-type-js-official"
-      },
-      {
-        "name": "HTML",
-        "icon": "vscode-icons:file-type-html"
-      },
-      {
-        "name": "CSS",
-        "icon": "vscode-icons:file-type-css"
-      }
-    ],
+    "techStack": ["JavaScript", "HTML", "CSS"],
     "imagePath": "/src/assets/projects/pw-generator.png",
     "imageAltText": "Password generator app",
     "gitHubUrl": "https://github.com/MattPahuta/password-generator-app",
