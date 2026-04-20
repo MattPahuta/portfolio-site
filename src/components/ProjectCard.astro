@@ -19,8 +19,8 @@ const images = import.meta.glob<{ default: ImageMetadata }>('/src/assets/project
 if (!images[imagePath]) throw new Error(`"${imagePath}" does not exist in glob: "src/assets/projects/*.{jpeg,jpg,png,gif}"`);
 ---
 
-<article class="flex flex-col gap-5 md:gap-6 sm:flex-row p-4 sm:p-6 bg-white dark:bg-gray-950/40 rounded-lg sm:rounded-xl shadow-md dark:shadow-lg sm:border sm:border-transparent dark:sm:border-slate-700 sm:hover:border-slate-100 dark:sm:hover:border-blue-400/30 sm:hover:bg-slate-100 dark:sm:hover:bg-blue-950/20 hover:shadow-xl dark:sm:hover:shadow-blue-500/20 sm:hover:-translate-y-0.5 transition duration-300">
-  <div class="w-full overflow-hidden grid content-center">
+<article class="flex flex-col gap-5 md:gap-6 sm:flex-row p-4 sm:p-6 bg-white dark:bg-black/50 rounded-lg sm:rounded-xl shadow-md dark:shadow-lg sm:border sm:border-transparent dark:sm:border-slate-700 sm:hover:border-blue-200/70 dark:sm:hover:border-blue-400/30 sm:hover:bg-blue-50/40 dark:sm:hover:bg-blue-950/20 hover:shadow-xl dark:sm:hover:shadow-blue-500/20 sm:hover:-translate-y-0.5 transition duration-300">
+  <div class="w-full overflow-hidden content-center">
     <Image src={images[imagePath]()} alt={imageAltText} class="object-cover object-top w-full rounded-lg sm:rounded-xl aspect-[4/3]" />
   </div>
   <div class="w-full flex flex-col grow space-y-6">
@@ -31,21 +31,21 @@ if (!images[imagePath]) throw new Error(`"${imagePath}" does not exist in glob: 
     </h3> 
     <ul class="flex flex-wrap items-center gap-3">
       {techStack.map((tech) => (
-        <li class="py-1 px-2 text-sm rounded-md bg-gray-200 dark:bg-gray-700">
+        <li class="py-1 px-2 text-sm rounded-md bg-gray-200 dark:text-gray-900 dark:bg-celadon">
           {tech}
         </li>
         )
       )}
     </ul>
-    <p class="md:text-lg text-slate-900 dark:text-zinc-300 leading-relaxed font-light">{description}</p>
-    <footer class="flex items-center justify-start gap-2 mt-auto">
+    <p class="">{description}</p>
+    <footer class="flex items-center sm:justify-end gap-2 mt-auto">
       <a 
         href={gitHubUrl} 
         target="_blank"
         rel="noreferrer nopener"
         title="Source code"
         aria-label="Navigate to GitHub project repo"
-        class="size-6 p-1.5 rounded-full min-w-11 min-h-11 hover:text-blue-800 dark:hover:text-blue-300 outline-offset-2 focus:outline-2 focus:outline-blue-500"
+        class="size-5 p-1.5 rounded-full min-h-10 min-w-10 hover:text-blue-800 dark:hover:text-blue-300 outline-offset-2 focus:outline-2 focus:outline-blue-500"
       >
         <Icon name="mdi:github" class="w-full h-full fill-current" role="img" aria-hidden="true" focusable="false" />
       </a>
@@ -55,7 +55,7 @@ if (!images[imagePath]) throw new Error(`"${imagePath}" does not exist in glob: 
         rel="noreferrer nopener"
         title="Live demo site"
         aria-label="Navigate to Live demo website" 
-        class="size-6 p-1.5 rounded-full min-w-11 min-h-11 hover:text-blue-800 dark:hover:text-blue-300 outline-offset-2 focus:outline-2 focus:outline-blue-500"
+        class="size-6 p-1.5 rounded-full min-w-10 min-h-10 hover:text-blue-800 dark:hover:text-blue-300 outline-offset-2 focus:outline-2 focus:outline-blue-500"
       >
         <Icon name="mdi:external-link" class="w-full h-full fill-current" role="img" aria-hidden="true" focusable="false" />
       </a>

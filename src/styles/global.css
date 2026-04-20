@@ -6,8 +6,9 @@
   --font-heading: 'Nunito', ui-sans-serif, system-ui, sans-serif;
   --font-sans: 'Open Sans', ui-sans-serif, system-ui, sans-serif;
   /* Dark Theme - gray-900 BG */
-  --color-celadon: oklch(80.39% 0.08788 142.825);
+  --color-celadon: oklch(85.855% 0.07924 140.549);
   /* Light Theme - zinc-50 BG */
+  --color-laser-blue: #2b59c3;
 
 }
  
