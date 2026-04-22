@@ -1,0 +1,38 @@
+[
+  {
+    "name": "React",
+    "icon": "vscode-icons:file-type-reactjs"
+  },
+  {
+    "name": "JavaScript",
+    "icon": "vscode-icons:file-type-js-official"
+  },
+  {
+    "name": "TypeScript",
+    "icon": "vscode-icons:file-type-typescript-official"
+  },
+  {
+    "name": "HTML",
+    "icon": "vscode-icons:file-type-html"
+  },
+  {
+    "name": "CSS3",
+    "icon": "vscode-icons:file-type-css"
+  },
+  {
+    "name": "Tailwind CSS",
+    "icon": "vscode-icons:file-type-tailwind"
+  },
+  {
+    "name": "Astro",
+    "icon": "vscode-icons:file-type-astro"
+  },
+  {
+    "name": "Git",
+    "icon": "vscode-icons:file-type-git"
+  },
+  {
+    "name": "Node",
+    "icon": "vscode-icons:file-type-node"
+  }
+]

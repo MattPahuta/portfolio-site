@@ -1,0 +1,24 @@
+---
+import SectionHeader from "./SectionHeader.astro";
+import SkillsGrid from "./SkillsGrid.astro";
+
+const heading = "About";
+---
+
+<section id="about" class="text-lg leading-relaxed">
+  <SectionHeader heading={heading} />
+  <div class="grid gap-8 md:grid-cols-2">
+    <div class="space-y-3">
+      <p><span class="text-xl font-semibold dark:text-blue-300">I've always been fascinated by technology</span>, and as a former business analyst and project manager, I have thrived in collaborative teams. .</p>
+      <p>Based in Southern California, I have a background in a variety of areas in the information technology field. My perpetually curious mindset and love of learning drew me to frontend web development..</p>
+      <p>I'm particularly interested in web accessibility best practices, inclusive design, and crafting interfaces that are simple, fast, and intuitive to use.</p>
+      <p>I'm excited about building products that make good sense for users, for teams, and for the business.</p>
+    </div>
+
+    <div class="space-y-4 p-6 bg-white shadow-xl border border-slate-200/70 rounded-2xl dark:bg-gray-950 dark:border-0 md:dark:border dark:border-gray-700">
+      <h3 class="text-xl font-heading md:text-2xl font-semibold">Technical Skills</h3>
+      <SkillsGrid />
+    </div>
+  </div>
+
+</section>

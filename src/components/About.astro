@@ -6,16 +6,18 @@ const heading = "About";
 ---
 
 <section id="about" class="text-lg leading-relaxed">
-  <SectionHeader heading={heading} />
-  <div class="mb-6 space-y-6">
+  <!-- <SectionHeader heading={heading} /> -->
+  <div class="p-4 sm:p-8 bg-white shadow-xl border border-slate-200/70 rounded-2xl dark:bg-gray-950 dark:border-0 md:dark:border dark:border-gray-700 space-y-4">
     <p>After years of translating between systems, stakeholders, and strategy, I found my niche at the intersection of logic and experience: front-end web development.</p>
-    <p>My career path has been shaped by a variety of roles in IT, from Technology Administration to Business Analysis. Along the way, I’ve built a foundation rooted in understanding how people work, how systems connect, and where things can break down. I’ve discovered that my superpower isn’t just solving problems, but in bringing the right people on board to find better solutions together.</p>
-    <p>Today, I bring that same challenge-solving mindset to building intuitive, accessible, and thoughtful user experiences. I don’t just write code; I ask the right questions, bridge gaps between teams, and translate complexity into clarity. Great front-end work isn’t just what users see in the finished product, it’s how seamlessly everything comes together behind the scenes.</p>
-    <p>I’m excited about building products that make good sense for users, for teams, and for the business.</p>
+    <p>My career path has been shaped by a variety of roles in IT, from Technology Administration to Business Analysis. Along the way, I've built a foundation rooted in understanding how people work, how systems connect, and where things can break down. I've discovered that my superpower isn't just solving problems, but in bringing the right people on board to find better solutions together.</p>
+    <p>Today, I bring that same challenge-solving mindset to building intuitive, accessible, and thoughtful user experiences. I don't just write code; I ask the right questions, bridge gaps between teams, and translate complexity into clarity. Great front-end work isn't just what users see in the finished product, it's how seamlessly everything comes together behind the scenes.</p>
+    <p class="mb-8">I'm excited about building products that make good sense for users, for teams, and for the business.</p>
+
+    <div class="space-y-6">
+      <h3 class="text-xl font-heading md:text-2xl font-semibold">Technical Skills</h3>
+      <p>Shaped by curiosity and continuous learning, these are some of the tools and technologies I use to create clear, intuitive experiences.</p>
+      <SkillsGrid />
+    </div>
   </div>
-  <div class="space-y-6">
-    <h3 class="text-xl font-heading md:text-2xl font-semibold">My Skills</h3>
-    <p>Shaped by curiosity and continuous learning, these are some of the tools and technologies I use to create clear, intuitive experiences.</p>
-    <SkillsGrid />
-  </div>
+
 </section>
