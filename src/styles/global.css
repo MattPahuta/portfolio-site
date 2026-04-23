@@ -1,10 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap'); */
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
 @import 'tailwindcss';
 
 @theme {
-  --font-heading: 'Nunito', ui-sans-serif, system-ui, sans-serif;
+  /* --font-heading: 'Nunito', ui-sans-serif, system-ui, sans-serif; */
   --font-sans: 'Open Sans', ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "Fira Code", monospace;
+
   /* Dark Theme - gray-900 BG */
   --color-celadon: oklch(85.855% 0.07924 140.549);
   /* Light Theme - zinc-50 BG */
