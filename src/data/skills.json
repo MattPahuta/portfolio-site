@@ -4,16 +4,8 @@
     "icon": "simple-icons:react"
   },
   {
-    "name": "Tailwind CSS",
-    "icon": "simple-icons:tailwindcss"
-  },
-  {
     "name": "JavaScript",
     "icon": "simple-icons:javascript"
-  },
-  {
-    "name": "Astro",
-    "icon": "simple-icons:astro"
   },
   {
     "name": "HTML",
@@ -24,16 +16,28 @@
     "icon": "simple-icons:css"
   },
   {
+    "name": "Tailwind CSS",
+    "icon": "simple-icons:tailwindcss"
+  },
+  {
     "name": "TypeScript",
     "icon": "simple-icons:typescript"
+  },
+  {
+    "name": "Astro",
+    "icon": "simple-icons:astro"
   },
   {
     "name": "Git",
     "icon": "simple-icons:git"
   },
   {
-    "name": "Node",
+    "name": "Node.js",
     "icon": "simple-icons:nodedotjs"
+  },
+  {
+    "name": "Express",
+    "icon": "simple-icons:express"
   },
   {
     "name": "Vite",

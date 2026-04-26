@@ -1,0 +1,49 @@
+---
+import { Icon } from "astro-icon/components";
+import skills from "../data/skills.json"
+---
+
+<!-- Flex wrap list -->
+<!-- <ul class="flex gap-4 flex-wrap">
+  {
+    skills.map((skill) => {
+      return (
+        <li class="py-3 px-4 flex gap-2 items-center border border-slate-300 dark:border-slate-700 rounded-xl hover:scale-95 transition">
+          <Icon
+            name={skill.icon}
+            title={skill.name}
+            class="size-6 text-indigo-700 dark:text-indigo-500"
+            aria-hidden="true"
+            focusable="false"
+          />
+          <span class="font-mono text-sm text-slate-600 dark:text-gray-400">
+            {skill.name}
+          </span>
+        </li>
+      );
+    })
+  }
+</ul> -->
+
+
+<!-- Grid list -->
+<ul class="grid gap-4 [grid-template-columns:repeat(auto-fit,minmax(min(130px,100%),1fr))]">
+  {
+    skills.map((skill) => {
+      return (
+        <li class="py-3 px-4 flex flex-col gap-2 items-center bg-white shadow-md dark:shadow-sm dark:bg-gray-950 border border-slate-200 dark:border-slate-700 rounded-xl hover:scale-95 transition">
+          <Icon
+            name={skill.icon}
+            title={skill.name}
+            class="size-7 text-indigo-700 dark:text-indigo-400"
+            aria-hidden="true"
+            focusable="false"
+          />
+          <span class="font-mono text-sm text-slate-500 dark:text-gray-400">
+            {skill.name}
+          </span>
+        </li>
+      );
+    })
+  }
+</ul>
