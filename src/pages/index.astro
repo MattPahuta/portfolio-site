@@ -1,18 +1,19 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
-import Header from '../components/Header.astro';
-import Projects from '../components/Projects.astro';
+import StickyHeader from '../components/StickyHeader.astro';
+import Hero from '../components/Hero.astro';
 import AboutAlt from '../components/About_alt.astro';
+import Projects from '../components/Projects.astro';
 import Contact from '../components/Contact.astro';
 import Footer from '../components/Footer.astro';
 ---
 
 <BaseLayout>
-	<!-- <Header /> -->
-	<Header />
-	<main class="mx-auto max-w-5xl px-4">
-		<AboutAlt />
+	<StickyHeader />
+	<main>
+		<Hero />
 		<Projects />
+		<AboutAlt />
 		<Contact />
 	</main>
 	<Footer />

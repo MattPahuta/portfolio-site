@@ -1,30 +1,31 @@
 ---
-import SectionHeader from "./SectionHeader.astro";
 import SkillsGrid from "./SkillsGrid.astro";
 import SkillsList from "./SkillsList.astro";
 const heading = "About";
 ---
 
 <section id="about" class="py-20 text-center">
-  <h2 class="mb-6 sm:mb-8 text-3xl md:text-4xl font-heading font-medium text-slate-900 dark:text-zinc-50 whitespace-nowrap">About Me</h2>
-  <div class="grid justify-center gap-8 lg:grid-cols-2 lg:gap-x-10 lg:gap-y-20">
-    <!-- grid item -->
-    <p class="max-w-2xl mx-auto sm:text-xl lg:col-span-2">I have always been fascinated by technology, and as a former systems analyst and technical project manager, I have thrived in collaborative teams. Today, I love building apps that aim to solve real-world problems, are simple and intuitive to use, and feature accessibility baked-in from the start.</p>
-    <!-- grid item -->
-    <div class="max-w-2xl hidden sm:block lg:px-4 text-left">
-      <h3 class="mb-6 text-xl md:text-2xl font-semibold">Get to know me</h3>
-      <div class="space-y-3">
-        <p>Based in Southern California, I have a background in a variety of areas in the information technology field. My perpetually curious mindset and love of learning drew me to frontend web development.</p>
-        <p>I'm particularly interested in web accessibility best practices, inclusive design, and crafting interfaces that are simple, fast, and intuitive to use.</p>
-        <p>I'm excited about building products that make good sense for users, for teams, and for the business.</p>
+  <div class="mx-auto max-w-5xl px-4">
+    <h2 class="mb-6 sm:mb-8 text-3xl md:text-4xl font-heading font-medium text-slate-900 dark:text-zinc-50 whitespace-nowrap">About Me</h2>
+    <div class="grid justify-center gap-8 lg:grid-cols-2 lg:gap-x-10 lg:gap-y-20">
+      <!-- grid item -->
+      <p class="max-w-2xl mx-auto sm:text-xl lg:col-span-2">I have always been fascinated by technology, and as a former systems analyst and technical project manager, I have thrived in collaborative teams. Today, I love building apps that aim to solve real-world problems, are simple and intuitive to use, and feature accessibility baked-in from the start.</p>
+      <!-- grid item -->
+      <div class="max-w-2xl hidden sm:block text-left">
+        <h3 class="mb-6 text-xl md:text-2xl font-semibold">Get to know me</h3>
+        <div class="space-y-3">
+          <p>Based in Southern California, I have a background in a variety of areas in the information technology field. My perpetually curious mindset and love of learning drew me to frontend web development.</p>
+          <p>I'm particularly interested in web accessibility best practices, inclusive design, and crafting interfaces that are simple, fast, and intuitive to use.</p>
+          <p>I'm excited about building products that make good sense for users, for teams, and for the business.</p>
+        </div>
       </div>
+      <!-- grid item -->
+      <div class="max-w-2xl text-left">
+        <h3 class="mb-6 text-xl md:text-2xl font-semibold">Technical Skills</h3>
+        <!-- <SkillsGrid /> -->
+         <SkillsList />
+      </div>
+  
     </div>
-    <!-- grid item -->
-    <div class="max-w-2xl text-left lg:px-4">
-      <h3 class="mb-6 text-xl md:text-2xl font-semibold">Technical Skills</h3>
-      <!-- <SkillsGrid /> -->
-       <SkillsList />
-    </div>
-
   </div>
 </section>
