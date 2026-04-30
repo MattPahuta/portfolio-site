@@ -1,21 +1,16 @@
 ---
-import SectionHeader from './SectionHeader.astro';
 import ProjectCard from './ProjectCard.astro';
 import { getCollection } from 'astro:content';
-const heading = "Projects";
 const projects = await getCollection('project');
 ---
 
 <!-- ToDo: add aria-labelledby to sections? check MDN -->
- <!-- 
-[grid-template-columns:repeat(auto-fit,minmax(min(375px,100%),1fr))]
- -->
 <section id="projects" class="py-16 sm:py-32" aria-labelledby="">
   <!-- wrapper div -->
   <div class="mx-auto max-w-6xl px-4 sm:px-5 text-center">
     <!-- <SectionHeader heading={heading} /> -->
     <h2 class="mb-8 sm:mb-16 text-3xl md:text-4xl font-ubuntu font-semibold text-slate-900 dark:text-zinc-50 whitespace-nowrap">Featured Projects</h2>
-    <div class="grid gap-5 sm:gap-8 md:gap-10 [grid-template-columns:repeat(auto-fit,minmax(min(375px,100%),1fr))]">
+    <div class="grid gap-6 sm:gap-8 md:gap-10 grid-cols-[repeat(auto-fit,minmax(min(375px,100%),1fr))]">
       {
         projects.map(project => (
           <ProjectCard 

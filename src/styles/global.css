@@ -14,7 +14,14 @@
   /* Dark Theme - gray-900 BG */
   --color-celadon: oklch(85.855% 0.07924 140.549);
   /* Light Theme - zinc-50 BG */
-  --color-laser-blue: oklch(49.575% 0.17387 263.62);
+  --color-laser-blue: hsl(222, 64%, 47%);
 
+  /* tech colors */
+  --color-react: #06b6d4;
+  --color-javascript: #fbbf24;
+  --color-html: #ea580c;
+  --color-css: var(--color-sky-700);
+  --color-tailwindcss: var(--color-sky-400);
+  --color-restapi: var(--color-green-700);
 }
  
