@@ -17,11 +17,15 @@
   --color-laser-blue: hsl(222, 64%, 47%);
 
   /* tech colors */
-  --color-react: #06b6d4;
-  --color-javascript: #fbbf24;
-  --color-html: #ea580c;
+  --color-react: var(--color-cyan-500);
+  --color-javascript: var(--color-amber-400);
+  --color-typescript: var(--sky-600);
+  --color-html: var(--color-orange-600);
   --color-css: var(--color-sky-700);
   --color-tailwindcss: var(--color-sky-400);
-  --color-restapi: var(--color-green-700);
+  --color-astro: var(--color-pink-500);
+  --color-git: var(--color-orange-600);
+  --color-node: var(--color-lime-600);
+  --color-express: var(--color-blue-600);
 }
  

@@ -20,11 +20,17 @@ const images = import.meta.glob<{ default: ImageMetadata }>('/src/assets/project
 if (!images[imagePath]) throw new Error(`"${imagePath}" does not exist in glob: "src/assets/projects/*.{jpeg,jpg,png,gif}"`);
 ---
 
+<!-- 
+
+flex py-4 px-2 sm:p-6 bg-white dark:bg-black/20 sm:rounded-xl shadow-md dark:shadow-lg sm:border sm:border-transparent dark:sm:border-slate-800 sm:hover:border-indigo-200/70 dark:sm:hover:border-indigo-500/30 sm:hover:bg-indigo-50/40 dark:sm:hover:bg-indigo-950/20 hover:shadow-xl dark:sm:hover:shadow-indigo-500/20 sm:hover:-translate-y-0.5 transition duration-300 first:mt-8 sm:first:mt-0
+
+-->
+
 <article 
-  class="flex flex-col gap-5 md:gap-6 p-4 sm:p-6 text-left bg-white dark:bg-black/40 border border-slate-200 dark:border-transparent dark:sm:border-slate-800 rounded-xl shadow-lg dark:sm:hover:border-indigo-500/30 dark:sm:hover:bg-indigo-950/20 hover:shadow-xl hover:shadow-indigo-300/20 dark:sm:hover:shadow-indigo-500/20 transition duration-300 sm:hover:-translate-y-1.5"
+  class="group flex flex-col gap-5 md:gap-6 p-4 sm:p-6 text-left bg-white dark:bg-black/40 border border-slate-200 dark:border-transparent dark:sm:border-slate-800 rounded-xl shadow-lg dark:sm:hover:border-indigo-500/30 dark:sm:hover:bg-indigo-950/20 hover:shadow-xl hover:shadow-indigo-300/20 dark:sm:hover:shadow-indigo-500/20 transition duration-300 sm:hover:-translate-y-1.5"
 >
-  <div class="w-full overflow-hidden content-center">
-    <Image src={images[imagePath]()} alt={imageAltText} class="object-cover object-top w-full rounded-lg sm:rounded-xl aspect-[4/3]" />
+  <div class="w-full content-center overflow-clip">
+    <Image src={images[imagePath]()} alt={imageAltText} class="object-cover object-top w-full rounded-lg sm:rounded-xl aspect-[4/3] group-hover:scale-105 transition-transform duration-500">
   </div>
   <div class="w-full flex flex-col grow">
     <h3 class="mb-3 text-2xl font-medium leading-tight dark:text-zinc-50">
@@ -43,13 +49,13 @@ if (!images[imagePath]) throw new Error(`"${imagePath}" does not exist in glob: 
         </li>
       ))}
     </ul>
-    <p class="mb-8 text-base sm:text-lg leading-relaxed">{description}</p>
-    <footer class="flex items-center gap-3 mt-auto text-sm font-ubuntu font-medium">
+    <p class="mb-8 text-base sm:text-lg leading-relaxed font-light">{description}</p>
+    <footer class="flex items-center gap-3 mt-auto text-sm font-ubuntu">
       <a 
         href={gitHubUrl} 
         target="_blank"
         rel="noreferrer nopener"
-        class="py-2 px-4 inline-flex items-center justify-center gap-2 rounded-lg border-2 border-slate-500 dark:border-slate-400 text-slate-500 dark:text-slate-400 hover:bg-slate-500 dark:hover:bg-slate-400 hover:text-white dark:hover:text-black focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-slate-500 dark:focus-visible:outline-slate-400 transition-colors"  
+        class="py-2 px-4 inline-flex items-center justify-center gap-2 rounded-lg border border-slate-500 dark:border-slate-400 text-slate-500 dark:text-slate-400 hover:bg-slate-500 dark:hover:bg-slate-400 hover:text-white dark:hover:text-black focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-slate-500 dark:focus-visible:outline-slate-400 transition-colors"  
       >
         <Icon name="github" aria-hidden="true" focusable="false" class="size-3.5" />
         Source Code
@@ -58,7 +64,7 @@ if (!images[imagePath]) throw new Error(`"${imagePath}" does not exist in glob: 
         href={liveSiteUrl} 
         target="_blank"
         rel="noreferrer nopener"
-        class="py-2 px-4 inline-flex items-center justify-center gap-2 rounded-lg border-2 border-slate-500 dark:border-slate-400 text-slate-500 dark:text-slate-400 hover:bg-slate-500 dark:hover:bg-slate-400 hover:text-white dark:hover:text-black focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-slate-500 dark:focus-visible:outline-slate-400 transition-colors" 
+        class="py-2 px-4 inline-flex items-center justify-center gap-2 rounded-lg border border-slate-500 dark:border-slate-400 text-slate-500 dark:text-slate-400 hover:bg-slate-500 dark:hover:bg-slate-400 hover:text-white dark:hover:text-black focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-slate-500 dark:focus-visible:outline-slate-400 transition-colors" 
       >
         <Icon name="external-link" aria-hidden="true" focusable="false" class="size-3.5" />
         Live Demo

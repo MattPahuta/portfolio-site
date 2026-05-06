@@ -1,31 +1,24 @@
 ---
 import SkillsGrid from "./SkillsGrid.astro";
 import SkillsList from "./SkillsList.astro";
-const heading = "About";
 ---
 
-<section id="about" class="py-20 text-center">
-  <div class="mx-auto max-w-5xl px-4 sm:px-5">
-    <h2 class="mb-6 sm:mb-8 text-3xl md:text-4xl font-ubuntu font-semibold text-slate-900 dark:text-zinc-50 whitespace-nowrap">About Me</h2>
-    <div class="grid justify-center gap-8 lg:grid-cols-2 lg:gap-x-10 lg:gap-y-20">
-      <!-- grid item -->
-      <p class="max-w-2xl mx-auto sm:text-xl lg:col-span-2">I have always been fascinated by technology, and as a former systems analyst and technical project manager, I have thrived in collaborative teams. Today, I love building apps that aim to solve real-world problems, are simple and intuitive to use, and feature accessibility baked-in from the start.</p>
-      <!-- grid item -->
-      <div class="max-w-2xl hidden sm:block text-left">
-        <h3 class="mb-6 text-xl md:text-2xl font-semibold">Get to know me</h3>
-        <div class="space-y-3">
-          <p>Based in Southern California, I have a background in a variety of areas in the information technology field. My perpetually curious mindset and love of learning drew me to frontend web development.</p>
-          <p>I'm particularly interested in web accessibility best practices, inclusive design, and crafting interfaces that are simple, fast, and intuitive to use.</p>
-          <p>I'm excited about building products that make good sense for users, for teams, and for the business.</p>
-        </div>
+<section id="about" class="py-20">
+  <div class="space-y-16 px-4 sm:px-5 text-center sm:text-xl">
+    <h2 class="text-3xl md:text-4xl font-ubuntu font-semibold text-slate-900 dark:text-zinc-50 whitespace-nowrap">About Me</h2>
+    <div class="max-w-2xl mx-auto  leading-relaxed">
+      <p>I have always been fascinated by technology, and as a former systems analyst and technical project manager, I have thrived in collaborative teams. Today, I love building apps that aim to solve real-world problems, are simple and intuitive to use, and feature accessibility baked-in from the start.</p>
+    </div>
+    <div class="max-w-2xl lg:max-w-5xl mx-auto p-6 sm:py-8 sm:px-12 grid gap-6 lg:gap-8 lg:grid-cols-2 sm:bg-white dark:bg-black/40 sm:shadow-xl dark:shadow-none sm:border border-slate-200 rounded-2xl dark:border-0 md:dark:border md:dark:shadow-xl dark:border-gray-700">
+      <div class="space-y-3 text-left font-light">
+        <p>Based in Southern California, I have a background in a variety of areas in the information technology field. My perpetually curious mindset and love of learning drew me to frontend web development.</p>
+        <p>I'm particularly interested in web accessibility best practices, inclusive design, and crafting interfaces that are simple, fast, and intuitive to use.</p>
+        <p>I'm excited about building products that make good sense for users, for teams, and for the business.</p>
       </div>
-      <!-- grid item -->
-      <div class="max-w-2xl text-left">
-        <h3 class="mb-6 text-xl md:text-2xl font-semibold">Technical Skills</h3>
-        <!-- <SkillsGrid /> -->
-         <SkillsList />
+      <div>
+        <h3 class="mb-4 sm:mb-6 text-lg text-left md:text-xl font-semibold">Tech Stack</h3>
+        <SkillsGrid />
       </div>
-  
     </div>
   </div>
 </section>
