@@ -2,9 +2,10 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import StickyHeader from '../components/StickyHeader.astro';
 import Hero from '../components/Hero.astro';
-import AboutAlt from '../components/About_alt.astro';
+import About from '../components/About.astro';
 import Projects from '../components/Projects.astro';
-import ContactFooter from '../components/ContactFooter.astro';
+import Contact from '../components/Contact.astro';
+import Footer from '../components/Footer.astro';
 ---
 
 <BaseLayout>
@@ -12,7 +13,8 @@ import ContactFooter from '../components/ContactFooter.astro';
 	<main class="mx-auto max-w-5xl">
 		<Hero />
 		<Projects />
-		<AboutAlt />
+		<About />
+		<Contact />
 	</main>
-	<ContactFooter />
+	 <Footer />
 </BaseLayout>

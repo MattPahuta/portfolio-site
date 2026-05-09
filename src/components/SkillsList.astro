@@ -4,30 +4,16 @@ import skills from "../data/skills.json"
 import skillsAlt from "../data/skills-alt.json";
 ---
 
-<!-- Flex wrap list -->
 <ul class="flex gap-4 flex-wrap text-sm font-mono">
   {
-    // skills.map((skill) => {
-    //   return (
-    //     <li class="inline-flex items-center gap-2">
-    //       <Icon
-    //         name="mdi--circle"
-    //         aria-hidden="true"
-    //         focusable="false"
-    //         class={"size-3.5 " + skill.color}
-    //       />
-    //       {skill.name}
-    //     </li>
-    //   );
-    // })
     skills.map((skill) => {
       return (
-        <li class="py-3 px-4 inline-flex items-center flex-wrap gap-1 rounded-lg bg-white/70 border text-slate-500 border-slate-400 transition duration-300 hover:shadow-md hover:shadow-indigo-300/40 dark:sm:hover:border-indigo-500/30 dark:sm:hover:bg-indigo-950/20 sm:hover:-translate-y-1.5 sm:hover:bg-indigo-50/40">
+        <li class="py-3 px-4 inline-flex items-center flex-wrap gap-1 rounded-lg bg-white/70 dark:bg-transparent border text-slate-500 dark:text-slate-400 border-slate-200 dark:border-gray-700 transition duration-300 hover:shadow-sm hover:shadow-blue-500/40 dark:sm:hover:border-blue-500/30 dark:sm:hover:bg-blue-950/20 sm:hover:-translate-y-1.5 sm:hover:bg-indigo-50/40">
           <Icon
             name={skill.icon}
             aria-hidden="true"
             focusable="false"
-            class="size-4 md:size-5 text-indigo-500"
+            class="size-4 md:size-5 text-blue-700 dark:text-blue-500"
           />
           {skill.name}
         </li>
@@ -35,26 +21,3 @@ import skillsAlt from "../data/skills-alt.json";
     })
   }
 </ul>
-
-
-<!-- Grid list -->
-<!-- <ul class="grid gap-4 [grid-template-columns:repeat(auto-fit,minmax(min(130px,100%),1fr))]">
-  {
-    skills.map((skill) => {
-      return (
-        <li class="py-3 px-4 flex flex-col gap-2 items-center bg-white shadow-md dark:shadow-sm dark:bg-gray-950 border border-slate-200 dark:border-slate-700 rounded-xl hover:scale-95 transition">
-          <Icon
-            name={skill.icon}
-            title={skill.name}
-            class="size-7 text-indigo-700 dark:text-indigo-400"
-            aria-hidden="true"
-            focusable="false"
-          />
-          <span class="font-mono text-sm text-slate-500 dark:text-gray-400">
-            {skill.name}
-          </span>
-        </li>
-      );
-    })
-  }
-</ul> -->

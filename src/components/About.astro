@@ -1,0 +1,24 @@
+---
+import SkillsList from "./SkillsList.astro";
+---
+
+<section id="about" class="py-20">
+  <div class="space-y-16 px-4 sm:px-5 text-center sm:text-xl">
+    <h2 class="text-3xl md:text-4xl font-ubuntu font-semibold text-slate-900 dark:text-zinc-50 whitespace-nowrap">About Me</h2>
+    <div class="max-w-3xl mx-auto space-y-4 leading-relaxed text-gray-600 dark:text-gray-300">
+      <p>After years of translating between systems, stakeholders, and strategy, I found my niche at the intersection of logic and experience: front-end web development.</p>
+      <p>Today, I bring that same challenge-solving mindset to building intuitive, accessible, and thoughtful user experiences. I don't just write code; I ask the right questions, bridge gaps between teams, and translate complexity into clarity. Great front-end work isn't just what users see in the finished product, it's how seamlessly everything comes together behind the scenes.</p>
+    </div>
+    <div class="max-w-2xl lg:max-w-5xl mx-auto p-4 sm:py-10 sm:px-12 grid gap-12 lg:grid-cols-2 sm:bg-white dark:bg-black/40 sm:shadow-xl dark:shadow-none sm:border border-slate-200 rounded-2xl dark:border-0 md:dark:border md:dark:shadow-xl dark:border-gray-800">
+      <div class="space-y-4 text-left text-slate-600 dark:text-gray-300 font-light leading-relaxed">
+        <!-- <h3 class="mb-4 sm:mb-5 text-lg text-left md:text-xl font-semibold">Accessibility First</h3> -->
+        <p>I enjoy creating clean, responsive web applications with modern web development tools like React and Astro.</p>
+        <p>I'm particularly interested in web accessibility best practices, inclusive design, and crafting interfaces that are simple, fast, and intuitive to use.</p>
+      </div>
+      <div>
+        <h3 class="mb-4 sm:mb-5 text-lg text-left md:text-xl font-semibold">My Skills</h3>
+        <SkillsList />
+      </div>
+    </div>
+  </div>
+</section>
