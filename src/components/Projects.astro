@@ -2,6 +2,7 @@
 import ProjectCard from './ProjectCard.astro';
 import { getCollection } from 'astro:content';
 const projects = await getCollection('project');
+import LinkButton from './LinkButton.astro';
 ---
 
 <!-- ToDo: add aria-labelledby to sections? check MDN -->
@@ -9,7 +10,7 @@ const projects = await getCollection('project');
   <!-- wrapper div -->
   <div class="px-4 sm:px-5 text-center">
     <h2 class="mb-8 sm:mb-16 text-3xl md:text-4xl font-ubuntu font-semibold text-slate-900 dark:text-zinc-50 whitespace-nowrap">Featured Projects</h2>
-    <div class="grid gap-6 sm:gap-8 md:gap-10 grid-cols-[repeat(auto-fit,minmax(min(375px,100%),1fr))]">
+    <div class="mb-12 grid gap-6 sm:gap-8 md:gap-10 grid-cols-[repeat(auto-fit,minmax(min(375px,100%),1fr))]">
       {
         projects.map(project => (
           <ProjectCard 
@@ -23,6 +24,11 @@ const projects = await getCollection('project');
           />
         ))
       }
+    </div>
+    <h3 class="mb-8 text-xl sm:text-2xl font-ubuntu font-light">Find more of my work on GitHub or Frontend Mentor</h3>
+    <div class="flex flex-col sm:flex-row gap-4 items-center justify-center">
+      <LinkButton label="GitHub" href="https://github.com/MattPahuta" icon="github" color="indigo" size="size-5" />
+      <LinkButton label="Frontend Mentor" href="https://www.frontendmentor.io/profile/MattPahuta" icon="frontendmentor" color="cyan" size="size-5" />
     </div>
   </div>
 </section>

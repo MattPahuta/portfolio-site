@@ -4,29 +4,33 @@ const year = new Date().getFullYear();
 import ContactSocialList from "./ContactSocialList.astro";
 ---
 
+<!-- 
+<a href="www.linkedin.com/in/mattpahuta" class="font-semibold text-blue-800 dark:text-blue-300 hover:text-slate-900 dark:hover:text-zinc-50 transition rounded-sm">LinkedIn</a>
+-->
+
 <footer id="contact" class="pt-20 pb-5">
   <!-- wrapper div -->
-  <div class="max-w-2xl mx-auto px-4 sm:px-5 text-center">
+  <div class="space-y-8 max-w-2xl mx-auto px-4 sm:px-6 text-center">
     <!-- contact content -->
     <div>
-      <h2 class="mb-1">Get in touch</h2>
+      <h2 class="mb-1">Thanks for stopping by</h2>
       <p class="mb-6 text-3xl md:text-4xl font-ubuntu font-semibold text-slate-900 dark:text-zinc-50 whitespace-nowrap">Let's Work Together</p>
-      <p class="leading-relaxed">Have an idea, a question, or an opportunity? Connect with me via email or <a href="www.linkedin.com/in/mattpahuta" class="font-semibold text-blue-800 dark:text-blue-300 hover:text-slate-900 dark:hover:text-zinc-50 transition rounded-sm">LinkedIn</a>.</p>
+      <p class="leading-relaxed text-balance">Have an idea, a question, or an opportunity? Connect with me via email or LinkedIn.</p>
     </div>
-    <div class="py-6 flex items-center justify-center">
+    <div class="flex items-center justify-center">
       <ContactSocialList />
     </div>
     <!-- footer content -->
-    <div class="py-5 px-4 text-xs text-center leading-6 sm:text-sm sm:flex gap-1.5 items-center justify-center">
-      <p>&copy; {year} Matt Pahuta.</p>
+    <div class="pt-10 pb-4 px-4 text-xs text-center leading-6 sm:text-sm sm:flex gap-1.5 items-center justify-center">
+      <p>&copy; {year} Matt Pahuta |</p>
       <p>Made with <span class="sr-only">coffee</span>
         <Icon 
-        name="pixelarticons:coffee"
+        name="coffee"
         class="inline size-5 text-blue-800 dark:text-blue-300"
         aria-hidden="true"
         focusable="false"
         />
-        in Astro &amp; Tailwind CSS
+        , Astro &amp; Tailwind CSS
       </p>
     </div>
   </div>

@@ -22,12 +22,12 @@ import skillsAlt from "../data/skills-alt.json";
     // })
     skills.map((skill) => {
       return (
-        <li class="inline-flex items-center gap-2">
+        <li class="py-3 px-4 inline-flex items-center flex-wrap gap-1 rounded-lg bg-white/70 border text-slate-500 border-slate-400 transition duration-300 hover:shadow-md hover:shadow-indigo-300/40 dark:sm:hover:border-indigo-500/30 dark:sm:hover:bg-indigo-950/20 sm:hover:-translate-y-1.5 sm:hover:bg-indigo-50/40">
           <Icon
             name={skill.icon}
             aria-hidden="true"
             focusable="false"
-            class={"size-3.5 " + skill.color}
+            class="size-4 md:size-5 text-indigo-500"
           />
           {skill.name}
         </li>

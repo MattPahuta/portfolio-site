@@ -43,5 +43,10 @@
     "name": "Node.js",
     "icon": "simple-icons:nodedotjs",
     "color": "text-lime-600"
+  },
+  {
+    "name": "Express",
+    "icon": "simple-icons:express",
+    "color": "text-lime-600"
   }
 ]
