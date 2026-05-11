@@ -1,5 +1,6 @@
 ---
 import ProjectCard from './ProjectCard.astro';
+import ProjectCardLegacy from './ProjectCard_legacy.astro';
 import { getCollection } from 'astro:content';
 const projects = await getCollection('project');
 import LinkButton from './LinkButton.astro';
@@ -10,7 +11,8 @@ import LinkButton from './LinkButton.astro';
   <!-- wrapper div -->
   <div class="px-4 sm:px-6 text-center">
     <h2 class="mb-8 sm:mb-16 text-3xl md:text-4xl font-ubuntu font-semibold text-slate-900 dark:text-zinc-50 whitespace-nowrap">Featured Projects</h2>
-    <div class="mb-12 grid gap-6 sm:gap-8 md:gap-6 grid-cols-[repeat(auto-fit,minmax(min(375px,100%),1fr))]">
+    <!-- <div class="mb-12 grid gap-6 sm:gap-8 md:gap-6 grid-cols-[repeat(auto-fit,minmax(min(375px,100%),1fr))]"> -->
+    <div class="mb-12 grid gap-6 sm:gap-8 md:gap-6 grid-cols-[repeat(auto-fit,minmax(min(360px,100%),1fr))] xl:grid-cols-1 xl:gap-10">
       {
         projects.map(project => (
           <ProjectCard 
