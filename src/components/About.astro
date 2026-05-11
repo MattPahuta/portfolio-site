@@ -3,15 +3,36 @@ import SkillsList from "./SkillsList.astro";
 ---
 
 <section id="about" class="py-20">
-  <div class="space-y-16 px-4 sm:px-5 text-center sm:text-xl">
+  <div class="space-y-16 max-w-3xl mx-auto px-4 sm:px-6">
     <h2 class="text-3xl md:text-4xl font-ubuntu font-semibold text-slate-900 dark:text-zinc-50 whitespace-nowrap">About Me</h2>
-    <div class="max-w-3xl mx-auto space-y-4 leading-relaxed text-gray-600 dark:text-gray-300">
-      <p>After years of translating between systems, stakeholders, and strategy, I found my niche at the intersection of logic and experience: front-end web development.</p>
-      <p>Today, I bring that same challenge-solving mindset to building intuitive, accessible, and thoughtful user experiences. I don't just write code; I ask the right questions, bridge gaps between teams, and translate complexity into clarity. Great front-end work isn't just what users see in the finished product, it's how seamlessly everything comes together behind the scenes.</p>
+    <div class="space-y-8">
+      <div class="space-y-4 leading-relaxed text-gray-600 dark:text-gray-300 col-span-2">
+        <p>I'm a software developer who enjoys creating accessible, user-centered web experiences that balance thoughtful design with technical simplicity.</p>
+        <p>Drawing from a professional background in IT, project management, business analysis, and data governance, I excel at translating complex ideas into clear solutions and connecting business needs with technical execution.</p>
+        <p>Today, I bring that same challenge-solving mindset and collaborative approach to building intuitive products that make good sense for users, for teams, and for the business. I’m especially interested in modern, inclusive frontend development using React, Astro, and CSS.</p>
+      </div>
+      <div class="">
+        <h3 class="mb-2 text-lg text-left md:text-xl font-semibold">My Skills</h3>
+        <p class="mb-6">Shaped by curiosity and continuous learning, these are some of the tools and technologies I love to use.</p>
+        <div class="">
+          <SkillsList />
+        </div>
+      </div>
     </div>
-    <div class="max-w-2xl lg:max-w-5xl mx-auto p-4 sm:py-10 sm:px-12 grid gap-12 lg:grid-cols-2 sm:bg-white dark:bg-black/40 sm:shadow-xl dark:shadow-none sm:border border-slate-200 rounded-2xl dark:border-0 md:dark:border md:dark:shadow-xl dark:border-gray-800">
+    <!-- <div class="grid gap-4 lg:grid-cols-3">
+      <div class="space-y-4 leading-relaxed text-gray-600 dark:text-gray-300 lg:col-span-2">
+        <p>
+          <span class="md:text-xl font-semibold block mb-5">I've always been fascinated by technology</span> After years of translating between systems, stakeholders, and strategy, I found my niche at the intersection of logic and experience: front-end web development.</p>
+        <p>Today, I bring that same challenge-solving mindset to building intuitive, accessible, and thoughtful user experiences. I don't just write code; I ask the right questions, bridge gaps between teams, and translate complexity into clarity. Great front-end work isn't just what users see in the finished product, it's how seamlessly everything comes together behind the scenes.</p>
+      </div>
+      <div>
+        <h3 class="mb-4 sm:mb-5 text-lg text-left md:text-xl font-semibold">My Skills</h3>
+        <SkillsList />
+      </div>
+    </div> -->
+
+    <!-- <div class="mx-auto p-4 sm:py-10 sm:px-12 grid gap-12 lg:grid-cols-2 lg:gap-5 sm:bg-white dark:bg-black/40 sm:shadow-xl dark:shadow-none sm:border border-slate-200 rounded-2xl dark:border-0 md:dark:border md:dark:shadow-xl dark:border-gray-800">
       <div class="space-y-4 text-left text-slate-600 dark:text-gray-300 font-light leading-relaxed">
-        <!-- <h3 class="mb-4 sm:mb-5 text-lg text-left md:text-xl font-semibold">Accessibility First</h3> -->
         <p>I enjoy creating clean, responsive web applications with modern web development tools like React and Astro.</p>
         <p>I'm particularly interested in web accessibility best practices, inclusive design, and crafting interfaces that are simple, fast, and intuitive to use.</p>
       </div>
@@ -19,6 +40,6 @@ import SkillsList from "./SkillsList.astro";
         <h3 class="mb-4 sm:mb-5 text-lg text-left md:text-xl font-semibold">My Skills</h3>
         <SkillsList />
       </div>
-    </div>
+    </div> -->
   </div>
 </section>

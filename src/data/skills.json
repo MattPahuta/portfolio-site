@@ -25,6 +25,11 @@
     "color": "text-sky-400"
   },
   {
+    "name": "Git",
+    "icon": "simple-icons:git",
+    "color": "text-orange-600"
+  },
+  {
     "name": "TypeScript",
     "icon": "simple-icons:typescript",
     "color": "text-sky-600"
@@ -35,11 +40,6 @@
     "color": "text-pink-500"
   },
   {
-    "name": "Git",
-    "icon": "simple-icons:git",
-    "color": "text-orange-600"
-  },
-  {
     "name": "Node.js",
     "icon": "simple-icons:nodedotjs",
     "color": "text-lime-600"
@@ -47,6 +47,16 @@
   {
     "name": "Express",
     "icon": "simple-icons:express",
+    "color": "text-lime-600"
+  },
+  {
+    "name": "Vite",
+    "icon": "simple-icons:vite",
+    "color": "text-lime-600"
+  },
+  {
+    "name": "MongoDB",
+    "icon": "simple-icons:mongodb",
     "color": "text-lime-600"
   }
 ]
