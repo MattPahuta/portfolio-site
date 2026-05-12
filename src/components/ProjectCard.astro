@@ -20,12 +20,12 @@ if (!images[imagePath]) throw new Error(`"${imagePath}" does not exist in glob: 
 ---
 
 <article 
-  class="group overflow-clip flex gap-5 flex-col xl:flex-row  md:gap-6 text-left bg-white dark:bg-gray-950 border border-slate-200 dark:border-0 rounded-xl shadow-lg sm:hover:bg-blue-50/50 dark:sm:hover:bg-blue-950/20 sm:hover:shadow-xl sm:hover:shadow-blue-200/60 dark:sm:hover:shadow-lg dark:sm:hover:shadow-blue-500/30 transition duration-300 sm:hover:-translate-y-1.5"
+  class="group overflow-clip flex gap-5 flex-col xl:flex-row xl:p-5 md:gap-6 text-left bg-white dark:bg-gray-950 border border-slate-200 dark:border-0 rounded-xl shadow-lg sm:hover:bg-blue-50/50 dark:sm:hover:bg-blue-950/20 sm:hover:shadow-xl sm:hover:shadow-blue-200/60 dark:sm:hover:shadow-lg dark:sm:hover:shadow-blue-500/30 transition duration-300 sm:hover:-translate-y-1.5"
 >
-  <div class="w-full content-center overflow-clip">
+  <div class="w-full content-center overflow-clip xl:rounded-xl">
     <Image src={images[imagePath]()} alt={imageAltText} class="object-cover object-top w-full min-h-full aspect-[4/3] group-hover:scale-105 transition-transform duration-500">
   </div>
-  <div class="w-full p-4 xl:py-8 flex flex-col grow">
+  <div class="w-full p-4 xl:p-0 flex flex-col grow">
     <h3 class="mb-3 text-2xl font-medium leading-tight dark:text-zinc-50">
       {title}
     </h3> 
