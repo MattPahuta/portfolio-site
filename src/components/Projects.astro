@@ -1,13 +1,12 @@
 ---
 import ProjectCard from './ProjectCard.astro';
-import ProjectCardLegacy from './ProjectCard_legacy.astro';
 import { getCollection } from 'astro:content';
 const projects = await getCollection('project');
 import LinkButton from './LinkButton.astro';
 ---
 
 <!-- ToDo: add aria-labelledby to sections? check MDN -->
-<section id="projects" class="py-20">
+<section id="projects" class="py-24">
   <!-- wrapper div -->
   <div class="px-4 sm:px-6 text-center">
     <h2 class="mb-8 sm:mb-16 text-3xl md:text-4xl font-ubuntu font-semibold text-slate-900 dark:text-zinc-50 whitespace-nowrap">Featured Projects</h2>

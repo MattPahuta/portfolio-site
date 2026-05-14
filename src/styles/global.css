@@ -1,21 +1,13 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&display=swap'); */
-
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&display=swap');
 
 @import 'tailwindcss';
+@custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* --font-heading: 'Nunito', ui-sans-serif, system-ui, sans-serif; */
-  /* --font-sans: 'Open Sans', ui-sans-serif, system-ui, sans-serif; */
-  /* --font-mono: "Fira Code", ui-monospace, SFMono-Regular, "Courier New", monospace; */
-
   --font-ubuntu: "Ubuntu Sans", ui-sans-serif, system-ui, sans-serif;
   --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
-  /* Dark Theme - gray-900 BG */
   --color-celadon: oklch(85.855% 0.07924 140.549);
-  /* Light Theme - zinc-50 BG */
   --color-laser-blue: #2b59c5;
-
   /* tech colors */
   --color-react: var(--color-cyan-500);
   --color-javascript: var(--color-amber-400);
