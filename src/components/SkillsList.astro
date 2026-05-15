@@ -3,16 +3,17 @@ import { Icon } from "astro-icon/components";
 import skills from "../data/skills.json"
 ---
 
-<ul class="flex gap-3 sm:gap-y-4 flex-wrap text-sm font-mono">
+<ul class="flex gap-3 sm:gap-y-4 flex-wrap font-ubuntu font-light">
   {
     skills.map((skill) => {
       return (
-        <li class="py-3 px-4 inline-flex items-center flex-wrap gap-1 rounded-lg bg-white/70 dark:bg-transparent border text-slate-500 dark:text-slate-400 border-slate-200 dark:border-gray-700 transition duration-300 hover:shadow-sm hover:shadow-blue-500/40 dark:sm:hover:border-blue-500/30 dark:sm:hover:bg-blue-950/20 sm:hover:-translate-y-1.5 sm:hover:bg-indigo-50/40">
+        // <li class="py-3 px-4 inline-flex items-center flex-wrap gap-1 rounded-lg bg-white/70 dark:bg-transparent border text-slate-500 dark:text-slate-400 border-slate-200 dark:border-gray-700 transition duration-300 hover:shadow-sm hover:shadow-blue-500/40 dark:sm:hover:border-blue-500/30 dark:sm:hover:bg-blue-950/20 sm:hover:-translate-y-1.5 sm:hover:bg-indigo-50/40">
+        <li class="p-2 inline-flex items-center flex-wrap gap-2 rounded-lg bg-white/70 dark:bg-transparent border text-slate-500 dark:text-slate-400 border-slate-200 dark:border-0">
           <Icon
             name={skill.icon}
             aria-hidden="true"
             focusable="false"
-            class="size-4 md:size-5 text-blue-700 dark:text-blue-500"
+            class="size-4 md:size-5 text-blue-700 dark:text-indigo-400"
           />
           {skill.name}
         </li>

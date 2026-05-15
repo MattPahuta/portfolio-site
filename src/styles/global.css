@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&display=swap');
 
 @import 'tailwindcss';
-@custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
   --font-ubuntu: "Ubuntu Sans", ui-sans-serif, system-ui, sans-serif;
