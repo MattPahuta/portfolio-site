@@ -18,9 +18,9 @@ const images = import.meta.glob<{ default: ImageMetadata }>('/src/assets/project
 
 if (!images[imagePath]) throw new Error(`"${imagePath}" does not exist in glob: "src/assets/projects/*.{jpeg,jpg,png,gif}"`);
 ---
-
+<!-- dark:border-2 dark:border-gray-700/60 -->
 <article 
-  class="group overflow-clip flex gap-5 flex-col xl:flex-row xl:p-5 md:gap-6 text-left bg-white dark:bg-transparent border border-slate-200 dark:border-2 dark:border-gray-700/60 rounded-xl shadow-lg"
+  class="group overflow-clip flex gap-5 flex-col xl:flex-row xl:p-5 md:gap-6 text-left bg-white dark:bg-gray-950/60 border border-slate-200 dark:border-0 rounded-xl shadow-lg"
 >
   <div class="w-full content-center overflow-clip xl:rounded-xl">
     <Image src={images[imagePath]()} alt={imageAltText} class="object-cover object-top w-full min-h-full aspect-[4/3] group-hover:scale-105 transition-transform duration-500">
@@ -48,7 +48,7 @@ if (!images[imagePath]) throw new Error(`"${imagePath}" does not exist in glob: 
         href={gitHubUrl} 
         target="_blank"
         rel="noreferrer nopener"
-        class="py-2 px-4 inline-flex items-center justify-center gap-2 rounded-lg border border-slate-300 shadow-sm dark:border-gray-700 hover:bg-blue-600 dark:hover:bg-blue-600 hover:text-white hover:border-blue-600 dark:hover:border-blue-600 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-blue-600 dark:focus-visible:outline-blue-600 transition-colors"  
+        class="py-2 px-4 inline-flex items-center justify-center gap-2 rounded-lg border border-slate-300 dark:border-gray-700 hover:bg-blue-600 dark:hover:bg-blue-600 hover:text-white hover:border-blue-600 dark:hover:border-blue-600 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-blue-600 dark:focus-visible:outline-blue-600 transition-colors"  
       >
         <Icon name="github" aria-hidden="true" focusable="false" class="size-3.5" />
         Source Code
@@ -57,7 +57,7 @@ if (!images[imagePath]) throw new Error(`"${imagePath}" does not exist in glob: 
         href={liveSiteUrl}  
         target="_blank"
         rel="noreferrer nopener"
-        class="py-2 px-4 inline-flex items-center justify-center gap-2 rounded-lg border border-slate-300 shadow-sm dark:border-gray-700 hover:bg-blue-600 dark:hover:bg-blue-600 hover:text-white hover:border-blue-600 dark:hover:border-blue-600 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-blue-600 dark:focus-visible:outline-blue-600 transition-colors" 
+        class="py-2 px-4 inline-flex items-center justify-center gap-2 rounded-lg border border-slate-300 dark:border-gray-700 hover:bg-blue-600 dark:hover:bg-blue-600 hover:text-white hover:border-blue-600 dark:hover:border-blue-600 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-blue-600 dark:focus-visible:outline-blue-600 transition-colors" 
       >
         <Icon name="external-link" aria-hidden="true" focusable="false" class="size-3.5" />
         Live Demo
