@@ -34,5 +34,25 @@
   {
     "name": "Node",
     "icon": "vscode-icons:file-type-node"
+  },
+  {
+    "name": "GitHub",
+    "icon": "simple-icons:github",
+    "color": "text-orange-600"
+  },
+  {
+    "name": "Node.js",
+    "icon": "simple-icons:nodedotjs",
+    "color": "text-lime-600"
+  },
+  {
+    "name": "Express",
+    "icon": "simple-icons:express",
+    "color": "text-lime-600"
+  },
+  {
+    "name": "Vite",
+    "icon": "simple-icons:vite",
+    "color": "text-lime-600"
   }
 ]

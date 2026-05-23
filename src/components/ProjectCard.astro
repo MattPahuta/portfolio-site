@@ -18,7 +18,7 @@ const images = import.meta.glob<{ default: ImageMetadata }>('/src/assets/project
 
 if (!images[imagePath]) throw new Error(`"${imagePath}" does not exist in glob: "src/assets/projects/*.{jpeg,jpg,png,gif}"`);
 ---
-<!-- dark:border-2 dark:border-gray-700/60 -->
+
 <article 
   class="group overflow-clip flex gap-5 flex-col xl:flex-row xl:p-5 md:gap-6 text-left bg-white dark:bg-gray-950/60 border border-slate-200 dark:border-0 rounded-xl shadow-lg"
 >
