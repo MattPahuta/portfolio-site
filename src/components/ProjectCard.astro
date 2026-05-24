@@ -20,18 +20,18 @@ if (!images[imagePath]) throw new Error(`"${imagePath}" does not exist in glob: 
 ---
 
 <article 
-  class="group overflow-clip flex gap-5 flex-col xl:flex-row xl:p-5 md:gap-6 text-left bg-white dark:bg-gray-950/60 border border-slate-200 dark:border-0 rounded-xl shadow-lg"
+  class="group flex flex-col xl:flex-row gap-5 md:gap-6 p-4 sm:p-6 text-left bg-white dark:bg-gray-950/70 border border-slate-200 dark:border-transparent dark:sm:border-gray-800 rounded-xl shadow-lg sm:hover:bg-slate-100 dark:sm:hover:border-gray-700 dark:sm:hover:bg-gray-900 sm:hover:shadow-xl sm:hover:shadow-blue-200/20 dark:sm:hover:shadow-md dark:sm:hover:shadow-gray-700 transition duration-300 sm:hover:-translate-y-1.5"
 >
-  <div class="w-full content-center overflow-clip xl:rounded-xl">
-    <Image src={images[imagePath]()} alt={imageAltText} class="object-cover object-top w-full min-h-full aspect-[4/3] group-hover:scale-105 transition-transform duration-500">
+  <div class="w-full content-center rounded-lg sm:rounded-xl overflow-clip">
+    <Image src={images[imagePath]()} alt={imageAltText} class="object-cover object-top w-full aspect-[4/3] group-hover:scale-105 transition-transform duration-500">
   </div>
-  <div class="w-full p-4 xl:p-0 flex flex-col grow">
+  <div class="w-full flex flex-col grow">
     <h3 class="mb-3 text-2xl font-medium leading-tight dark:text-zinc-50">
       {title}
     </h3> 
     <ul class="mb-5 flex flex-wrap items-center gap-3" role="list">
       {techStack.map((tech) => (
-        <li class="flex gap-1.5 items-center text-sm text-gray-600 dark:text-gray-400">
+        <li class="flex gap-1.5 items-center text-sm text-slate-600 dark:text-cool-steel">
           <Icon
             name="check-circle"
             aria-hidden="true"
@@ -48,7 +48,7 @@ if (!images[imagePath]) throw new Error(`"${imagePath}" does not exist in glob: 
         href={gitHubUrl} 
         target="_blank"
         rel="noreferrer nopener"
-        class="py-2 px-4 inline-flex items-center justify-center gap-2 rounded-lg border border-slate-300 dark:border-gray-700 hover:bg-blue-600 dark:hover:bg-blue-600 hover:text-white hover:border-blue-600 dark:hover:border-blue-600 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-blue-600 dark:focus-visible:outline-blue-600 transition-colors"  
+        class="py-2 px-4 inline-flex items-center justify-center gap-2 rounded-lg border-1 border-slate-300 dark:border-gray-700 hover:bg-emerald-700 dark:hover:bg-emerald-800 hover:text-white hover:border-emerald-700 dark:hover:border-emerald-800 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-emerald-600 dark:focus-visible:outline-emerald-800 transition-colors"  
       >
         <Icon name="github" aria-hidden="true" focusable="false" class="size-3.5" />
         Source Code
@@ -57,7 +57,7 @@ if (!images[imagePath]) throw new Error(`"${imagePath}" does not exist in glob: 
         href={liveSiteUrl}  
         target="_blank"
         rel="noreferrer nopener"
-        class="py-2 px-4 inline-flex items-center justify-center gap-2 rounded-lg border border-slate-300 dark:border-gray-700 hover:bg-blue-600 dark:hover:bg-blue-600 hover:text-white hover:border-blue-600 dark:hover:border-blue-600 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-blue-600 dark:focus-visible:outline-blue-600 transition-colors" 
+        class="py-2 px-4 inline-flex items-center justify-center gap-2 rounded-lg border-1 border-slate-300 dark:border-gray-700 hover:bg-emerald-700 dark:hover:bg-emerald-800 hover:text-white hover:border-emerald-700 dark:hover:border-emerald-800 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-emerald-600 dark:focus-visible:outline-emerald-800 transition-colors"  
       >
         <Icon name="external-link" aria-hidden="true" focusable="false" class="size-3.5" />
         Live Demo

@@ -5,8 +5,9 @@
 @theme {
   --font-ubuntu: "Ubuntu Sans", ui-sans-serif, system-ui, sans-serif;
   --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
-  --color-celadon: oklch(85.855% 0.07924 140.549);
-  --color-laser-blue: #2b59c5;
+
+  --color-cool-steel: #A3BAC3;
+  --color-smart-blue: #3066BE;
   /* tech colors */
   --color-react: var(--color-cyan-500);
   --color-javascript: var(--color-amber-400);
