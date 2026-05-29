@@ -20,10 +20,10 @@ if (!images[imagePath]) throw new Error(`"${imagePath}" does not exist in glob: 
 ---
 
 <article 
-  class="group flex flex-col xl:flex-row gap-5 md:gap-6 p-4 sm:p-6 text-left bg-white dark:bg-gray-950/70 border border-slate-200 dark:border-transparent dark:sm:border-gray-800 rounded-xl shadow-lg sm:hover:bg-slate-100 dark:sm:hover:border-gray-700 dark:sm:hover:bg-gray-900 sm:hover:shadow-xl sm:hover:shadow-blue-200/20 dark:sm:hover:shadow-md dark:sm:hover:shadow-gray-700 transition duration-300 sm:hover:-translate-y-1.5"
+  class="group flex flex-col xl:flex-row gap-5 md:gap-6 p-4 sm:p-6 text-left bg-white dark:bg-gray-950/70 border border-slate-200 dark:border-transparent dark:sm:border-gray-800 rounded-xl shadow-lg hover:shadow-xl dark:shadow-sm dark:hover:shadow-sm dark:sm:hover:border-gray-600 transition duration-300"
 >
-  <div class="w-full content-center rounded-lg sm:rounded-xl overflow-clip">
-    <Image src={images[imagePath]()} alt={imageAltText} class="object-cover object-top w-full aspect-[4/3] group-hover:scale-105 transition-transform duration-500">
+  <div class="relative w-full content-center rounded-lg overflow-clip sm:rounded-xl">
+    <Image src={images[imagePath]()} alt={imageAltText} class="w=full min-h-full object-cover object-top aspect-[4/3]">
   </div>
   <div class="w-full flex flex-col grow">
     <h3 class="mb-3 text-2xl font-medium leading-tight dark:text-zinc-50">
@@ -42,7 +42,7 @@ if (!images[imagePath]) throw new Error(`"${imagePath}" does not exist in glob: 
         </li>
       ))}
     </ul>
-    <p class="mb-8 text-base sm:text-lg leading-relaxed font-light">{description}</p>
+    <p class="mb-8 text-base lg:text-lg leading-relaxed font-light">{description}</p>
     <footer class="flex items-center gap-3 mt-auto text-sm font-ubuntu">
       <a 
         href={gitHubUrl} 
