@@ -23,7 +23,7 @@ if (!images[imagePath]) throw new Error(`"${imagePath}" does not exist in glob: 
   class="group flex flex-col xl:flex-row gap-5 md:gap-6 p-4 sm:p-6 text-left bg-white dark:bg-gray-950/70 border border-slate-200 dark:border-transparent dark:sm:border-gray-800 rounded-xl shadow-lg hover:shadow-xl dark:shadow-sm dark:hover:shadow-sm dark:sm:hover:border-gray-600 transition duration-300"
 >
   <div class="relative w-full content-center rounded-lg overflow-clip sm:rounded-xl">
-    <Image src={images[imagePath]()} alt={imageAltText} class="w=full min-h-full object-cover object-top aspect-[4/3]">
+    <Image src={images[imagePath]()} alt={imageAltText} class="w=full min-h-full object-cover object-top aspect-[4/3] group-hover:scale-105 transition-transform duration-300">
   </div>
   <div class="w-full flex flex-col grow">
     <h3 class="mb-3 text-2xl font-medium leading-tight dark:text-zinc-50">
