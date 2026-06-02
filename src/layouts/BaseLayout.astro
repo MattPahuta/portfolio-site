@@ -1,5 +1,6 @@
 ---
 import '../styles/global.css';
+import { Seo } from 'astro-seo-meta';
 const { title = 'Matt Pahuta | Web Developer' } = Astro.props;
 ---
 
@@ -10,9 +11,14 @@ const { title = 'Matt Pahuta | Web Developer' } = Astro.props;
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <!-- <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"> -->
 		<meta name="generator" content={Astro.generator} />
-    <title>{title}</title>
+    <Seo 
+      title="Matt Pahuta"
+      keywords={["website", "portfolio", "astro", "developer"]}
+      description="Frontend developer skilled with React and Tailwind CSS, focussed on accessibility and inclusive design."
+      icon="/favicon-32x32.png"
+    />
   </head>
   <body class="min-h-dvh font-sans text-lg bg-slate-50 text-gray-700 dark:bg-gray-900 dark:text-gray-300 scroll-smooth">
     <slot />
