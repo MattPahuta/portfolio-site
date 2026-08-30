@@ -6,7 +6,7 @@ const { label, handle, href, iconName, iconSize } = Astro.props;
   href=`${href}`
   target="_blank"
   rel="noreferrer noopener"
-  class="group w-full py-2 px-4 inline-flex items-center gap-4 rounded-lg border border-gray-400 dark:border-gray-500 dark:bg-transparent hover:bg-emerald-700 dark:hover:bg-emerald-800 hover:border-emerald-700 dark:hover:border-emerald-800 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-emerald-600 dark:focus-visible:outline-emerald-800 transition"
+  class="group w-full py-2 px-4 inline-flex items-center gap-4 rounded-lg border border-gray-400 dark:border-gray-500 dark:bg-transparent hover:bg-emerald-700 dark:hover:bg-emerald-800 hover:border-emerald-700 dark:hover:border-emerald-800 focus-visible:outline-2 focus-visible:outline-offset-4 transition"
 >
   <div class="p-3 rounded-lg bg-gray-200 dark:bg-gray-800 group-hover:bg-white dark:group-hover:bg-gray-900">
     <Icon name=`${iconName}` aria-hidden="true" focusable="false" class=`${iconSize} text-gray-800 dark:text-gray-200 group-hover:text-emerald-700` />
@@ -15,4 +15,4 @@ const { label, handle, href, iconName, iconSize } = Astro.props;
     <span class="text-slate-800 dark:text-gray-200 font-semibold group-hover:text-zinc-50 dark:group-hover:text-gray-50 transition-colors">{label}</span>
     <span class="text-sm text-slate-600 dark:text-gray-400 group-hover:text-zinc-50 dark:group-hover:text-gray-200 transition-colors">{handle}</span>
   </div>
-</a>    
+</a>
