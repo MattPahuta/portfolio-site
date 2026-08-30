@@ -2,6 +2,7 @@
 import '../styles/global.css';
 import { Seo } from 'astro-seo-meta';
 const { title = 'Matt Pahuta | Web Developer' } = Astro.props;
+import { Font } from 'astro:assets';
 ---
 
 <!DOCTYPE html>
@@ -19,6 +20,8 @@ const { title = 'Matt Pahuta | Web Developer' } = Astro.props;
       description="Frontend developer skilled with React and Tailwind CSS, focussed on accessibility and inclusive design."
       icon="/favicon-32x32.png"
     />
+    <Font cssVariable="--font-ubuntu" />
+    <Font cssVariable="--font-sans" />
   </head>
   <body class="min-h-dvh font-sans text-lg bg-slate-50 text-gray-700 dark:bg-gray-900 dark:text-gray-300 scroll-smooth">
     <slot />

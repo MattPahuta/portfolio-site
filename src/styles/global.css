@@ -2,9 +2,13 @@
 
 @import 'tailwindcss';
 
-@theme {
-  --font-ubuntu: "Ubuntu Sans", ui-sans-serif, system-ui, sans-serif;
-  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+@theme inline {
+  /* --font-ubuntu: "Ubuntu Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif; */
+
+  --font-inter: var(--font-inter);
+  --font-ubuntu: var(--font-ubuntu);
+  --font-sans: var(--font-sans);
 
   --color-cool-steel: #A3BAC3;
   --color-smart-blue: #3066BE;
