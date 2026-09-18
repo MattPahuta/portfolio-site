@@ -1,46 +1,61 @@
 ---
-import ProjectCard from './ProjectCard.astro';
-import { getCollection } from 'astro:content';
-const projects = await getCollection('project');
-import { Icon } from 'astro-icon/components';
+import ProjectCard from "./ProjectCard.astro";
+import { getCollection } from "astro:content";
+const projects = await getCollection("project");
+import { Icon } from "astro-icon/components";
 ---
 
 <section id="projects" class="py-24">
   <div class="mx-auto max-w-4xl px-4 sm:px-6 text-center">
-    <h2 class="mb-8 sm:mb-16 text-3xl md:text-4xl font-ubuntu font-semibold text-slate-900 dark:text-zinc-50 whitespace-nowrap">Featured Projects</h2>
-    <div class="mb-12 grid gap-6 sm:gap-8 md:gap-6 grid-cols-[repeat(auto-fit,minmax(min(360px,100%),1fr))] xl:grid-cols-1 xl:gap-10">
+    <h2
+      class="mb-8 sm:mb-16 text-3xl md:text-4xl font-ubuntu font-semibold text-slate-900 dark:text-zinc-50 whitespace-nowrap">
+      Featured Projects
+    </h2>
+    <div
+      class="mb-12 grid gap-6 sm:gap-8 md:gap-6 grid-cols-[repeat(auto-fit,minmax(min(360px,100%),1fr))] xl:grid-cols-1 xl:gap-10">
       {
-        projects.map(project => (
-          <ProjectCard 
-            title={project.data.title} 
-            description={project.data.description} 
-            imagePath={project.data.imagePath} 
-            imageAltText={project.data.imageAltText} 
-            techStack={project.data.techStack} 
-            gitHubUrl={project.data.gitHubUrl} 
-            liveSiteUrl={project.data.liveSiteUrl} 
+        projects.map((project) => (
+          <ProjectCard
+            title={project.data.title}
+            description={project.data.description}
+            imagePath={project.data.imagePath}
+            imageAltText={project.data.imageAltText}
+            techStack={project.data.techStack}
+            gitHubUrl={project.data.gitHubUrl}
+            liveSiteUrl={project.data.liveSiteUrl}
           />
         ))
       }
     </div>
-    <h3 class="mb-8 text-xl sm:text-2xl font-ubuntu font-light">Find more of my work on GitHub or Frontend Mentor</h3>
-    <div class="flex flex-col sm:flex-row gap-4 items-center justify-center">
-      <a 
-        href="https://github.com/MattPahuta" 
+    <h3 class="mb-8 text-xl sm:text-2xl font-ubuntu font-light">
+      Find more of my work on GitHub or Frontend Mentor
+    </h3>
+    <div
+      class="flex flex-col sm:flex-row gap-4 items-center justify-center">
+      <a
+        href="https://github.com/MattPahuta"
         target="_blank"
         rel="noreferrer noopener"
-        class="py-2 px-4 inline-flex items-center justify-center gap-2 rounded-lg border-2 border-emerald-700 dark:border-emerald-800 text-emerald-700 dark:text-slate-200 hover:bg-emerald-700 dark:hover:bg-emerald-800 hover:text-slate-50 focus-visible:outline-2 focus-visible:outline-offset-4 transition-colors"
-      >
-        <Icon name="github" aria-hidden="true" focusable="false" class="size-5" />
+        class="py-2 px-4 inline-flex items-center justify-center gap-2 rounded-lg border-2 border-emerald-700 dark:border-emerald-800 text-emerald-700 dark:text-slate-200 hover:bg-emerald-700 dark:hover:bg-emerald-800 hover:text-slate-50 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-emerald-700 dark:focus-visible:outline-white transition-colors">
+        <Icon
+          name="github"
+          aria-hidden="true"
+          focusable="false"
+          class="size-5"
+        />
         GitHub
       </a>
-      <a 
-        href="https://www.frontendmentor.io/profile/MattPahuta" 
+      <a
+        href="https://www.frontendmentor.io/profile/MattPahuta"
         target="_blank"
         rel="noreferrer noopener"
-        class="py-2 px-4 inline-flex items-center justify-center gap-2 rounded-lg border-2 border-emerald-700 dark:border-emerald-800 text-emerald-700 dark:text-slate-200 hover:bg-emerald-700 dark:hover:bg-emerald-800 hover:text-slate-50 focus-visible:outline-2 focus-visible:outline-offset-4 transition-colors"
-      >
-        <Icon name="frontendmentor" aria-hidden="true" focusable="false" class="size-5" />
+        class="py-2 px-4 inline-flex items-center justify-center gap-2 rounded-lg border-2 border-emerald-700 dark:border-emerald-800 text-emerald-700 dark:text-slate-200 hover:bg-emerald-700 dark:hover:bg-emerald-800 hover:text-slate-50 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-emerald-700 dark:focus-visible:outline-white transition-colors">
+        <Icon
+          name="frontendmentor"
+          aria-hidden="true"
+          focusable="false"
+          class="size-5"
+        />
         Frontend Mentor
       </a>
     </div>
