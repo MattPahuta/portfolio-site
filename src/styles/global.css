@@ -1,27 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&display=swap');
-
 @import 'tailwindcss';
 
 @theme inline {
-  /* --font-ubuntu: "Ubuntu Sans", ui-sans-serif, system-ui, sans-serif;
-  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif; */
-
   --font-inter: var(--font-inter);
   --font-ubuntu: var(--font-ubuntu);
-  --font-sans: var(--font-sans);
-
   --color-cool-steel: #A3BAC3;
   --color-smart-blue: #3066BE;
-  /* tech colors */
-  --color-react: var(--color-cyan-500);
-  --color-javascript: var(--color-amber-400);
-  --color-typescript: var(--sky-600);
-  --color-html: var(--color-orange-600);
-  --color-css: var(--color-sky-700);
-  --color-tailwindcss: var(--color-sky-400);
-  --color-astro: var(--color-pink-500);
-  --color-git: var(--color-orange-600);
-  --color-node: var(--color-lime-600);
-  --color-express: var(--color-blue-600);
 }
  
