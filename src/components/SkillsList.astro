@@ -7,12 +7,12 @@ import skills from "../data/skills.json"
   {
     skills.map((skill) => {
       return (
-        <li class="py-2 inline-flex items-center gap-2 text-slate-500 dark:text-cool-steel">
+        <li class="py-2 inline-flex items-center gap-2 text-gray-400">
           <Icon
             name={skill.icon}
             aria-hidden="true"
             focusable="false"
-            class="size-5 md:size-6 lg:size-7 text-emerald-600 dark:text-emerald-700"
+            class="size-5 md:size-6 lg:size-7 text-accent"
           />
           {skill.name}
         </li>

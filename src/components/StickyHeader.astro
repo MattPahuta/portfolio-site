@@ -1,22 +1,45 @@
 ---
+// ToDo: add navLinks object to iterate/render - { label, href }
+const navMenuItems = [
+  { label: "About", href: "#about" },
+  { label: "Projects", href: "#projects" },
+  { label: "Contact", href: "#contact" },
+];
 ---
 
-<header class="header sticky top-0 z-50 py-4 sm:py-6 text-gray-600 dark:text-gray-300 bg-white/70 dark:bg-gray-950/60 shadow-sm backdrop-blur-md border-b border-slate-100 dark:border-b-0">
+<header
+  class="header sticky top-0 z-50 py-4 sm:py-6 text-zinc-300 bg-midnight-oil/70 shadow-sm backdrop-blur-md border-b border-zinc-600">
   <div class="max-w-4xl mx-auto px-4 sm:px-5">
-    <div class="flex items-center justify-center md:justify-between">
-      <a href="/" class="hidden text-lg font-medium font-ubuntu md:inline-flex rounded-md hover:text-emerald-600 focus:outline-emerald-600 focus:outline-2 outline-offset-2 transition">
-        <span class="">&#x7b; matt</span>Pahuta.dev &#x7d;
+    <div
+      class="flex flex-col items-center justify-center sm:justify-between">
+      <a
+        href="/"
+        class="inline-flex px-2 py-1 text-xl font-semibold font-ubuntu text-zinc-100 hover:text-accent focus:outline-accent focus:outline-2 outline-offset-4 transition">
+        mattPahuta<span class="text-accent font-mono">.dev</span>
       </a>
       <nav class="" aria-label="Primary">
-        <ul class="flex gap-4 font-ubuntu font-semibold text-base sm:text-lg">
+        <ul
+          class="flex gap-4 font-ubuntu font-semibold text-base sm:text-lg">
           <li>
-            <a href="#about" class="flex rounded-sm px-2 py-1 md:p-0 hover:text-emerald-600 focus-visible:outline-3 focus-visible:outline-offset-4 transform md:hover:underline underline-offset-4 transition outline-emerald-600">About</a>
+            <a
+              href="#about"
+              class="flex px-2 py-1 border-b-2 border-transparent hover:border-accent hover:text-accent focus-visible:outline-3 focus-visible:outline-offset-4 outline-accent transition"
+              >About</a
+            >
           </li>
           <li>
-            <a href="#projects" class="flex rounded-sm px-2 py-1 md:p-0 hover:text-emerald-600 focus-visible:outline-3 focus-visible:outline-offset-4 transform md:hover:underline underline-offset-4 transition outline-emerald-600">Projects</a>
+            <a
+              href="#projects"
+              class="flex px-2 py-1 border-b-2 border-transparent hover:border-accent hover:text-accent focus-visible:outline-3 focus-visible:outline-offset-4 outline-accent transition"
+              >Projects</a
+            >
           </li>
-          <li>  
-            <a href="#contact" class="flex rounded-sm px-2 py-1 md:p-0 hover:text-emerald-600 focus-visible:outline-3 focus-visible:outline-offset-4 transform md:hover:underline underline-offset-4 transition outline-emerald-600">Contact</a>
+          <li>
+            <a
+              href="#contact"
+              class="flex px-2 py-1 border-b-2 border-transparent hover:border-accent hover:text-accent focus-visible:outline-3 focus-visible:outline-offset-4 outline-accent transition"
+              >Contact</a
+            >
           </li>
         </ul>
       </nav>

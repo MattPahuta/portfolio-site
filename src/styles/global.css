@@ -1,9 +1,21 @@
-@import 'tailwindcss';
+@import "tailwindcss";
 
 @theme inline {
   --font-inter: var(--font-inter);
   --font-ubuntu: var(--font-ubuntu);
-  --color-cool-steel: #A3BAC3;
-  --color-smart-blue: #3066BE;
+
+  --color-midnight-oil: hsl(225 21% 7%);
+  --color-cyantific: hsl(174, 44%, 60%);
+
+  --color-cool-steel: #a3bac3;
+  --color-smart-blue: #3066be;
+  --color-tropical-escape: #5cbcb9;
+  --color-yellow-press: #dddc77;
+  --color-hobgoblin: #29b496;
+  --color-gecko: #a29133;
+  --color-whiskey-sour: #db9558;
+  --color-duck-butter: hsl(50 71% 62%);
+  --color-weissbier: #b2843a;
+
+  --color-accent: var(--color-cyantific);
 }
- 

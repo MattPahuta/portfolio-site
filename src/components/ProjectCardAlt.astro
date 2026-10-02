@@ -1,0 +1,95 @@
+---
+import type { ImageMetadata } from "astro";
+import { Image } from "astro:assets";
+import { Icon } from "astro-icon/components";
+
+interface Props {
+  title: string;
+  description: string;
+  imagePath: string;
+  imageAltText: string;
+  techStack: string[];
+  gitHubUrl: string;
+  liveSiteUrl: string;
+}
+
+const {
+  title,
+  description,
+  imagePath,
+  imageAltText,
+  techStack,
+  gitHubUrl,
+  liveSiteUrl,
+} = Astro.props;
+const images = import.meta.glob<{ default: ImageMetadata }>(
+  "/src/assets/projects/*.{jpeg,jpg,png,gif}",
+);
+
+if (!images[imagePath])
+  throw new Error(
+    `"${imagePath}" does not exist in glob: "src/assets/projects/*.{jpeg,jpg,png,gif}"`,
+  );
+---
+
+<article
+  class="group p-4 text-left grid md:grid-cols-[350px_auto] gap-5 md:gap-7">
+  <!-- image wrapper -->
+  <div class="overflow-hidden rounded-lg">
+    <!-- thumbnail image -->
+    <Image
+      src={images[imagePath]()}
+      alt={imageAltText}
+      class="object-cover aspect-4/3 object-top"
+    />
+  </div>
+  <!-- card content -->
+  <div class="w-full flex flex-col grow">
+    <h3
+      class="mb-3 text-2xl font-medium leading-tight text-gray-200">
+      {title}
+    </h3>
+    <ul class="mb-5 flex flex-wrap items-center gap-3" role="list">
+      {
+        techStack.map((tech) => (
+          <li class="py-0.5 px-2 flex gap-1.5 items-center text-xs border border-gray-600 font-mono text-gray-400">
+            {tech}
+          </li>
+        ))
+      }
+    </ul>
+    <p
+      class="mb-8 text-base text-gray-300 leading-relaxed font-light max-w-prose">
+      {description}
+    </p>
+    <footer
+      class="flex items-center gap-3 mt-auto text-sm font-ubuntu">
+      <a
+        href={gitHubUrl}
+        target="_blank"
+        rel="noreferrer nopener"
+        class="py-2 px-4 text-gray-300 font-med inline-flex items-center justify-center gap-2 border-2 rounded-lg border-gray-400 hover:border-accent focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white transition-colors">
+        <Icon
+          name="github"
+          aria-hidden="true"
+          focusable="false"
+          class="size-3.5"
+        />
+        Source Code
+      </a>
+      <a
+        href={liveSiteUrl}
+        target="_blank"
+        rel="noreferrer nopener"
+        class="py-2 px-4 text-gray-300 font-med inline-flex items-center justify-center gap-2 border-2 rounded-lg border-gray-400 hover:border-accent focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white transition-colors">
+        <Icon
+          name="external-link"
+          aria-hidden="true"
+          focusable="false"
+          class="size-4"
+        />
+        Live Demo
+      </a>
+    </footer>
+  </div>
+</article>

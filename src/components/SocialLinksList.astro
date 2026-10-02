@@ -1,37 +1,41 @@
 ---
-import { Icon } from 'astro-icon/components'
+import { Icon } from "astro-icon/components";
+const socialLinks = [
+  {
+    label: "Email",
+    href: "mailto:mhpahuta@gmail.com",
+    iconName: "mail",
+  },
+  {
+    label: "LinkedIn",
+    href: "https://linkedin.com/in/mattpahuta",
+    iconName: "linkedin",
+  },
+  {
+    label: "GitHub",
+    href: "https://github.com/MattPahuta",
+    iconName: "github",
+  },
+];
 ---
 
-<ul class="font-ubuntu font-medium flex flex-wrap items-center justify-center start gap-3 md:gap-4">
-  <li>
-    <a 
-      href="mailto:mhpahuta@gmail.com" 
-      class="py-2 px-4 inline-flex items-center justify-center gap-2 rounded-lg border-2 border-emerald-700 dark:border-emerald-800 text-emerald-700 dark:text-slate-200 hover:bg-emerald-700 dark:hover:bg-emerald-800 hover:text-slate-50 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-emerald-700 dark:focus-visible:outline-white transition-colors"
-    >
-      <Icon name="mail" aria-hidden="true" focusable="false" class="size-5" />
-      Email
-    </a>
-  </li>
-  <li>
-    <a 
-      href="https://linkedin.com/in/mattpahuta" 
-      target="_blank"
-      rel="noreferrer noopener"
-      class="py-2 px-4 inline-flex items-center justify-center gap-2 rounded-lg border-2 border-emerald-700 dark:border-emerald-800 text-emerald-700 dark:text-slate-200 hover:bg-emerald-700 dark:hover:bg-emerald-800 hover:text-slate-50 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-emerald-700 dark:focus-visible:outline-white transition-colors"
-    >
-      <Icon name="linkedin" aria-hidden="true" focusable="false" class="size-5" />
-      LinkedIn
-    </a>
-  </li>
-  <li>
-    <a 
-      href="https://github.com/MattPahuta" 
-      target="_blank"
-      rel="noreferrer noopener"
-      class="py-2 px-4 inline-flex items-center justify-center gap-2 rounded-lg border-2 border-emerald-700 dark:border-emerald-800 text-emerald-700 dark:text-slate-200 hover:bg-emerald-700 dark:hover:bg-emerald-800 hover:text-slate-50 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-emerald-700 dark:focus-visible:outline-white transition-colors"
-    >
-      <Icon name="github" aria-hidden="true" focusable="false" class="size-5" />
-      GitHub
-    </a>
-  </li>
+<ul
+  class="font-ubuntu font-medium flex flex-wrap items-center justify-center start gap-3 md:gap-4">
+  {
+    socialLinks.map((item) => (
+      <li>
+        <a
+          href={item.href}
+          class="py-2 px-4 inline-flex items-center justify-center gap-2 border-2 rounded-lg   border-accent text-gray-200 hover:bg-accent hover:text-midnight-oil focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white transition-colors">
+          <Icon
+            name={item.iconName}
+            aria-hidden="true"
+            focusable="false"
+            class="size-5"
+          />
+          {item.label}
+        </a>
+      </li>
+    ))
+  }
 </ul>

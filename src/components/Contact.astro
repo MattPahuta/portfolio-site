@@ -1,27 +1,52 @@
 ---
-import ContactLinkButton from './ContactLinkButton.astro'
+import ContactLinkButton from "./ContactLinkButton.astro";
 ---
 
-<section id="contact" class="pb-5">
+<section id="contact">
   <div class="space-y-8 max-w-lg lg:max-w-4xl mx-auto px-4 sm:px-6">
     <div class="grid gap-8 lg:grid-cols-2 lg:gap-16">
       <div class="text-center lg:py-5 lg:text-left">
-        <h2 class="mb-2 sm:mb-4 text-3xl md:text-4xl font-ubuntu font-semibold text-slate-900 dark:text-zinc-50 whitespace-nowrap">Let's Work Together</h2>
-        <p class="leading-relaxed md:text-xl">Have an idea, a question, or an opportunity? Connect with me via email or LinkedIn.</p>
+        <h2
+          class="mb-2 sm:mb-4 text-3xl md:text-4xl font-ubuntu font-semibold text-zinc-50 whitespace-nowrap">
+          Let's Work Together
+        </h2>
+        <p class="leading-relaxed md:text-xl">
+          Have an idea, a question, or an opportunity? Connect with me
+          via email or LinkedIn.
+        </p>
       </div>
       <div class="flex">
-        <ul class="font-ubuntu font-medium flex flex-wrap items-center justify-center start gap-3 md:gap-4">
+        <ul
+          class="font-ubuntu font-medium flex flex-wrap items-center justify-center start gap-3 md:gap-4">
           <li class="w-full">
-            <ContactLinkButton href="mailto:mhpahuta@gmail.com" label="Email" handle="mhpahuta@gmail.com" iconName="mail" iconSiz="size-5" />
+            <ContactLinkButton
+              href="mailto:mhpahuta@gmail.com"
+              label="Email"
+              handle="mhpahuta@gmail.com"
+              iconName="mail"
+              iconSiz="size-5"
+            />
           </li>
           <li class="w-full">
-            <ContactLinkButton href="https://linkedin.com/in/mattpahuta" label="LinkedIn" handle="/in/MattPahuta" iconName="linkedin" iconSiz="size-5" />
+            <ContactLinkButton
+              href="https://linkedin.com/in/mattpahuta"
+              label="LinkedIn"
+              handle="/in/MattPahuta"
+              iconName="linkedin"
+              iconSiz="size-5"
+            />
           </li>
           <li class="w-full">
-            <ContactLinkButton href="https://github.com/MattPahuta" label="GitHub" handle="@MattPahuta" iconName="github" iconSiz="size-5" />
+            <ContactLinkButton
+              href="https://github.com/MattPahuta"
+              label="GitHub"
+              handle="@MattPahuta"
+              iconName="github"
+              iconSiz="size-5"
+            />
           </li>
         </ul>
       </div>
     </div>
   </div>
-</section>  
+</section>
