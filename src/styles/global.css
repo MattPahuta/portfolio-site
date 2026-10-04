@@ -5,6 +5,10 @@
   --font-ubuntu: var(--font-ubuntu);
 
   --color-midnight-oil: hsl(225 21% 7%);
+  --color-primary-bg: hsl(225 21% 7%);
+  --color-eigengrau: hsl(226, 21%, 12%);
+  --color-raised-bg: hsl(226, 21%, 12%);
+
   --color-cyantific: hsl(174, 44%, 60%);
 
   --color-cool-steel: #a3bac3;

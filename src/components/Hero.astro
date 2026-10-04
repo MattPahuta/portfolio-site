@@ -2,40 +2,174 @@
 import SocialLinksList from "./SocialLinksList.astro";
 import { Image } from "astro:assets";
 import avatar from "../assets/avatar_v1.jpg";
+import { Icon } from "astro-icon/components";
+const socialLinks = [
+  {
+    label: "Email",
+    href: "mailto:mhpahuta@gmail.com",
+    iconName: "mail",
+  },
+  {
+    label: "LinkedIn",
+    href: "https://linkedin.com/in/mattpahuta",
+    iconName: "linkedin",
+  },
+  {
+    label: "GitHub",
+    href: "https://github.com/MattPahuta",
+    iconName: "github",
+  },
+];
+
+const heroStats = [
+  { label: "focus", value: "accessible development", colorClass: "" },
+  { label: "library", value: "React", colorClass: "" },
+  { label: "approach", value: "clear & pragmatic", colorClass: "" },
+  { label: "status", value: "building", colorClass: "" },
+];
+
+const skills = [
+  "React",
+  "JavaScript",
+  "TypeScript",
+  "Astro",
+  "Tailwind CSS",
+];
 ---
 
-<section class="py-16 md:pt-28 md:pb-8 lg:pt-40 lg:pb-20">
+<section class="py-20 space-y-6">
+  <!-- top grid -->
   <div
-    class="max-w-4xl mx-auto w-fit sm:py-14 sm:px-14 lg:px-0 grid lg:grid-cols-3 gap-12 lg:gap-8 items-center justify-items-center text-center">
+    class="grid gap-8 items-start md:gap-y-0 md:grid-cols-[13fr_7fr]">
+    <!-- headline and about content -->
     <div class="">
-      <Image
-        src={avatar}
-        alt="Headshot of Matt Pahuta"
-        priority
-        class="size-44 sm:size-56 aspect-auto object-cover rounded-full shadow-lg shadow-gray-900"
-      />
-    </div>
-    <div
-      class="space-y-8 flex flex-col items-center lg:col-span-2 lg:items-start md:text-xl lg:text-left">
-      <h1 class="mb-2">
-        <span class="text-xl font-medium text-gray-400 block"
-          >Hi there, I'm</span
-        >
-        <span
-          class="font-bold text-4xl sm:text-5xl lg:text-6xl font-ubuntu text-zinc-50"
-          >Matt Pahuta</span
-        >
-      </h1>
-      <p class="font-ubuntu font-medium text-gray-400">
-        Frontend Developer
-      </p>
+      <!-- hero eyebrow -->
       <p
-        class="max-w-xl text-pretty text-lg sm:text-xl leading-relaxed">
+        class="mb-4 text-sm font-mono tracking-wide uppercase text-accent">
+        Frontend engineer · Costa Mesa, CA
+      </p>
+      <h1 class="max-w-[20ch] text-6xl sm:text-7xl font-serif">
+        I build accessible interfaces that work for everyone.
+      </h1>
+    </div>
+    <!-- info box -->
+    <div
+      class="p-2 rounded-xl sm:rounded-2xl border-2 border-zinc-600">
+      <aside class="p-3 sm:p-5">
+        <!-- hero profile header -->
+        <div
+          class="pb-5 flex gap-4 items-center border-b border-zinc-600">
+          <Image
+            src={avatar}
+            alt="Headshot of Matt Pahuta"
+            priority
+            class="size-20 aspect-auto object-cover rounded-full"
+          />
+          <div class="">
+            <p class="text-lg sm:text-xl font-medium text-zinc-50">
+              Matt Pahuta
+            </p>
+            <p class="text-sm text-gray-400">Frontend Engineer</p>
+          </div>
+        </div>
+        <!-- hero profile stats -->
+        <dl class="m-0 pt-5 grid gap-3.5 font-mono text-sm">
+          {
+            heroStats.map((stat) => (
+              <div class="flex gap-4 justify-between">
+                <dt class="text-gray-500">{stat.label}</dt>
+                <dd class="m-0 text-right text-cyantific">
+                  {stat.value}
+                </dd>
+              </div>
+            ))
+          }
+        </dl>
+      </aside>
+    </div>
+    <!-- CTA button links -->
+    <ul
+      class="font-ubuntu font-medium flex flex-wrap items-center justify-start gap-3 md:gap-4">
+      {
+        socialLinks.map((item) => (
+          <li>
+            <a
+              href={item.href}
+              class="py-2 px-4 inline-flex items-center gap-2 border-2 rounded-lg border-accent text-gray-200 focus-visible:outline-2 focus-visible:outline-offset-4 focus:outline-white transition-colors">
+              <Icon
+                name={item.iconName}
+                aria-hidden="true"
+                focusable="false"
+                class="size-5"
+              />
+              {item.label}
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+    <!-- about content -->
+    <div class="space-y-4">
+      <p
+        class="max-w-prose text-pretty text-lg sm:text-xl leading-relaxed">
         I'm a frontend developer focused on accessible, inclusive
         design — with a decade of enterprise experience shaping how I
         build and why.
       </p>
-      <SocialLinksList />
+      <p
+        class="max-w-prose text-pretty text-lg sm:text-xl leading-relaxed">
+        I didn't start my career writing components — I spent a decade
+        inside enterprise IT, working across project management,
+        business analysis, and data governance at one of the country's
+        largest credit unions. That work taught me how organizations
+        make decisions, where projects break down, and what it
+        actually takes to create something that sticks.
+      </p>
     </div>
   </div>
+  <!-- skill bar -->
+
+  <!-- <div class="">
+    <ul
+      class="overflow-hidden bg-zinc-600 p-2 rounded-xl sm:rounded-2xl border-2 border-zinc-600 grid grid-cols-2 gap-2 sm:grid-cols-5">
+      {
+        skills.map((skill) => (
+          <li class="text-sm font-mono bg-amber-800 text-zinc-300 not-last:border-0">
+            {skill}
+          </li>
+        ))
+      }
+    </ul>
+  </div> -->
+
+  <div class="">
+    <dl
+      class="overflow-hidden border-2 border-zinc-600 rounded-2xl grid grid-cols-2 gap-1 sm:grid-cols-3 lg:grid-cols-5"
+      aria-label="Core technologies">
+      {
+        [
+          "React",
+          "TypeScript",
+          "Astro",
+          "Accessibility",
+          "Tailwind CSS",
+        ].map((skill) => (
+          <div class="py-3 px-2.5 text-center">
+            <dt class="sr-only">Technology</dt>
+            <dd class="text-zinc-300 font-mono text-sm m-0">
+              {skill}
+            </dd>
+          </div>
+        ))
+      }
+    </dl>
+  </div>
 </section>
+
+<!-- <SocialLinksList />
+<Image
+  src={avatar}
+  alt="Headshot of Matt Pahuta"
+  priority
+  class="size-44 sm:size-56 aspect-auto object-cover rounded-full shadow-lg shadow-gray-900"
+/> -->

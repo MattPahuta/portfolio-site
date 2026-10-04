@@ -1,0 +1,136 @@
+---
+import SocialLinksList from "./SocialLinksList.astro";
+import { Image } from "astro:assets";
+import avatar from "../assets/avatar_v1.jpg";
+import { Icon } from "astro-icon/components";
+const socialLinks = [
+  {
+    label: "Email",
+    href: "mailto:mhpahuta@gmail.com",
+    iconName: "mail",
+  },
+  {
+    label: "LinkedIn",
+    href: "https://linkedin.com/in/mattpahuta",
+    iconName: "linkedin",
+  },
+  {
+    label: "GitHub",
+    href: "https://github.com/MattPahuta",
+    iconName: "github",
+  },
+];
+
+const heroStats = [
+  { label: "focus", value: "accessible development", colorClass: "" },
+  { label: "library", value: "React", colorClass: "" },
+  { label: "approach", value: "clear & pragmatic", colorClass: "" },
+  { label: "status", value: "building", colorClass: "" },
+];
+
+const skills = [
+  "React",
+  "JavaScript",
+  "TypeScript",
+  "Astro",
+  "Tailwind CSS",
+];
+---
+
+<section class="py-10 space-y-6">
+  <!-- hero shell -->
+  <div class="space-y-6 p-5 md:p-10 rounded-xl bg-raised-bg">
+    <!-- headline wrapper -->
+    <!-- hero profile header -->
+    <div
+      class="pb-6 flex items-center gap-4 border-b border-zinc-700">
+      <!-- image wrapper -->
+      <Image
+        src={avatar}
+        alt="Headshot of Matt Pahuta"
+        priority
+        class="max-w-24 w-full h-full rounded-full object-cover"
+      />
+
+      <div class="">
+        <p
+          class="mb-1 text-xl sm:text-2xl font-ubuntu font-medium text-zinc-50">
+          Matt Pahuta
+        </p>
+        <!-- <p class="text-sm text-gray-400">Frontend Engineer</p> -->
+        <p
+          class="text-sm font-mono tracking-wide uppercase text-accent">
+          Frontend developer
+        </p>
+      </div>
+    </div>
+    <div class="">
+      <!-- <p
+        class="mb-4 text-sm font-mono tracking-wide uppercase text-accent">
+        Frontend software developer · Costa Mesa, CA
+      </p> -->
+      <h1 class="mb-8 max-w-[20ch] text-5xl sm:text-7xl font-sans">
+        I build accessible interfaces that work for everyone.
+      </h1>
+      <p class="mb-2">Hi, I'm Matt!</p>
+      <p
+        class="mb-2 max-w-prose text-pretty text-lg sm:text-xl leading-relaxed">
+        I'm a frontend developer focused on accessible, inclusive
+        design — with a decade of enterprise experience shaping how I
+        build and why.
+      </p>
+      <p
+        class="mb-8 max-w-prose text-pretty text-lg sm:text-xl leading-relaxed">
+        I craft responsive, user-focused web apps using JavaScript,
+        React, Next.js, and TailwindCSS, always aiming for clean
+        architecture, accessibility, and smooth user experiences.
+      </p>
+      <!-- CTA button links -->
+      <div class="">
+        <ul
+          class="font-ubuntu font-medium flex flex-wrap items-center justify-start gap-3 md:gap-4">
+          {
+            socialLinks.map((item) => (
+              <li>
+                <a
+                  href={item.href}
+                  class="py-2 px-4 inline-flex items-center gap-2 border-2 rounded-lg border-accent text-gray-200 focus-visible:outline-2 focus-visible:outline-offset-4 focus:outline-white transition-colors">
+                  <Icon
+                    name={item.iconName}
+                    aria-hidden="true"
+                    focusable="false"
+                    class="size-5"
+                  />
+                  {item.label}
+                </a>
+              </li>
+            ))
+          }
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- skills and techs -->
+<!-- <div class="">
+  <dl class="flex flex-wrap">
+    {
+      [
+        "React",
+        "TypeScript",
+        "Astro",
+        "Accessibility",
+        "Tailwind CSS",
+        "JavaScript",
+        "HTML",
+        "CSS3",
+      ].map((skill) => (
+        <div class="py-2 px-1.5 bg-raised-bg text-center">
+          <dt class="sr-only">Technology</dt>
+          <dd class="text-zinc-300 font-mono">{skill}</dd>
+        </div>
+      ))
+    }
+  </dl>
+</div> -->
