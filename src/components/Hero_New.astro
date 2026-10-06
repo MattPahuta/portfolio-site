@@ -24,7 +24,7 @@ const socialLinks = [
 const heroStats = [
   { label: "focus", value: "accessible development", colorClass: "" },
   { label: "library", value: "React", colorClass: "" },
-  { label: "approach", value: "clear & pragmatic", colorClass: "" },
+  { label: "approach", value: "clean & practical", colorClass: "" },
   { label: "status", value: "building", colorClass: "" },
 ];
 
@@ -39,78 +39,72 @@ const skills = [
 
 <section class="py-10 space-y-6">
   <!-- hero shell -->
-  <div class="space-y-6 p-5 md:p-10 rounded-xl bg-raised-bg">
-    <!-- headline wrapper -->
-    <!-- hero profile header -->
-    <div
-      class="pb-6 flex items-center gap-4 border-b border-zinc-700">
-      <!-- image wrapper -->
+  <div class="sm:p-5 md:p-10 lg:p-4">
+    <!-- hero top grid -->
+    <div class="mb-6 lg:mb-10 flex flex-col items-start">
+      <div class="mb-6">
+        <!-- <p
+          class="mb-6 text-xs sm:text-sm font-mono tracking-wide uppercase text-accent">
+          accessibility-focused frontend engineer
+        </p> -->
+        <p class="mb-2 text-lg text-zinc-300">Hi, I'm Matt!</p>
+        <h1 class="max-w-[24ch] text-4xl sm:text-6xl lg:text-5xl">
+          I build thoughtful frontend experiences with accessibility
+          at the core.
+        </h1>
+      </div>
+
       <Image
         src={avatar}
         alt="Headshot of Matt Pahuta"
         priority
-        class="max-w-24 w-full h-full rounded-full object-cover"
+        class="size-36 md:size-40 rounded-full object-cover -order-1"
       />
-
-      <div class="">
-        <p
-          class="mb-1 text-xl sm:text-2xl font-ubuntu font-medium text-zinc-50">
-          Matt Pahuta
-        </p>
-        <!-- <p class="text-sm text-gray-400">Frontend Engineer</p> -->
-        <p
-          class="text-sm font-mono tracking-wide uppercase text-accent">
-          Frontend developer
-        </p>
-      </div>
     </div>
-    <div class="">
-      <!-- <p
-        class="mb-4 text-sm font-mono tracking-wide uppercase text-accent">
-        Frontend software developer · Costa Mesa, CA
-      </p> -->
-      <h1 class="mb-8 max-w-[20ch] text-5xl sm:text-7xl font-sans">
-        I build accessible interfaces that work for everyone.
-      </h1>
-      <p class="mb-2">Hi, I'm Matt!</p>
-      <p
-        class="mb-2 max-w-prose text-pretty text-lg sm:text-xl leading-relaxed">
-        I'm a frontend developer focused on accessible, inclusive
-        design — with a decade of enterprise experience shaping how I
-        build and why.
-      </p>
-      <p
-        class="mb-8 max-w-prose text-pretty text-lg sm:text-xl leading-relaxed">
-        I craft responsive, user-focused web apps using JavaScript,
-        React, Next.js, and TailwindCSS, always aiming for clean
-        architecture, accessibility, and smooth user experiences.
-      </p>
+
+    <div
+      class="space-y-2 max-w-prose text-pretty text-lg sm:text-xl leading-relaxed">
       <!-- CTA button links -->
-      <div class="">
+      <div class="mt-10">
         <ul
-          class="font-ubuntu font-medium flex flex-wrap items-center justify-start gap-3 md:gap-4">
+          class="text-sm sm:text-base flex flex-wrap items-center justify-start gap-3 md:gap-4">
           {
             socialLinks.map((item) => (
               <li>
                 <a
                   href={item.href}
-                  class="py-2 px-4 inline-flex items-center gap-2 border-2 rounded-lg border-accent text-gray-200 focus-visible:outline-2 focus-visible:outline-offset-4 focus:outline-white transition-colors">
+                  class="py-2 px-4 inline-flex items-center gap-2 border border-accent text-gray-200 hover:bg-raised-bg hover:translate-y-[-2px] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white transition duration-300">
                   <Icon
                     name={item.iconName}
                     aria-hidden="true"
                     focusable="false"
-                    class="size-5"
+                    class="size-4"
                   />
-                  {item.label}
+                  <span class="">{item.label}</span>
                 </a>
               </li>
             ))
           }
         </ul>
       </div>
+      <p>
+        I'm a frontend engineer focused on building responsive
+        interfaces with React, Astro, and Tailwind CSS, with
+        accessibility and usability considered from the start.
+      </p>
+      <p>
+        My background in technology, business analysis, and project
+        management helps me bridge the gap between technical
+        solutions, team collaboration, and user needs.
+      </p>
     </div>
   </div>
 </section>
+
+<!-- <p
+        class="mb-4 text-sm font-mono tracking-wide uppercase text-accent">
+        Frontend software developer · Costa Mesa, CA
+      </p> -->
 
 <!-- skills and techs -->
 <!-- <div class="">
